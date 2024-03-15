@@ -12,6 +12,7 @@ function Loader() {
       navigate('/home')
     }, 7050);
   })
+  
 
   useEffect(() => {
     const Messenger = function (el) {

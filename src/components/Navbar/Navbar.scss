@@ -1,0 +1,15 @@
+.Navbar {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between;
+    min-height: 100vh;
+    max-width: 15%;
+    font-size: 2em;
+    padding: 20px 10px;
+    font-family: 'Friz Quadrata Std', sans-serif;
+    &__icon {
+        width: 1em;
+        font-size: 3em;
+    }
+}

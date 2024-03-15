@@ -1,0 +1,14 @@
+volumes:
+   my-app-data:
+services:
+  server:
+    build: 
+      context: .
+    ports: 
+      - 8080:8080
+    develop:
+      watch:
+        - action: rebuild
+        - path: /app
+    volumes:
+      - my-app-data:/app

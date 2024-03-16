@@ -1,0 +1,32 @@
+@mixin background-size-animation($name) {
+    @keyframes #{$name} {
+        100% {
+            background-size: 100%;
+        }
+    }
+}
+
+@mixin swing-animation($name) {
+    @keyframes #{$name} {
+        0% {
+            transform: rotate(15deg);
+        }
+        50% {
+            transform: rotate(-15deg);
+        }
+        100% {
+            transform: rotate(15deg);
+        }
+    }
+}
+
+@mixin spin-animation($name) {
+    @keyframes #{$name} {
+         from {
+            transform: rotate(0deg);
+         }   
+         to {
+            transform: rotate(360deg);
+         }
+    }
+}

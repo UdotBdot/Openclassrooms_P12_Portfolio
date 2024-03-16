@@ -1,6 +1,6 @@
 import './App.scss'
-import Loader from './pages/Loader/Loader'
-import Home from './pages/Home/Home'
+import Loader from '../pages/Loader/Loader'
+import Home from '../pages/Home/Home'
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 function App() {

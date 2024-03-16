@@ -1,3 +1,5 @@
+@import 'src/index.scss';
+
 .Navbar {
     box-sizing: border-box;
     display: flex;
@@ -7,9 +9,9 @@
     max-width: 15%;
     font-size: 2em;
     padding: 20px 10px;
-    font-family: 'Friz Quadrata Std', sans-serif;
+    font-family: $text-font
     &__icon {
         width: 1em;
-        font-size: 3em;
+        font-size: 1.5em;
     }
 }

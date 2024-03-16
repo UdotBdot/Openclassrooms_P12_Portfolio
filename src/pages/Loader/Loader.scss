@@ -1,3 +1,5 @@
+@import 'src/index.scss';
+
 .Loader {
     background-image: linear-gradient(to right, #00040d, #00040d, #00040d, #2f2d33, #5b555a, #8a8183, #8a8183, #5b555a, #2f2d33, #00040d, #00040d, #00040d,);
     width: 100vw;
@@ -15,6 +17,7 @@
         z-index: 1;
         transform-origin: top;
         animation: swing 3s ease-in-out infinite;
+        @include swing-animation(swing);
     }
     &__wire {
         width: 4.5px;
@@ -76,12 +79,12 @@
     }
     &__text {
         margin-top: 100px;
-        font-family: 'Friz Quadrata Std', sans-serif;
+        font-family: $headline-font;
         display: flex;
         justify-content: center;
-        color: #1d1e22;
+        color: $text-color;
         align-items: center;
-        font-size: 40px;
+        font-size: 30px;
         font-weight: bold;
     }
     &__progress {
@@ -91,39 +94,18 @@
         position: absolute;
         bottom: 35%;
         animation: l1 5s forwards linear;
+        @include background-size-animation(l1);
   }
   &__spinner {
     position: absolute;
     left: -30px;
     bottom: -2px;
     font-size: 20px;
-    animation: spin 2s linear infinite;
-  }
-  @keyframes l1 {
-      100% {background-size:100%}
+    animation: spin 1.5s linear infinite;
+    @include spin-animation(spin);
   }
 }
 
-@keyframes swing {
-    0% {
-        transform: rotate(15deg);
-    }
-    50% {
-        transform: rotate(-15deg);
-    }
-    100% {
-        transform: rotate(15deg);
-    }
-}
-
-@keyframes spin {
-     from {
-        transform: rotate(0deg);
-     }   
-     to {
-        transform: rotate(360deg);
-     }
-}
 
 
                 

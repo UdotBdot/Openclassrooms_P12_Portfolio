@@ -9,11 +9,11 @@ function Loader() {
   const loaderRef = useRef(null);
   const navigate = useNavigate();
 
-  useEffect( () => {
-    setTimeout(() => {
-      navigate('/home')
-    }, 5330);
-  })
+  // useEffect( () => {
+  //   setTimeout(() => {
+  //     navigate('/home')
+  //   }, 5300);
+  // })
   
 
   useEffect(() => {

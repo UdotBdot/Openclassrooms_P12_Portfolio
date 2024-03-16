@@ -1,5 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faSpinner } from '@fortawesome/free-solid-svg-icons'
 import './Loader.scss';
 import '../../assets/Styles/Fonts.scss'
 
@@ -10,7 +12,7 @@ function Loader() {
   useEffect( () => {
     setTimeout(() => {
       navigate('/home')
-    }, 7050);
+    }, 5330);
   })
   
 
@@ -74,7 +76,7 @@ function Loader() {
           if (doCycles) {
             setTimeout(animateFadeBuffer, 50);
           } else {
-            setTimeout(cycleText, 2000);
+            setTimeout(cycleText, 1000);
           }
         };
       
@@ -86,16 +88,14 @@ function Loader() {
           setTimeout(animateIn, 200);
         };
       
-        animateIn(); // Start animation
+        animateIn();
       };
 
     const messenger = new Messenger(loaderRef);
 
-    // Clean up function
     return () => {
-      // Any clean-up code goes here
     };
-  }, []); // Empty dependency array to run effect only once
+  }, []); 
 
   return (
     <>
@@ -114,7 +114,7 @@ function Loader() {
         </div>
       </div>
       <div className='Loader__text' ref={loaderRef}></div>
-      <div class="Loader__progress"></div>
+      <div class="Loader__progress"><FontAwesomeIcon className='Loader__spinner' icon={faSpinner} /></div>
     </div>
     </>
   );

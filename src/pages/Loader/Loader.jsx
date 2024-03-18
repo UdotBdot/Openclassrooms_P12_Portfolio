@@ -9,11 +9,11 @@ function Loader() {
   const loaderRef = useRef(null);
   const navigate = useNavigate();
 
-  // useEffect( () => {
-  //   setTimeout(() => {
-  //     navigate('/home')
-  //   }, 5300);
-  // })
+  useEffect( () => {
+    setTimeout(() => {
+      navigate('/home')
+    }, 5300);
+  })
   
 
   useEffect(() => {
@@ -114,7 +114,7 @@ function Loader() {
         </div>
       </div>
       <div className='Loader__text' ref={loaderRef}></div>
-      <div class="Loader__progress"><FontAwesomeIcon className='Loader__spinner' icon={faSpinner} /></div>
+      <div className="Loader__progress"><FontAwesomeIcon className='Loader__spinner' icon={faSpinner} /></div>
     </div>
     </>
   );

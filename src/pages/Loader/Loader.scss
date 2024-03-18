@@ -1,7 +1,7 @@
 @import 'src/index.scss';
 
 .Loader {
-    background-image: linear-gradient(to right, #00040d, #00040d, #00040d, #2f2d33, #5b555a, #8a8183, #8a8183, #5b555a, #2f2d33, #00040d, #00040d, #00040d,);
+    background: $secondary-color;
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -88,6 +88,7 @@
         font-weight: bold;
     }
     &__progress {
+        border-radius: 5px;
         width: 150px;
         height: 20px;
         background: linear-gradient(#832116, #832116) 0/0% no-repeat #FAF5EF;

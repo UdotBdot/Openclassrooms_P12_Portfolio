@@ -1,9 +1,14 @@
 import React from 'react'
 import './Tab.scss'
 
-function Tab() {
+function Tab(props) {
+const {className, text} = props
   return (
-    <div>Tab</div>
+    <>
+      <li className={className}>
+        {text}
+      </li>
+    </>
   )
 }
 

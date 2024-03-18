@@ -30,3 +30,60 @@
          }
     }
 }
+
+@mixin dropdown-animation-0($name) {
+    @keyframes #{$name} {
+         0% {
+            transform: rotate(0deg);
+         }   
+    }
+}
+
+@mixin dropdown-animation-180($name) {
+    @keyframes #{$name} {
+         100% {
+            transform: rotate(180deg);
+         }   
+    }
+}
+
+@mixin dropdown-animation-reset($name) {
+    @keyframes #{$name} {
+         0% {
+            transform: rotate(180deg);
+         }
+         100% {
+            transform: rotate(0deg);
+         }
+    }
+}
+@mixin expand-animation($name) {
+    @keyframes #{$name} {
+        0% {
+            letter-spacing: -0.5em;
+            -webkit-transform: translateZ(-800px);
+                    transform: translateZ(-800px);
+            -webkit-filter: blur(12px);
+                    filter: blur(12px);
+            opacity: 0;
+          }
+          100% {
+            -webkit-transform: translateZ(0);
+                    transform: translateZ(0);
+            -webkit-filter: blur(0);
+                    filter: blur(0);
+            opacity: 1;
+          }
+      }
+}
+
+@mixin close-expand-animation($name) {
+    @keyframes #{$name} {
+        100% {
+            opacity: 1;
+          }
+          0% {
+            opacity: 0;
+          }
+      }
+}

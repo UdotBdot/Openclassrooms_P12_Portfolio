@@ -2,13 +2,13 @@
 
 .Hero {
     margin: 105px 0 105px 105px;
-    position: fixed;
     width: 50%;
     padding: 10px;
     margin-left: 300px;
     &__h1 {
         font-family: $headline-font;
         font-size: 2em;
+        margin-top: 20px;
     }
     &__h2 {
         margin-top: 10px;

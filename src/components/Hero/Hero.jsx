@@ -5,19 +5,70 @@ function Hero() {
   return (
     <>
     <article className='Hero'>
-        <h1 className='Hero__h1'>Enchanté et bienvenue sur mon Portfolio !</h1>
-           <h2 className='Hero__h2'> Je suis Frédéric SIN, un jeune développeur Agile basé en Alsace. </h2>
-           <p className='Hero__p'>
-            Bienvenue dans mon espace numérique où je m'exprime régulièrement à travers mes projets, mettant en avant ma capacité à combiner esthétique et fonctionnalité pour offrir la meilleure expérience utilisateur possible.
+        <h1 className='Hero__h1'>Welcome to my Portfolio!</h1>
+           <h2 className='Hero__h2'>I am Frederic SIN, a young Agile developer based in Alsace.</h2>
+        <p className='Hero__p'>
+           Welcome to my digital space where I regularly express myself through my projects, highlighting my ability to combine aesthetics and functionality to offer the best possible user experience.
         </p>
         <p className='Hero__p'>
-        Grâce à mon spèctre de compétences, je propose une diversité de services incluant le débogage, l'optimisation SEO/Performance, ainsi que la création d'applications web.
+          Thanks to my range of skills, I offer a diversity of services including debugging, SEO/Performance optimization, as well as the creation of web applications.
         </p>
         <p className='Hero__p'>
-        Explorez mon portfolio pour découvrir ma vision du développement web et ensemble, transformons ensemble vos idées en réalité numérique...
+        Explore my portfolio to discover my vision of web development and together, let's transform your ideas into digital reality...
         </p>
-    </article>
+        <p className='Hero__p'>
+        Explore my portfolio to discover my vision of web development and together, let's transform your ideas into digital reality...
+        </p>
+        <p className='Hero__p'>
+        Explore my portfolio to discover my vision of web development and together, let's transform your ideas into digital reality...
+        </p>
+        <p className='Hero__p'>
+        Explore my portfolio to discover my vision of web development and together, let's transform your ideas into digital reality...
+        </p>
+        <p className='Hero__p'>
+        Explore my portfolio to discover my vision of web development and together, let's transform your ideas into digital reality...
+        </p>
+        <p className='Hero__p'>
+        Explore my portfolio to discover my vision of web development and together, let's transform your ideas into digital reality...
+        </p>
+        <p className='Hero__p'>
+        Explore my portfolio to discover my vision of web development and together, let's transform your ideas into digital reality...
+        </p>
+        <p className='Hero__p'>
+        Explore my portfolio to discover my vision of web development and together, let's transform your ideas into digital reality...
+        </p>
+        <p className='Hero__p'>
+        Explore my portfolio to discover my vision of web development and together, let's transform your ideas into digital reality...
+        </p>
+        <p className='Hero__p'>
+        Explore my portfolio to discover my vision of web development and together, let's transform your ideas into digital reality...
+        </p>
+        <p className='Hero__p'>
+        Explore my portfolio to discover my vision of web development and together, let's transform your ideas into digital reality...
+        </p>
+        <p className='Hero__p'>
+        Explore my portfolio to discover my vision of web development and together, let's transform your ideas into digital reality...
+        </p>
+        <p className='Hero__p'>
+        Explore my portfolio to discover my vision of web development and together, let's transform your ideas into digital reality...
+        </p>
+        <p className='Hero__p'>
+        Explore my portfolio to discover my vision of web development and together, let's transform your ideas into digital reality...
+        </p>
+        <p className='Hero__p'>
+        Explore my portfolio to discover my vision of web development and together, let's transform your ideas into digital reality...
+        </p>
+        <p className='Hero__p'>
+        Explore my portfolio to discover my vision of web development and together, let's transform your ideas into digital reality...
+        </p>
+        <p className='Hero__p'>
+        Explore my portfolio to discover my vision of web development and together, let's transform your ideas into digital reality...
+        </p>
+        <p className='Hero__p'>
+        Explore my portfolio to discover my vision of web development and together, let's transform your ideas into digital reality...
+        </p>
         
+    </article>
     </>
   )
 }

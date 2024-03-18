@@ -1,6 +1,7 @@
 @import 'src/index.scss';
 
 .Navbar {
+    position: fixed;
     display: flex;
     flex-direction: column;
     color: $secondary-color;

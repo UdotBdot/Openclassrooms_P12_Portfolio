@@ -1,12 +1,14 @@
 @import 'src/index.scss';
 
 .Navbar {
+    display: flex;
+    flex-direction: column;
     color: $secondary-color;
     box-sizing: border-box;
     height: 100vh;
     width: 100px;
     font-size: 2em;
-    padding: 0 20px;
+    padding: 10px 0;
     font-family: $headline-font;
     background: $tertiary-color;
     border-right: 5px solid $text-color;
@@ -34,21 +36,22 @@
         animation: dropdown-180 0.5s forwards;
         @include dropdown-animation-180(dropdown-180);
         color: $primary-color;
+        margin-right: 10px;
     }
 
     &__display {
         cursor: pointer;
         display: flex;
-        text-align: center;
         justify-content: space-between;
+        margin: 10px;
         align-items: center;
-        gap: 20px;
         &:nth-child(5) {
             margin-top: 150px;
         }
         &:hover {
             color: $primary-color;
             transition: color 200ms ease;
+            background-color: $alternative-color;
         }
     }
 
@@ -56,20 +59,13 @@
         color: $sun-color;
         width: 1em;
         font-size: 1.5em;
-        margin: 20px 5px;
+       margin: 20px 0 20px 5px;
         animation: dropdown-0 0.5s ;
         @include dropdown-animation-0(dropdown-0);
         &:not(:hover) {
             animation: dropdown-reset 0.5s forwards;
             @include dropdown-animation-reset(dropdown-reset);
         }
-    }
-
-    &__tab-size {
-        // border: 2px solid red;
-        list-style: none;
-        max-height: 41px;
-        max-width: 200px;
     }
     &__title {
         margin: 20px 0;
@@ -85,5 +81,8 @@
     }
     &__display:hover &__tab-icon {
         color: $sun-color;
+    }
+    &__tab-size {
+        padding-right: 10px;
     }
 }

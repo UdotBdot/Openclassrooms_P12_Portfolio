@@ -3,18 +3,15 @@
 .Navbar {
     color: $secondary-color;
     box-sizing: border-box;
-    display: flex;
-    flex-direction: column; 
-    align-items: center;
     height: 100vh;
     width: 100px;
     font-size: 2em;
-    padding: 0 10px;
+    padding: 0 20px;
     font-family: $headline-font;
     background: $tertiary-color;
     border-right: 5px solid $text-color;
     list-style: none;
-    &:not(hover) {
+    &:not(:hover) {
         transition: width 0.4s ease;
     }
     &:hover &__title {
@@ -44,6 +41,7 @@
         display: flex;
         text-align: center;
         justify-content: space-between;
+        align-items: center;
         gap: 20px;
         &:nth-child(5) {
             margin-top: 150px;
@@ -58,7 +56,7 @@
         color: $sun-color;
         width: 1em;
         font-size: 1.5em;
-        margin: 15px 0 75px 0;
+        margin: 20px 5px;
         animation: dropdown-0 0.5s ;
         @include dropdown-animation-0(dropdown-0);
         &:not(:hover) {
@@ -81,7 +79,7 @@
         display: none;
     }
     &__tab-icon {
-        margin: 10px 0;
+        margin: 10px;
         width: 32px;
         height: 32px;
     }

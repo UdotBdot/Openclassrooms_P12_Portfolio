@@ -1,7 +1,7 @@
 @import 'src/index.scss';
 
 .Loader {
-    background: $secondary-color;
+    background: $primary-color;
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -79,16 +79,16 @@
     }
     &__text {
         margin-top: 100px;
+        margin-bottom: 30px;
         font-family: $headline-font;
         display: flex;
         justify-content: center;
         color: $text-color;
         align-items: center;
-        font-size: 36px;
-        font-weight: bold;
+        font-size: 32px;
     }
     &__progress {
-        border: 4px solid $primary-color;
+        border: 3px solid $text-color;
         border-radius: 10px;
         width: 150px;
         height: 20px;

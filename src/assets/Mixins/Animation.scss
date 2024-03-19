@@ -77,3 +77,33 @@
       }
 }
 
+
+@mixin pulse-animation($name) {
+    @keyframes #{$name} {
+        50% {
+            opacity: .5;
+        }
+    }
+}
+
+@mixin track-in-animation($name) {
+    @keyframes #{$name} {
+        0% {
+            opacity: 0;
+          }
+          100% {
+            opacity: 1;
+          }
+    }
+}
+
+@mixin skelet-animation-out($name)  {
+    @keyframes #{$name} {
+        100% {
+            opacity: 0.2;
+        }
+        0% {
+            opacity: 0;
+        }
+    }
+}

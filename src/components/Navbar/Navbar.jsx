@@ -1,4 +1,6 @@
 import React from 'react'
+import { useEffect, useState } from 'react';
+import SkeletonNavbar from '../Skeletons/SkeletonNavbar/SkeletonNavbar';
 import Tab from '../Tab/Tab'
 import './Navbar.scss'
 import { useNavigate } from "react-router-dom";
@@ -6,13 +8,26 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowsUpToLine, faHouse, faFile, faGear, faPhone, faCircleHalfStroke, faLanguage } from '@fortawesome/free-solid-svg-icons'
 
 function Navbar() {
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 500);
+
+    return () => clearTimeout(timer);
+  }, []);
+
   const navigate = useNavigate();
 
   const handleNavigation = (path) => {
     navigate(path);}
   return (
     <>
-        <nav className='Navbar'>
+        {isLoading ? (
+          <SkeletonNavbar />
+        ) : (
+          <nav className='Navbar'>
           <a onClick={() => handleNavigation("/")} className='Navbar__display'>
           <Tab text={"SIN_DEV"} className={"Navbar__display Navbar__title Navbar__tab-size"} />
           <FontAwesomeIcon className='Navbar__icon' icon={faArrowsUpToLine} />
@@ -44,6 +59,8 @@ function Navbar() {
           </a>
           </ul>
         </nav>
+        )}
+        
     </>
   )
 }

@@ -1,4 +1,17 @@
+@import 'src/index.scss';
+
 * {
+    box-sizing: content-box;
     margin: 0;
     padding: 0;
+    max-width: 100vw;
+}
+
+.Hero-Pages {
+    display: flex;
+}
+
+html {
+    overflow-y: scroll;
+    background-color: $primary-color;
 }

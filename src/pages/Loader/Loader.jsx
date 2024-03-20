@@ -102,19 +102,6 @@ function Loader() {
 
   return (
     <div className='Loader'>
-      <div className="Loader__bulb-container">
-        <div className='Loader__wire'></div>
-        <div className='Loader__connector'>
-          {[...Array(3)].map((_, index) => (
-            <div key={index} className='Loader__grove'></div>
-          ))}
-        </div>
-        <div className='Loader__bulb'>
-          {[...Array(3)].map((_, index) => (
-            <div key={index} className='Loader__metal-wire'></div>
-          ))}
-        </div>
-      </div>
       <div className='Loader__text' ref={loaderRef}></div>
       <div className="Loader__progress">
         <FontAwesomeIcon className='Loader__spinner' icon={faSpinner} />

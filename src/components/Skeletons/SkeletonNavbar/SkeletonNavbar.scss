@@ -28,7 +28,7 @@
     &__bottom {
         margin-top: 130px;
     }
-    &__pulse {
+    .pulse {
         animation: pulse 0.5s cubic-bezier(0.4, 0, 0.6, 1) infinite;
         @include pulse-animation(pulse)
     }

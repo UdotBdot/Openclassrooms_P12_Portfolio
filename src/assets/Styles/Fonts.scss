@@ -1,6 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
-@import url('https://fonts.cdnfonts.com/css/helvetica-neue-9');
+@font-face { 
+    font-family: 'Bagnar Regular'; 
+    src: 
+        url('/BagnardSans.otf')  
+        format('opentype'); 
+} 
+
+@font-face { 
+    font-family: 'Cotham Sans'; 
+    src: 
+        url('/CothamSans.otf')  
+        format('opentype'); 
+} 
+
+$headline-font: 'Bagnar Regular';
+$text-font: 'Cotham Sans';
 
 
-$headline-font: 'Helvetica Neue', sans-serif;
-$text-font: 'Comfortaa', sans-serif;

@@ -10,15 +10,16 @@
     @include track-in-animation(track-in);
     &__h2 {
         font-family: $headline-font;
-        font-size: 1.5em;
+        font-size: 3em;
         margin-top: 20px;
     }
     &__h3 {
         margin-top: 10px;
         font-family: $headline-font;
+        font-size: 1.5em;
     }
     &__p {
-        margin: 10px 20px 20px 0;
+        margin: 30px 20px 20px 0;
         width: 90%;
         font-family: $text-font;
         font-size: 27px;

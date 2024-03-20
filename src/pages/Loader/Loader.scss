@@ -6,80 +6,7 @@
     height: 100vh;
     display: flex;
     justify-content: center;
-    
-    &__bulb-container {
-        width: 300px;
-        height: 500px;
-        position: absolute;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        z-index: 1;
-        transform-origin: top;
-        animation: swing 3s ease-in-out infinite;
-        @include swing-animation(swing);
-    }
-    &__wire {
-        width: 4.5px;
-        height: 190px;
-        background: #060505;
-        position: relative;
-        z-index: 1;
-    }
-    &__connector {
-        background: #292929;
-        width: 30px;
-        aspect-ratio: 4/5;
-        border-top-left-radius: 10px;
-        border-top-right-radius: 10px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
-        z-index: 2;
-    }
-    &__grove {
-        background: #424242;
-        width: 30px;
-        height: 1px;
-        z-index: 3;
-    }
-    &__bulb {
-        margin-top: -2px;
-        width: 92px;
-        aspect-ratio: 1;
-        border-radius: 50%;
-        background: #ffeb00;
-        border: 1px solid rgba(255,255,255,0.1);
-        box-shadow: 0px 0px 80px 50px rgba(245,223,77,1);
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: flex-start;
-        gap: -1px;
-        z-index: 1;
-        animation: flash 10s linear infinite;
-    }
-    &__metal-wire {
-        position: relative;
-        border: 1px solid black;
-        width: 13px;
-        height: 5px;
-        border-radius: 50%;
-        z-index: 2;
-        &:nth-child(1) {
-            top: -1px;
-        }
-        &:nth-child(2) {
-            top: -4px;
-        }
-        &:nth-child(3) {
-            top: -7.5px;
-        }
-    }
     &__text {
-        margin-top: 100px;
-        margin-bottom: 30px;
         font-family: $headline-font;
         display: flex;
         justify-content: center;
@@ -88,17 +15,18 @@
         font-size: 32px;
     }
     &__progress {
-        border: 3px solid $text-color;
+        border: 3px solid $secondary-color;
         border-radius: 10px;
         width: 150px;
         height: 20px;
-        background: linear-gradient(#832116, #832116) 0/0% no-repeat #FAF5EF;
+        background: linear-gradient($sun-color, $sun-color) 0/0% no-repeat #FAF5EF;
         position: absolute;
-        bottom: 35%;
+        bottom: 40%;
         animation: l1 5s forwards linear;
         @include background-size-animation(l1);
   }
   &__spinner {
+    color: $secondary-color;
     position: absolute;
     left: -30px;
     bottom: -2px;

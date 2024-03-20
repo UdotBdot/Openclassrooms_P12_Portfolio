@@ -6,6 +6,7 @@ function SkeletonHeader() {
     <>
     <div className='Header Skeleton-header'>
         <div className='Skeleton-header__text-anim pulse'></div>
+        <div className='Skeleton-header__about-me pulse'></div>
         <div className='Skeleton-header__logos'>
             <div className='Skeleton-header__logo pulse'></div>
             <div className='Skeleton-header__logo pulse'></div>

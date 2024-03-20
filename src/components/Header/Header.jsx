@@ -34,10 +34,10 @@ function Header() {
       <a className='Header__about-me' onClick={() => handleNavigation("/about-me")} >About Me</a>
       <div className='Header__logos'>
         <a href='https://github.com/UdotBdot' target='_blank'>
-          <img width="50" height="50" className="Header__logo" src="../../images/github_logo.png" alt="GitHub Logo" />
+          <img width="30" height="30" className="Header__logo" src="../../images/github_logo.png" alt="GitHub Logo" />
         </a>
         <a href="https://www.linkedin.com/in/frederic-sin-965b36100/" target='_blank'>
-          <img width="50" height="50" className="Header__logo" src="../../images/linkedin_logo.png" alt="LinkedIn Logo" />
+          <img width="30" height="30" className="Header__logo" src="../../images/linkedin_logo.png" alt="LinkedIn Logo" />
         </a>
       </div>
     </div>

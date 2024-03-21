@@ -1,0 +1,19 @@
+@import 'src/index.scss';
+
+footer {
+    margin-top: auto;
+    .Footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $text-color;
+        max-width: 100vw;
+        height: 80px;
+        &__p {
+            font-family: $headline-font;
+            color: $primary-color;
+            margin: 0 300px;
+        }
+    }
+    
+}

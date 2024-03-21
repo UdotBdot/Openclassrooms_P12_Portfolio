@@ -42,7 +42,6 @@ function Header() {
       </div>
     </div>
     )}
-    
     </>
   );
 }

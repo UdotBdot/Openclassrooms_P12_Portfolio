@@ -1,0 +1,41 @@
+@import 'src/index.scss'; 
+
+.Auto-slider-container {
+    display: flex;
+    justify-content: center;
+h2 {
+    font-family: $headline-font;
+    margin: 30px 0;
+    font-size: 2.5em;
+    display: flex;
+    justify-content: center;
+}
+    .Auto-slider {
+        margin: 20px;
+        padding: 20px;
+        max-width: 600px;
+        overflow: hidden;
+
+        &__word-list {
+            padding: 1rem 0;
+            display: flex;
+            gap: 1rem;
+            margin: 0;
+            list-style: none;
+            animation: auto-slider 20s infinite linear;
+            @include auto-slider-animation(auto-slider);
+            white-space: nowrap;
+
+            li {
+                padding: 1rem;
+                border-radius: 0.5rem;
+            }
+        }
+    }
+    & {
+        .Auto-slider {
+            -webkit-mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+            mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+        }
+    }
+}

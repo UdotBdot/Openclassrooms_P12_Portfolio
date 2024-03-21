@@ -1,7 +1,7 @@
 import './App.scss'
 import Loader from '../pages/Loader/Loader'
 import Home from '../pages/Home'
-import Works from '../pages/Works/Works';
+import Works from '../pages/Works';
 import AboutMe from '../pages/AboutMe';
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 

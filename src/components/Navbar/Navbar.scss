@@ -1,14 +1,7 @@
 @import 'src/index.scss';
 
 .Navbar {
-    position: fixed;
-    top: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     color: $primary-color;
-    height: 100vh;
-    width: 100px;
     font-size: 2em;
     font-family: $headline-font;
     background: $secondary-color;
@@ -17,16 +10,10 @@
     &:not(:hover) {
         transition: width 0.4s ease;
     }
-    &:hover &__title {
+    &:hover &__title, &:hover &__text {
         display: block;
         text-shadow: 1px -2px 5px rgba(0, 0, 0, 0.8);
         animation: expand 0.3s ease;
-        @include expand-animation(expand);
-    }
-    &:hover &__text {
-        text-shadow: -1px 2px 5px rgba(0, 0, 0, 0.8);
-        display: block;
-        animation: expand 0.4s ease;
         @include expand-animation(expand);
     }
     &:hover {
@@ -54,7 +41,6 @@
             transition: color 200ms ease;
         }
     }
-
     &__icon {
         color: $sun-color;
         width: 1em;
@@ -67,22 +53,17 @@
             @include dropdown-animation-reset(dropdown-reset);
         }
     }
-    &__title {
-        color: $sun-color;
-        margin: 20px 0;
-        display: none;
-        font-size: 0.8em;
-    }
-    &__text {
-        display: none;
-        font-size: 0.8em;
-    }
     &__tab-icon {
         margin: 10px;
         width: 25px;
         height: 25px;
     }
-    &__tab-size {
-        padding-right: 10px;
+    &__title {
+        color: $sun-color;
+        margin: 20px 0;
+    }
+    &__text {
+        display: none;
+        font-size: 0.8em;
     }
 }

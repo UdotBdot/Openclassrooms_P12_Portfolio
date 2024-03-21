@@ -1,0 +1,146 @@
+@import 'src/index.scss';
+
+.Skeleton-navbar {
+    background-color: grey;
+    opacity: 0.2;
+    border-right: 5px solid black;
+    &__element1 {
+        width: 80px;
+        height: 50px;
+        background-color: black;
+        margin: 30px;
+        border-radius: 3px;
+    }
+    &__element2 {
+        width: 50px;
+        height: 50px;
+        background-color: black;
+        margin: 10px 0;
+        border-radius: 4px;
+    }
+    &__bottom {
+        margin-top: 130px;
+    }
+}
+
+.Skeleton-header {
+    max-width: 100vw;
+    &__text-anim {
+        margin: 35px 0 0 200px;
+        min-width: 650px;
+        height: 30%;
+        background-color: grey;
+        opacity: 0.2;
+        border-radius: 5px;
+    }
+    &__logos {
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+        gap: 30px;
+        align-items: center;
+        padding: 30px;
+    }
+    &__logo {
+        width: 50px;
+        height: 50px;
+        background-color: grey;
+        opacity: 0.2;
+        border-radius: 5px;
+    }
+    &__about-me {
+        border-radius: 5px;
+        margin: 35px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        min-width: 150px;
+        background-color: grey;
+        opacity: 0.2;
+        margin-left: 150px;
+    }
+}
+
+.Skeleton-text {
+    position: relative;
+    margin-top: 20px;
+    padding: 30px;
+    margin-left: 300px;
+    width: 40%;
+    height: 450px;
+    background-color: grey;
+    opacity: 0.2;
+    border-radius: 5px;
+    animation: skelet-out 0.5s ease;
+    @include skelet-animation-out(skelet-out);
+    &__h2 {
+        position: absolute;
+        background-color: black;
+        border-radius: 3px;
+        width: 60%;
+        height: 40px;
+    }
+    &__h3 {
+        margin-top: 70px;
+        position: absolute;
+        background-color: black;
+        border-radius: 3px;
+        width: 90%;
+        height: 30px;
+    }
+    &__p {
+        margin-top: 200px;
+        position: absolute;
+        background-color: black;
+        border-radius: 3px;
+        width: 80%;
+        height: 50px;
+    }
+    &__p2 {
+        margin-top: 300px;
+        position: absolute;
+        background-color: black;
+        border-radius: 5px;
+        width: 65%;
+        height: 50px;
+    }
+
+    &__p3 {
+        margin-top: 400px;
+        position: absolute;
+        background-color: black;
+        border-radius: 5px;
+        width: 55%;
+        height: 50px;
+    }
+}
+
+.Skeleton-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-height: 470px;
+    border-radius: 20px;
+    margin: 40px 20px 20px 100px;
+    min-width: 400px;
+    background-color: grey;
+    opacity: 0.2;
+    &__round {
+        margin-top: 50px;
+        width: 200px;
+        height: 200px;
+        background-color: black;
+        border-radius: 50%;
+    }
+    &__bottom {
+        display: flex;
+    }
+    &__square {
+        height: 40px;
+        width: 150px;
+        margin: 90px 10px 10px 10px;
+        background-color: black;
+    }
+}

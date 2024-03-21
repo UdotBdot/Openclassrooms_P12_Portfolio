@@ -1,5 +1,4 @@
 import React from 'react'
-import './SkeletonText.scss'
 
 function Skeleton() {
   return (

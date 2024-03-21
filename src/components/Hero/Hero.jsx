@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import Skeleton from '../Skeletons/SkeletonText/SkeletonText';
+import Skeleton from '../Skeletons/SkeletonText';
 import './Hero.scss';
 
 function Hero() {

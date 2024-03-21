@@ -1,7 +1,7 @@
 import React, { useState, useEffect} from 'react';
 import './Header.scss';
 import Typewriter from '../Typewriter/Typewriter';
-import SkeletonHeader from '../Skeletons/SkeletonHeader/SkeletonHeader';
+import SkeletonHeader from '../Skeletons/SkeletonHeader';
 import { useNavigate } from 'react-router';
 
 function Header() {

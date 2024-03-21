@@ -1,5 +1,5 @@
 import React from 'react'
-import './SkeletonCard.scss'
+import Skeletons from './main/Skeletons'
 
 function SkeletonCard() {
   return (

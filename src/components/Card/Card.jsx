@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import ReactCurvedText from 'react-curved-text';
-import SkeletonCard from '../Skeletons/SkeletonCard/SkeletonCard';
+import SkeletonCard from '../Skeletons/SkeletonCard';
 
 import './Card.scss'
 function Card() {

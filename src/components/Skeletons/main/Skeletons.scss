@@ -144,3 +144,27 @@
         background-color: black;
     }
 }
+
+.Skeleton-about-me {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 300px;
+    background-color: grey;
+    opacity: 0.2;
+    border-radius: 5px;
+    height: 480px;
+    &__h2 {
+        border-radius: 5px;
+        margin: 30px 30px 30px 20px;
+        height: 100px;
+        width: 200px;
+        background-color: black;
+    }
+    &__text {
+        border-radius: 5px;
+        background-color: black;
+        width: 80%;
+        height: 40px;
+        margin: 20px;
+    } 
+}

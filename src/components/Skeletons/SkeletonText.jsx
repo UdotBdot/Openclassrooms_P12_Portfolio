@@ -1,14 +1,15 @@
 import React from 'react'
+import Skeletons from './main/Skeletons'
 
 function Skeleton() {
   return (
     <>
     <div className='Skeleton-text'>
-    <h2 className='Skeleton-text__h1 pulse'></h2>
-    <h3 className='Skeleton-text__h2 pulse'></h3>
-    <p className='Skeleton-text__p pulse'></p>
-    <p className='Skeleton-text__p2 pulse'></p>
-    <p className='Skeleton-text__p3 pulse'></p>
+      <Skeletons classes="Skeleton-text__h1" />
+      <Skeletons classes="Skeleton-text__h2" />
+      <Skeletons classes="Skeleton-text__p" />
+      <Skeletons classes="Skeleton-text__p2" />
+      <Skeletons classes="Skeleton-text__p3" />
     </div>
     </>
   )

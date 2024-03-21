@@ -1,0 +1,20 @@
+@import 'src/index.scss';
+
+.About-me {
+    padding: 20px;
+    margin: 0 300px;
+    & h2 {
+        font-family: $headline-font;
+        font-size: 3em;
+        margin: 20px 0;
+        animation: track-in 1.5s forwards;
+        @include track-in-animation(track-in);
+    }
+    & p {
+        font-family: $text-font;
+        font-size: 1.5em;
+        margin-bottom: 30px;
+        animation: track-in 3s forwards;
+        @include track-in-animation(track-in);
+    }
+}

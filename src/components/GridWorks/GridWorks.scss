@@ -20,6 +20,10 @@
        scale: 1.1;
        transition: scale 150ms linear;
     }
+    &:not(:hover) { 
+        scale: 1;
+        transition: scale 150ms linear;
+    }
     &__slot:nth-child(1) {
         grid-column-start:1;
         grid-column-end: 3;

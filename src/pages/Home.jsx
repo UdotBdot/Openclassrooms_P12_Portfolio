@@ -4,6 +4,7 @@ import Navbar from '../components/Navbar/Navbar'
 import Hero from '../components/Hero/Hero'
 import Card from '../components/Card/Card'
 import AutoSlider from '../components/AutoSlider/AutoSlider'
+import GridWorks from '../components/GridWorks/GridWorks'
 import Footer from '../components/Footer/Footer'
 
 function Home() {
@@ -18,6 +19,7 @@ function Home() {
       <Card />
     </div>
     <AutoSlider/>
+    <GridWorks />
     <footer>
       <Footer />
     </footer>

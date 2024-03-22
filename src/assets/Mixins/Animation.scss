@@ -117,13 +117,10 @@
     }
 }
 
-@mixin auto-slider-animation($name) {
+@mixin auto-scroll-animation($name) {
     @keyframes #{$name} {
-        0% {
-          transform: translateX(0%);
-        }
-        100% {
-          transform: translateX(-100%);
-        }
+            to {
+              transform: translate(calc(-50% - 0.5rem));
+            }
+          }
       }
-}

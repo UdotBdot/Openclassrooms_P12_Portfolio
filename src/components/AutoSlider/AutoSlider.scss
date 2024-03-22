@@ -1,41 +1,62 @@
-@import 'src/index.scss'; 
+@import 'src/index.scss';
 
 .Auto-slider-container {
     display: flex;
     justify-content: center;
-h2 {
-    font-family: $headline-font;
-    margin: 30px 0;
-    font-size: 2.5em;
-    display: flex;
-    justify-content: center;
-}
-    .Auto-slider {
-        margin: 20px;
-        padding: 20px;
-        max-width: 600px;
-        overflow: hidden;
+  padding: 30px;
+    .scroller {
+        max-width: 800px;
 
-        &__word-list {
-            padding: 1rem 0;
+        &__inner {
+            padding-block: 1rem;
             display: flex;
+            flex-wrap: wrap;
             gap: 1rem;
-            margin: 0;
-            list-style: none;
-            animation: auto-slider 20s infinite linear;
-            @include auto-slider-animation(auto-slider);
-            white-space: nowrap;
+        }
 
-            li {
-                padding: 1rem;
-                border-radius: 0.5rem;
+        &[data-animated="true"] {
+            overflow: hidden;
+            -webkit-mask: linear-gradient(
+                90deg,
+                transparent,
+                white 20%,
+                white 80%,
+                transparent
+            );
+            mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+            
+            & .scroller__inner {
+                width: max-content;
+                flex-wrap: nowrap;
+                animation: scroll var(--_animation-duration, 40s)
+                    var(--_animation-direction, forwards) linear infinite;
+                @include auto-scroll-animation(scroll);
             }
         }
-    }
-    & {
-        .Auto-slider {
-            -webkit-mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
-            mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+
+        &[data-speed="slow"] {
+            --_animation-duration: 100s;
         }
+    }
+
+    .tag-list {
+        margin: 0;
+        padding-inline: 0;
+        list-style: none;
+
+        li {
+            padding: 1rem;
+            background: var(--clr-primary-400);
+            border-radius: 0.5rem;
+            box-shadow: 0 0.5rem 1rem -0.25rem var(--clr-primary-900);
+        }
+    }
+
+    h2 {
+        font-family: $headline-font;
+        margin: 30px 0;
+        font-size: 2.5em;
+        display: flex;
+        justify-content: center;
     }
 }

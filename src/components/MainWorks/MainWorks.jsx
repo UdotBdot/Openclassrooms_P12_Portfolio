@@ -33,9 +33,10 @@ function MainWorks() {
   return (
     <>
     {isLoading ? (<SkeletonWorks />) : (
-      <div className='Works'>
+      <article className='Article'>
+<div className='Works'>
       <div className='slider'>
-        <img width={920} height={400} src={images[currentImageIndex]} alt={`Work ${currentImageIndex + 1}`} />
+        <img src={images[currentImageIndex]} alt={`Work ${currentImageIndex + 1}`} />
         <button className='btn1 btn-style' onClick={prevSlide}> <FontAwesomeIcon icon={faArrowLeft}/> </button>
         <button className='btn2 btn-style' onClick={nextSlide}> <FontAwesomeIcon icon={faArrowRight}/></button>
       </div>
@@ -51,6 +52,8 @@ function MainWorks() {
         </p>
       </div>
     </div>
+      </article>
+      
     )}
     
     </>

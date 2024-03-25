@@ -17,7 +17,8 @@ function TextAboutMe() {
   return (
 <>
     {isLoading ? (<SkeletonAboutMe />) : (
-        <div className='About-me'>
+      <article className='Article'>
+ <div className='About-me'>
         <h2>
             About Me
         </h2>
@@ -34,6 +35,8 @@ function TextAboutMe() {
             By incorporating thoses principles into my development projects, I aim to not only create unique experiences but also contribute to a more environmentally friendly ecosystem. Together, let us build a more sustainable future for generations to come. 
         </p>
     </div>
+      </article>
+       
     )}
     </>
   )

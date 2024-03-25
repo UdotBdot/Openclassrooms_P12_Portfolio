@@ -31,9 +31,10 @@ const AutoSlider = () => {
   }, []); 
 
   return (
+    <>
+    <h2 className='test'>Front-End Tools</h2>
     <div className='Auto-slider-container'>
       <div className="scroller" data-speed="slow" ref={scrollerRef}>
-        <h2>Front-End Tools</h2>
         <ul className="tag-list scroller__inner">
           {Urls.map((url, index) => (
             <li key={index}><img width={50} height={50} src={url} alt={`Front-end Tool ${index}`} /></li>
@@ -41,6 +42,7 @@ const AutoSlider = () => {
         </ul>
       </div>
     </div>  
+    </>
   );
 };
 

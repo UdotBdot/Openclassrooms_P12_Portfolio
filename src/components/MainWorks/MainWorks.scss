@@ -1,0 +1,35 @@
+@import 'src/index.scss';
+
+.Works {
+    position: relative;
+    margin: 20px 300px;
+    padding: 20px;
+    height: 400px;
+    width: 920px;
+    & img {
+        cursor: pointer;
+        object-fit: cover;
+        border-radius: 5px;
+    }
+    .btn1 {
+        position: absolute;
+        left: 5%;
+        top: 50%;
+    }
+    .btn2 {
+        position: absolute;
+        right: 5%;
+        top: 50%;
+    }
+    .btn-style {
+        cursor: pointer;
+        padding: 5px 7px;
+    }
+    & p {
+        font-family: $text-font;
+        margin: 50px;
+        font-size: 1.1em;
+        animation: track-in 3s forwards;
+        @include track-in-animation(track-in);
+    }
+}

@@ -9,7 +9,7 @@ function GridWorks() {
     navigate(path);}
   return (
     <>
-    <h2 >
+    <h2 className='test' >
       My Projects Wall
     </h2>
     <div onClick={() => handleNavigation("/works")} className='Works-grid'>

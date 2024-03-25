@@ -6,8 +6,7 @@
     margin-bottom: 90px;
   padding: 30px;
     .scroller {
-        max-width: 800px;
-
+        max-width: 900px;
         &__inner {
             padding-block: 1rem;
             display: flex;
@@ -53,3 +52,7 @@
         }
     }
 }
+h2 {
+    display: flex;
+    justify-content: flex-start;
+ }

@@ -1,20 +1,19 @@
 @import 'src/index.scss';
 
 .Skeleton-navbar {
-    background-color: grey;
-    opacity: 0.2;
-    border-right: 5px solid black;
+    background-color: $bg-skelet-color;
+    border-right: 5px solid $main-skelet-color;
     &__element1 {
         width: 80px;
         height: 50px;
-        background-color: black;
+        background-color: $main-skelet-color;
         margin: 30px;
         border-radius: 3px;
     }
     &__element2 {
         width: 50px;
         height: 50px;
-        background-color: black;
+        background-color: $main-skelet-color;
         margin: 10px 0;
         border-radius: 4px;
     }
@@ -24,13 +23,13 @@
 }
 
 .Skeleton-header {
+    padding-left: 20px;
     max-width: 100vw;
     &__text-anim {
         margin: 35px 0 0 200px;
         min-width: 650px;
         height: 30%;
-        background-color: grey;
-        opacity: 0.2;
+        background-color: $bg-skelet-color;
         border-radius: 5px;
     }
     &__logos {
@@ -44,8 +43,7 @@
     &__logo {
         width: 50px;
         height: 50px;
-        background-color: grey;
-        opacity: 0.2;
+        background-color: $bg-skelet-color;
         border-radius: 5px;
     }
     &__about-me {
@@ -56,27 +54,22 @@
         align-items: center;
         text-align: center;
         min-width: 150px;
-        background-color: grey;
-        opacity: 0.2;
+        background-color: $bg-skelet-color;
         margin-left: 150px;
     }
 }
 
 .Skeleton-text {
     position: relative;
-    margin-top: 20px;
+    margin: 20px 0px 60px 320px;
     padding: 30px;
-    margin-left: 300px;
     width: 40%;
     height: 450px;
-    background-color: grey;
-    opacity: 0.2;
+    background-color: $bg-skelet-color;
     border-radius: 5px;
-    animation: skelet-out 0.5s ease;
-    @include skelet-animation-out(skelet-out);
     &__h2 {
         position: absolute;
-        background-color: black;
+        background-color: $main-skelet-color;
         border-radius: 3px;
         width: 60%;
         height: 40px;
@@ -84,7 +77,7 @@
     &__h3 {
         margin-top: 70px;
         position: absolute;
-        background-color: black;
+        background-color: $main-skelet-color;
         border-radius: 3px;
         width: 90%;
         height: 30px;
@@ -92,7 +85,7 @@
     &__p {
         margin-top: 200px;
         position: absolute;
-        background-color: black;
+        background-color: $main-skelet-color;
         border-radius: 3px;
         width: 80%;
         height: 50px;
@@ -100,7 +93,7 @@
     &__p2 {
         margin-top: 300px;
         position: absolute;
-        background-color: black;
+        background-color: $main-skelet-color;
         border-radius: 5px;
         width: 65%;
         height: 50px;
@@ -109,7 +102,7 @@
     &__p3 {
         margin-top: 400px;
         position: absolute;
-        background-color: black;
+        background-color: $main-skelet-color;
         border-radius: 5px;
         width: 55%;
         height: 50px;
@@ -125,13 +118,12 @@
     border-radius: 20px;
     margin: 40px 20px 20px 100px;
     min-width: 400px;
-    background-color: grey;
-    opacity: 0.2;
+    background-color: $bg-skelet-color;
     &__round {
         margin-top: 50px;
         width: 200px;
         height: 200px;
-        background-color: black;
+        background-color: $main-skelet-color;
         border-radius: 50%;
     }
     &__bottom {
@@ -141,7 +133,7 @@
         height: 40px;
         width: 150px;
         margin: 90px 10px 10px 10px;
-        background-color: black;
+        background-color: $main-skelet-color;
     }
 }
 
@@ -149,8 +141,7 @@
     display: flex;
     flex-direction: column;
     margin: 20px 300px;
-    background-color: grey;
-    opacity: 0.2;
+    background-color: $bg-skelet-color;
     border-radius: 5px;
     height: 480px;
     &__h2 {
@@ -158,13 +149,22 @@
         margin: 30px 30px 30px 20px;
         height: 100px;
         width: 200px;
-        background-color: black;
+        background-color: $main-skelet-color;
     }
     &__text {
         border-radius: 5px;
-        background-color: black;
+        background-color: $main-skelet-color;
         width: 80%;
         height: 40px;
         margin: 20px;
     } 
+}
+
+.Skeleton-main-works {
+    margin: 20px 300px;
+    padding: 20px;
+    height: 400px;
+    width: 920px;
+    border-radius: 5px;
+    background: $bg-skelet-color;
 }

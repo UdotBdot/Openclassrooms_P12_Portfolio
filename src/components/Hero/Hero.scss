@@ -2,13 +2,14 @@
 
 .Hero {
     text-shadow: 1px 0px 5px rgba(126, 96, 38, 0.2);
-    margin: 0 0 90px 105px;
+    margin: 0 0 100px 300px;
     width: 50%;
     padding: 20px;
-    margin-left: 300px;
     animation: track-in 3s forwards;
     @include track-in-animation(track-in);
     &__h2 {
+        display: flex;
+        justify-content: flex-start;
         font-family: $headline-font;
         color: $secondary-color;
         font-size: 3em;

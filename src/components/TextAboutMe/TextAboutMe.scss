@@ -4,9 +4,11 @@
     padding: 20px 20px 0 20px;
     margin: 0 300px 10px 300px;
     & h2 {
+        display: flex;
+        justify-content: flex-start;
         font-family: $headline-font;
         font-size: 3em;
-        margin: 20px 0 20px 0;
+        margin: 20px 0 50px 0;
         animation: track-in 1.5s forwards;
         @include track-in-animation(track-in);
     }

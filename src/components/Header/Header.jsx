@@ -23,7 +23,7 @@ function Header() {
     
   return (
     <>
-    {isLoading ? (<SkeletonHeader/>) : (
+    {isLoading ? (<div className='Article'><SkeletonHeader/></div>) : (
       <article className='Article'>
       <div className='Header'>
       <h1 className='Header__h1'>

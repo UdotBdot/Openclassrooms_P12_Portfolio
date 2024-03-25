@@ -5,6 +5,7 @@ function SkeletonWorks() {
   return (
     <>
     <Skeletons classes={"Skeleton-main-works"}/>
+
     </>
   )
 }

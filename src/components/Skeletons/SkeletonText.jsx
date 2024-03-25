@@ -8,8 +8,8 @@ function Skeleton() {
       <Skeletons classes="Skeleton-text__h1" />
       <Skeletons classes="Skeleton-text__h2" />
       <Skeletons classes="Skeleton-text__p" />
-      <Skeletons classes="Skeleton-text__p2" />
-      <Skeletons classes="Skeleton-text__p3" />
+      <Skeletons classes="Skeleton-text__p" />
+      <Skeletons classes="Skeleton-text__p" />
     </div>
     </>
   )

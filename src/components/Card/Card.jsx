@@ -1,23 +1,12 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import ReactCurvedText from 'react-curved-text';
-import SkeletonCard from '../Skeletons/SkeletonCard';
 
 import './Card.scss'
 function Card() {
 
-    const [isLoading, setIsLoading] = useState(true);
-
-    useEffect(() => {
-      const timer = setTimeout(() => {
-        setIsLoading(false);
-      }, 500);
-  
-      return () => clearTimeout(timer);
-    }, []);
 
   return (
     <>
-    {isLoading ? (<SkeletonCard/>) : (
         <div className='Card'>
         <ReactCurvedText width={300}
             height={300}
@@ -41,8 +30,6 @@ function Card() {
             <li>Over 15 solo projects made this year.</li>
         </ul>
     </div>
-    )}
-     
     </>
    
   )

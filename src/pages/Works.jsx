@@ -10,9 +10,7 @@ function Works() {
     <header>
       <Header />
     </header>
-    <div className='Hero-Pages'>
       <Navbar />
-    </div>
       <MainWorks />
     <footer>
       <Footer />

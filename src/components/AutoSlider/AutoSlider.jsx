@@ -32,6 +32,8 @@ const AutoSlider = () => {
 
   return (
     <>
+    <article className='Article'>
+   
     <h2 className='test'>Front-End Tools</h2>
     <div className='Auto-slider-container'>
       <div className="scroller" data-speed="slow" ref={scrollerRef}>
@@ -42,6 +44,7 @@ const AutoSlider = () => {
         </ul>
       </div>
     </div>  
+    </article>
     </>
   );
 };

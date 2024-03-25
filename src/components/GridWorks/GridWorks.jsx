@@ -9,29 +9,32 @@ function GridWorks() {
     navigate(path);}
   return (
     <>
+    <article className='Article'>
     <h2 className='test' >
       My Projects Wall
     </h2>
     <div onClick={() => handleNavigation("/works")} className='Works-grid'>
         <div className='Works-grid__slot'>
-            <img width={386} height={265} src="../../images/Bluel-Work.jpg" />
+            <img  src="../../images/Bluel-Work.jpg" />
         </div>
         <div className='Works-grid__slot'>
-        <img width={218} height={600} src="../../images/Kasa-Work.png" />
+        <img  src="../../images/Kasa-Work.png" />
         </div>
         <div className='Works-grid__slot'>
-        <img width={148} height={328} src="../../images/Qwenta-Work.jpg" />
+        <img  src="../../images/Qwenta-Work.jpg" />
         </div>
         <div className='Works-grid__slot'>
-        <img width={148} height={328} src="../../images/Nina-Work.png" />
+        <img  src="../../images/Nina-Work.png" />
         </div>
         <div className='Works-grid__slot'>
-        <img width={386} height={326} src="../../images/ArgentBank-Work.webp" />
+        <img  src="../../images/ArgentBank-Work.webp" />
         </div>
         <div className='Works-grid__slot'>
-        <img width={306} height={263} src="../../images/724-Work.png" />
+        <img src="../../images/724-Work.png" />
         </div>
     </div>
+    </article>
+    
 
     </>
   )

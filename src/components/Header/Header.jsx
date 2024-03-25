@@ -16,7 +16,7 @@ function Header() {
     return () => clearTimeout(timer);
   }, []);
 
-  const words = ["a Developer", "29 Years Old", "Born in France", "Originally from Hong-Kong"]; 
+  const words = ["a Developer", "29 Years Old", "Born in France", "from Hong-Kong"]; 
 
   const handleNavigation = (path) => {
     navigate(path);}
@@ -24,6 +24,7 @@ function Header() {
   return (
     <>
     {isLoading ? (<SkeletonHeader/>) : (
+      <article className='Article'>
       <div className='Header'>
       <h1 className='Header__h1'>
         <span className='Header__text'>I am</span>
@@ -31,8 +32,8 @@ function Header() {
           <Typewriter words={words} delay={150} infinite />
         </span>
       </h1>
-      <a className='Header__about-me' onClick={() => handleNavigation("/about-me")} >About Me</a>
       <div className='Header__logos'>
+      <a className='Header__about-me' onClick={() => handleNavigation("/about-me")} >About Me</a>
         <a href='https://github.com/UdotBdot' target='_blank'>
           <img width="30" height="30" className="Header__logo" src="../../images/github_logo.png" alt="GitHub Logo" />
         </a>
@@ -41,6 +42,7 @@ function Header() {
         </a>
       </div>
     </div>
+    </article>
     )}
     </>
   );

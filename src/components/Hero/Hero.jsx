@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Skeleton from '../Skeletons/SkeletonText';
 import './Hero.scss';
+import Card from '../Card/Card';
 
 function Hero() {
   const [isLoading, setIsLoading] = useState(true);
@@ -18,7 +19,8 @@ function Hero() {
       {isLoading ? (
         <Skeleton />
       ) : (
-        <article className='Hero'>
+      <article className='Article-hero Article'>
+        <div className='Hero'>
           <h2 className='Hero__h2'>Welcome to my Portfolio!</h2>
           <h3 className='Hero__h3'>I am Frederic SIN, a young Agile developer based in Alsace.</h3>
           <p className='Hero__p'>
@@ -30,7 +32,9 @@ function Hero() {
           <p className='Hero__p'>
             Explore my portfolio to discover my vision of web development and together, let's transform your ideas into digital reality...
           </p>
-        </article>
+        </div>
+        <Card />
+      </article>
       )}
     </>
   );

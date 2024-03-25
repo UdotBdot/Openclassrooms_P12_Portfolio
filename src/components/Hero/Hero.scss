@@ -1,9 +1,9 @@
 @import 'src/index.scss';
 
+
 .Hero {
     text-shadow: 1px 0px 5px rgba(126, 96, 38, 0.2);
-    margin: 0 0 100px 300px;
-    width: 50%;
+    width: 60%;
     padding: 20px;
     animation: track-in 3s forwards;
     @include track-in-animation(track-in);

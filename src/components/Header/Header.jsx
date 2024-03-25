@@ -23,7 +23,7 @@ function Header() {
     
   return (
     <>
-    {isLoading ? (<div className='Article'><SkeletonHeader/></div>) : (
+    {/* {isLoading ? (<div className='Article'><SkeletonHeader/></div>) : (
       <article className='Article'>
       <div className='Header'>
       <h1 className='Header__h1'>
@@ -43,7 +43,7 @@ function Header() {
       </div>
     </div>
     </article>
-    )}
+    )} */}
     </>
   );
 }

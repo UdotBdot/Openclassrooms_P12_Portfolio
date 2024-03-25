@@ -24,7 +24,7 @@ function Navbar() {
     navigate(path);}
   return (
     <>
-        {isLoading ? (
+        {/* {isLoading ? (
           <SkeletonNavbar />
         ) : (
           <nav className='Navbar Navbar-position'>
@@ -59,7 +59,7 @@ function Navbar() {
           </a>
           </ul>
         </nav>
-        )}
+        )} */}
         
     </>
   )

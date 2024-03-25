@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import './AutoSlider.scss'; 
 
 const AutoSlider = () => {
+  
   const initialUrl = ['../../images/html.png', '../../images/css-3.png', '../../images/sass.png', '../../images/js.png', '../../images/react.png', '../../images/redux.png', '../../images/jest.svg', '../../images/figma.png', '../../images/notion.png', '../../images/mongodb.png', '../../images/docker.png'];
   const [Urls, setUrls] = useState(initialUrl);
   const scrollerRef = useRef();

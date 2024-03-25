@@ -69,3 +69,29 @@
 }
 
 
+@media (max-width: 1024px) {
+    .Navbar:hover {
+        width: auto; 
+        transition: none;
+    } 
+    .Navbar:hover .Navbar__title, .Navbar:hover .Navbar__text {
+        display: none;
+        text-shadow: none;
+        animation: none;
+    }
+    .Navbar:hover .Navbar__icon {
+        animation: none;
+        margin-right: 0;
+    }
+    .Navbar__display:nth-child(5) {
+        margin-top: 0;
+    }
+    .Navbar-position {
+        display: flex;
+        flex-direction: row;
+        height: 7%;
+        width: 100%;
+    }
+}
+
+

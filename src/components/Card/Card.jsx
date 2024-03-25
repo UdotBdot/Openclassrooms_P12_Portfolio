@@ -7,7 +7,7 @@ function Card() {
 
   return (
     <>
-        <div className='Card'>
+        {/* <div className='Card'>
         <ReactCurvedText width={300}
             height={300}
             cx={150}
@@ -29,9 +29,8 @@ function Card() {
             <li>Obtention of Openclassrooms Associate Degree in April 2024.</li>
             <li>Over 15 solo projects made this year.</li>
         </ul>
-    </div>
+    </div> */}
     </>
-   
   )
 }
 

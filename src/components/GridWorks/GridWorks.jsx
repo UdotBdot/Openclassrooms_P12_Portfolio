@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router';
 import './GridWorks.scss'
 
 function GridWorks() {
+  
   const navigate = useNavigate();
 
   const handleNavigation = (path) => {

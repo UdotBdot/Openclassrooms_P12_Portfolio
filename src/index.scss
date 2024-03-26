@@ -2,16 +2,6 @@
 @import 'src/assets/Variables/Variables.scss';
 @import 'src/assets/Styles/Fonts.scss';
 
-.Navbar-position {
-    position: fixed;
-    top: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 100vh;
-    width: 7%;
-}
-
 .pulse {
     animation: pulse 0.5s cubic-bezier(0.4, 0, 0.6, 1) infinite;
     @include pulse-animation(pulse)

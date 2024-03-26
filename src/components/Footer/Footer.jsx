@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faCopyright} from '@fortawesome/free-solid-svg-icons'
 
 function Footer() {
+  
   return (
     <>  
     <div className='Footer'>

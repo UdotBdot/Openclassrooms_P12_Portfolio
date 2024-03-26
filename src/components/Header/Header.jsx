@@ -4,6 +4,7 @@ import Typewriter from '../Typewriter/Typewriter';
 import SkeletonHeader from '../Skeletons/SkeletonHeader';
 import { useNavigate } from 'react-router';
 
+
 function Header() {
   const navigate = useNavigate();
   const [isLoading, setIsLoading] = useState(true);
@@ -23,7 +24,7 @@ function Header() {
     
   return (
     <>
-    {/* {isLoading ? (<div className='Article'><SkeletonHeader/></div>) : (
+    {isLoading ? (<SkeletonHeader />) : (
       <article className='Article'>
       <div className='Header'>
       <h1 className='Header__h1'>
@@ -33,7 +34,9 @@ function Header() {
         </span>
       </h1>
       <div className='Header__logos'>
-      <a className='Header__about-me' onClick={() => handleNavigation("/about-me")} >About Me</a>
+        <a onClick={() => handleNavigation("/about-me")} >
+        <img width="30" height="30" className="Header__logo" src="../../images/about-me.png" alt="About me Logo" />
+        </a>
         <a href='https://github.com/UdotBdot' target='_blank'>
           <img width="30" height="30" className="Header__logo" src="../../images/github_logo.png" alt="GitHub Logo" />
         </a>
@@ -43,7 +46,7 @@ function Header() {
       </div>
     </div>
     </article>
-    )} */}
+    )}
     </>
   );
 }

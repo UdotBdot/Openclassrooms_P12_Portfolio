@@ -4,7 +4,6 @@
 .Hero {
     text-shadow: 1px 0px 5px rgba(126, 96, 38, 0.2);
     width: 60%;
-    padding: 20px;
     animation: track-in 3s forwards;
     @include track-in-animation(track-in);
     &__h2 {
@@ -12,18 +11,23 @@
         justify-content: flex-start;
         font-family: $headline-font;
         color: $secondary-color;
-        font-size: 3em;
-        margin-top: 20px;
+        font-size: calc(2rem + 0.390625vw);
     }
     &__h3 {
-        margin-top: 10px;
+        margin: 15px 0;
         font-family: $headline-font;
-        font-size: 1.5em;
+        font-size: calc(1rem + 0.390625vw);
     }
     &__p {
-        margin: 30px 20px 20px 0;
-        width: 90%;
+        margin: 20px 0;
+        width: 100%;
         font-family: $text-font;
-        font-size: 27px;
+        font-size: calc(1rem + 0.390625vw);
+    }
+}
+
+@media (max-width:1024px) {
+    .Hero {
+        width: 100%;
     }
 }

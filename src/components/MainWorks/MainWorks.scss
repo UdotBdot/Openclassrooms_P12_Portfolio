@@ -1,7 +1,6 @@
 @import 'src/index.scss';
 
 .Works {
-    padding: 5px;
     width: 100%;
     .slider {
         display: flex;
@@ -42,4 +41,8 @@
       @include track-in-animation(track-in);
     }
   }
-  
+  @media (max-width: 1024px) {
+    .Works p {
+      margin: 50px 10px;
+    }
+  }

@@ -1,5 +1,123 @@
 @import 'src/index.scss';
 
+.navbar {
+  position: fixed;
+  background-color: $secondary-color;
+  transition: width 250ms linear;
+  border-right: 4px solid $text-color;
+}
+
+.navbar-nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+
+.nav-item {
+  width: 100%;
+  &:first-child {
+    margin: 20px 0;
+  }
+  &:nth-child(6) {
+    margin-top: auto;
+  }
+}
+
+.nav-link {
+    cursor: pointer;
+  display: flex;
+  align-items: center;
+  height: 5rem;
+  color: $primary-color;
+  text-decoration: none;
+  &:hover {
+    background: $sun-color;
+    color: $text-color;
+  }
+}
+
+.link-text {
+    font-weight: bold;
+    font-family: $headline-font;
+  display: none;
+  margin-left: 1rem;
+  animation: expand 250ms linear;
+  @include expand-animation(expand);
+  font-size: calc(1rem + 0.390625vw);
+}
+
+.nav-link svg {
+  width: 2rem;
+  min-width: 2rem;
+  margin: 0 1.5rem;
+}
+
+.logo {
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  text-align: center;
+  font-size: 1.5rem;
+  letter-spacing: 0.3ch;
+  width: 100%;
+}
 
 
+@media only screen and (max-width: 1439px) {
+  .navbar {
+    bottom: 0;
+    width: 100vw;
+    height: 5rem;
+    z-index: 1;
+  }
 
+  .navbar-nav {
+    flex-direction: row;
+  }
+
+  .nav-link {
+    justify-content: center;
+  }
+
+}
+
+@media only screen and (min-width: 1439px) {
+  .navbar {
+    top: 0;
+    width: 5rem;
+    height: 100vh;
+  }
+
+  .navbar:hover {
+    width: 280px;
+  }
+
+  .navbar:hover .link-text {
+    display: inline;
+  }
+
+  .navbar:hover .logo svg
+  {
+    margin-left: 11rem;
+  }
+
+  .navbar:hover .logo-text
+  {
+    left: 0px;
+  }
+}
+
+.nav-item:first-child .nav-link:hover {
+    background-color: $text-color;
+    color: $sun-color;
+  }
+
+  @media (max-width:555px) {
+    .nav-link svg {
+      margin: 0;
+    }
+  }

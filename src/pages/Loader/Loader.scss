@@ -2,7 +2,7 @@
 
 .Loader {
     background: $primary-color;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -12,7 +12,7 @@
         justify-content: center;
         color: $text-color;
         align-items: center;
-        font-size: 32px;
+        font-size: calc(2rem + 0.390625vw);
     }
     &__progress {
         border: 3px solid $secondary-color;

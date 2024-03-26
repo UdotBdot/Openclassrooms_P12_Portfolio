@@ -10,7 +10,6 @@
 }
 
 body, html, main, #root {
-    min-height: 1014px;
     background-color: $primary-color;
 }
 
@@ -27,6 +26,19 @@ main {
 .Article-hero {
     display: flex;
 }
+
+body::-webkit-scrollbar {
+    width: 0.75rem;
+}
+
+body::-webkit-scrollbar-track {
+    background: $secondary-color;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: $sun-color;
+}
+
 
 @media (max-width:1024px) {
     .Article-hero {

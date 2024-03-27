@@ -35,13 +35,13 @@ function Header() {
       </h1>
       <div className='Header__logos'>
         <a href="" onClick={() => handleNavigation("/about-me")} >
-        <img width="30" height="30" className="Header__logo" src="../../images/Logos/about-me.png" alt="About me Logo" />
+        <img width="30" height="30" className="Header__logo" src="../../images/Logos/about-me.webp" alt="About me Logo" />
         </a>
         <a href='https://github.com/UdotBdot' target='_blank'>
-          <img width="30" height="30" className="Header__logo" src="../../images/Logos/github_logo.png" alt="GitHub Logo" />
+          <img width="30" height="30" className="Header__logo" src="../../images/Logos/github_logo.webp" alt="GitHub Logo" />
         </a>
         <a href="https://www.linkedin.com/in/frederic-sin-965b36100/" target='_blank'>
-          <img width="30" height="30" className="Header__logo" src="../../images/Logos/linkedin_logo.png" alt="LinkedIn Logo" />
+          <img width="30" height="30" className="Header__logo" src="../../images/Logos/linkedin_logo.webp" alt="LinkedIn Logo" />
         </a>
       </div>
     </div>

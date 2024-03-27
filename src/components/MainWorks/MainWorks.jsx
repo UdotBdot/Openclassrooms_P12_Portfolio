@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './MainWorks.scss';
-import img1 from '../../assets/Works/Bluel-Wall.png';
-import img2 from '../../assets/Works/Nina-Wall.png';
+import img1 from '../../assets/Works/Bluel-Wall.webp';
+import img2 from '../../assets/Works/Nina-Wall.webp';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowRight, faArrowLeft} from '@fortawesome/free-solid-svg-icons'
 import SkeletonWorks from '../Skeletons/SkeletonWorks';

@@ -28,25 +28,19 @@
 }
 
 .nav-link {
-    cursor: pointer;
+  cursor: pointer;
   display: flex;
   align-items: center;
   height: 5rem;
   color: $primary-color;
   text-decoration: none;
-  &:hover {
-    background: $sun-color;
-    color: $text-color;
-  }
+  transition: background-color 0.3s, color 0.3s; 
 }
 
 .link-text {
-    font-weight: bold;
-    font-family: $headline-font;
-  display: none;
+  font-weight: bold;
+  font-family: $headline-font;
   margin-left: 1rem;
-  animation: expand 250ms linear;
-  @include expand-animation(expand);
   font-size: calc(1rem + 0.390625vw);
 }
 
@@ -66,7 +60,6 @@
   width: 100%;
 }
 
-
 @media only screen and (max-width: 1439px) {
   .navbar {
     bottom: 0;
@@ -82,7 +75,6 @@
   .nav-link {
     justify-content: center;
   }
-
 }
 
 @media only screen and (min-width: 1439px) {
@@ -96,28 +88,31 @@
     width: 280px;
   }
 
-  .navbar:hover .link-text {
+  .link-text {
     display: inline;
   }
 
-  .navbar:hover .logo svg
-  {
+  .navbar:hover .logo svg {
     margin-left: 11rem;
   }
 
-  .navbar:hover .logo-text
-  {
+  .navbar:hover .logo-text {
     left: 0px;
   }
 }
 
-.nav-item:first-child .nav-link:hover {
-    background-color: $text-color;
-    color: $sun-color;
-  }
+.nav-link:hover {
+  background-color: $sun-color; 
+  color: $text-color; 
+}
 
-  @media (max-width:555px) {
-    .nav-link svg {
-      margin: 0;
-    }
+.nav-item:first-child .nav-link:hover {
+  background-color: $text-color; 
+  color: $sun-color; 
+}
+
+@media (max-width:555px) {
+  .nav-link svg {
+    margin: 0;
   }
+}

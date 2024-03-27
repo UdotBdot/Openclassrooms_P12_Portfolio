@@ -11,7 +11,10 @@ function Works() {
       <Header />
     </header>
       <Navbar />
-      <MainWorks />
+      <section>
+        <MainWorks />
+      </section>
+
     <footer>
       <Footer />
     </footer>

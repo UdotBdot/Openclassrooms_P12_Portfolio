@@ -33,7 +33,7 @@ function MainWorks() {
   return (
     <>
     {isLoading ? (<SkeletonWorks />) : (
-      <article className='Article'>
+      <div className='Article'>
       <div className='Works'>
         <div className='slider'>
           <img src={images[currentImageIndex]} alt={`Work ${currentImageIndex + 1}`} />
@@ -55,7 +55,7 @@ function MainWorks() {
           </p>
         </div>
       </div>
-    </article>
+    </div>
     
       
     )}

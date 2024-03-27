@@ -21,31 +21,31 @@ function GridWorks() {
   return (
     <>
     {isLoading ? (null) : (
- <article className='Article'>
+ <section className='Article'>
  <h2 className='test' >
    My Projects Wall
  </h2>
  <div onClick={() => handleNavigation("/works")} className='Works-grid'>
      <div className='Works-grid__slot'>
-         <img  src="../../images/Grid/Bluel-Work.jpg" />
+         <img  src="../../images/Grid/Bluel-Work.jpg" alt="Projet Sophie Bluel" />
      </div>
      <div className='Works-grid__slot'>
-     <img  src="../../images/Grid/Kasa-Work.png" />
+     <img  src="../../images/Grid/Kasa-Work.png" alt="Projet Kasa" />
      </div>
      <div className='Works-grid__slot'>
-     <img  src="../../images/Grid/Qwenta-Work.jpg" />
+     <img  src="../../images/Grid/Qwenta-Work.jpg" alt="Projet Qwenta" />
      </div>
      <div className='Works-grid__slot'>
-     <img  src="../../images/Grid/Nina-Work.png" />
+     <img  src="../../images/Grid/Nina-Work.png" alt="Projet Nina Carducci" />
      </div>
      <div className='Works-grid__slot'>
-     <img  src="../../images/Grid/ArgentBank-Work.webp" />
+     <img  src="../../images/Grid/ArgentBank-Work.webp" alt="Projet ArgenBank" />
      </div>
      <div className='Works-grid__slot'>
-     <img src="../../images/Grid/724-Work.png" />
+     <img src="../../images/Grid/724-Work.png" alt="Projet 724events" />
      </div>
  </div>
- </article>
+ </section>
     )}
     </>
   )

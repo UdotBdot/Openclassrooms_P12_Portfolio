@@ -11,7 +11,9 @@ function AboutMe() {
       <Header />
     </header>
      <Navbar />
-     <TextAboutMe />
+     <section>
+      <TextAboutMe />
+     </section>
      <footer>
       <Footer />
     </footer>

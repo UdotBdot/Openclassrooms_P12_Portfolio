@@ -42,7 +42,7 @@ const AutoSlider = () => {
 
   return (
     <>
-      <article className='Article'>
+      <section className='Article'>
         {showSlider && (
           <>
             <h2 className='test'>Front-End Tools</h2>
@@ -57,7 +57,7 @@ const AutoSlider = () => {
             </div>
           </>
         )}
-      </article>
+      </section>
     </>
   );
 };

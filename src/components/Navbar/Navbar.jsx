@@ -22,13 +22,13 @@ function Navbar() {
     {isLoading ? (<SkeletonNavbar/>) : (
       <nav className="navbar">
       <ul className="navbar-nav">
-        <Tab path="/" icon={faArrowsUpToLine} text="SIN_DEV"/>
-        <Tab path="/home" icon={faHouse} text="Home"/>
-        <Tab path="/works" icon={faFile} text="Works"/>
-        <Tab icon={faGear} text="Services"/>
-        <Tab icon={faPhone} text="Contact"/>
-        <Tab icon={faCircleHalfStroke} text="Darkmode"/>
-        <Tab icon={faLanguage} text="Language"/>
+        <Tab href="" path="/" icon={faArrowsUpToLine} text="SIN_DEV"/>
+        <Tab href="" path="/home" icon={faHouse} text="Home"/>
+        <Tab href="" path="/works" icon={faFile} text="Works"/>
+        <Tab href="" icon={faGear} text="Services"/>
+        <Tab href="" icon={faPhone} text="Contact"/>
+        <Tab href="" icon={faCircleHalfStroke} text="Darkmode"/>
+        <Tab href="" icon={faLanguage} text="Language"/>
       </ul>
       </nav>
     )}

@@ -12,12 +12,8 @@
 body, html, main, #root {
     min-height: 100vh;
     background-color: $primary-color;
-}
-
-main {
     display: flex;
     flex-direction: column;
-    
 }
 
 .Article {

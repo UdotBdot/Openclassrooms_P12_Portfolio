@@ -2,7 +2,7 @@ import React from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useNavigate } from "react-router-dom";
 
-function Tab({ icon, text, path }) {
+function Tab({ icon, text, path, href }) {
 
   const navigate = useNavigate();
 
@@ -12,7 +12,7 @@ function Tab({ icon, text, path }) {
 
   return (
     <li className="nav-item">
-      <a onClick={handleNavigation} className="nav-link">
+      <a href={href} onClick={handleNavigation} className="nav-link">
         <FontAwesomeIcon icon={icon} />
         <span className="link-text">{text}</span>
       </a>

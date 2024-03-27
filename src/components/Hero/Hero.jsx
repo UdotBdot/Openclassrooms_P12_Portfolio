@@ -19,7 +19,7 @@ function Hero() {
       {isLoading ? (
           <Skeleton /> 
       ) : (
-      <article className='Article-hero Article'>
+      <section className='Article-hero Article'>
         <div className='Hero'>
           <h2 className='Hero__h2'>Welcome to my Portfolio!</h2>
           <h3 className='Hero__h3'>I am Frederic SIN, a young Agile developer based in Alsace.</h3>
@@ -34,7 +34,7 @@ function Hero() {
           </p>
         </div>
         <Card />
-      </article>
+      </section>
       )}
     </>
   );

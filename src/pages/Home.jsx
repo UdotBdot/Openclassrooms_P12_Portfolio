@@ -13,11 +13,11 @@ function Home() {
       <Header />
     </header>
     <Navbar />
-    <div className='Hero-Pages'>
+    <section className='Hero-Pages'>
       <Hero />
-    </div>
-    <AutoSlider/>
-    <GridWorks />
+    </section>
+      <AutoSlider/>
+      <GridWorks />
     <footer>
       <Footer />
     </footer>

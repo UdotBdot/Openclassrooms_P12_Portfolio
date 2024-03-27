@@ -34,7 +34,7 @@ function Header() {
         </span>
       </h1>
       <div className='Header__logos'>
-        <a onClick={() => handleNavigation("/about-me")} >
+        <a href="" onClick={() => handleNavigation("/about-me")} >
         <img width="30" height="30" className="Header__logo" src="../../images/Logos/about-me.png" alt="About me Logo" />
         </a>
         <a href='https://github.com/UdotBdot' target='_blank'>

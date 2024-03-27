@@ -166,3 +166,10 @@
         background-color: $main-skelet-color;
     }
 }
+
+// Responsive 
+@media (max-width:1439px) {
+    .Skeleton-about-me, .Skeleton-header, .Skeleton-navbar, .Skeleton-hero, .Skeleton-works {
+        display: none;
+    }
+}

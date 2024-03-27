@@ -4,15 +4,17 @@ import Skeletons from './main/Skeletons'
 function SkeletonNavbar() {
   return (
     <>
-    <div className='Skeleton-navbar Navbar-position'>
-      <Skeletons classes="Skeleton-navbar__element1" />
-      <Skeletons classes="Skeleton-navbar__element2"/>
-      <Skeletons classes="Skeleton-navbar__element2"/>
-      <Skeletons classes="Skeleton-navbar__element2"/>
-      <Skeletons classes="Skeleton-navbar__element2"/>
-        <div className='Skeleton-navbar__bottom'>
-          <Skeletons classes="Skeleton-navbar__element2"/>
-          <Skeletons classes="Skeleton-navbar__element2"/>
+    <div className='Skeleton-navbar display-col'>
+      <Skeletons classes="Skeleton-navbar__element" />
+      <div className='Skeleton-navbar__top'>
+        <Skeletons classes="Skeleton-navbar__element1 Skeleton-navbar__element"/>
+        <Skeletons classes="Skeleton-navbar__element1 Skeleton-navbar__element"/>
+        <Skeletons classes="Skeleton-navbar__element1 Skeleton-navbar__element"/>
+        <Skeletons classes="Skeleton-navbar__element1 Skeleton-navbar__element"/>
+      </div>
+        <div className='Skeleton-navbar__bottom display-col'>
+          <Skeletons classes="Skeleton-navbar__element"/>
+          <Skeletons classes="Skeleton-navbar__element"/>
         </div>
     </div>
     </>

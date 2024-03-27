@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import Skeleton from '../Skeletons/SkeletonText';
 import './Hero.scss';
 import Card from '../Card/Card';
-import SkeletonCard from '../Skeletons/SkeletonCard'
 
 function Hero() {
   const [isLoading, setIsLoading] = useState(true);
@@ -18,11 +17,7 @@ function Hero() {
   return (
     <>
       {isLoading ? (
-        <div className='Article Article-hero'>
           <Skeleton /> 
-          <SkeletonCard/>
-        </div>
-        
       ) : (
       <article className='Article-hero Article'>
         <div className='Hero'>

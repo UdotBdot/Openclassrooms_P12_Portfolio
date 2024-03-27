@@ -2,6 +2,7 @@ import React from 'react'
 import { useEffect, useState } from 'react';
 import Tab from '../Tab/Tab'
 import './Navbar.scss'
+import SkeletonNavbar from '../Skeletons/SkeletonNavbar';
 import { faArrowsUpToLine, faHouse, faFile, faGear, faPhone, faCircleHalfStroke, faLanguage } from '@fortawesome/free-solid-svg-icons'
 
 
@@ -18,7 +19,8 @@ function Navbar() {
 
   return (
     <>
-     <nav className="navbar">
+    {isLoading ? (<SkeletonNavbar/>) : (
+      <nav className="navbar">
       <ul className="navbar-nav">
         <Tab path="/" icon={faArrowsUpToLine} text="SIN_DEV"/>
         <Tab path="/home" icon={faHouse} text="Home"/>
@@ -28,7 +30,9 @@ function Navbar() {
         <Tab icon={faCircleHalfStroke} text="Darkmode"/>
         <Tab icon={faLanguage} text="Language"/>
       </ul>
-     </nav>
+      </nav>
+    )}
+    
     </>
   )
 }

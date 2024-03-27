@@ -16,7 +16,7 @@ function TextAboutMe() {
 
   return (
 <>
-    {isLoading ? (<div className='Article'><SkeletonAboutMe /></div>) : (
+    {isLoading ? (<SkeletonAboutMe />) : (
       <article className='Article'>
  <div className='About-me'>
         <h2>

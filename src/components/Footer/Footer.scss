@@ -12,7 +12,16 @@ footer {
         &__p {
             font-family: $headline-font;
             color: $primary-color;
+            font-size: calc(0.5rem + 0.390625vw);
         }
     }
-    
+}
+
+@media (max-width:1439px) {
+    footer {
+        margin-bottom: 80px;
+    }
+    .Footer {
+        max-height: 50px;
+    }
 }

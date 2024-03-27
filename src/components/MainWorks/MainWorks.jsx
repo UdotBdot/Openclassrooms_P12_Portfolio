@@ -32,7 +32,7 @@ function MainWorks() {
 
   return (
     <>
-    {isLoading ? (<div className='Article'><SkeletonWorks /></div>) : (
+    {isLoading ? (<SkeletonWorks />) : (
       <article className='Article'>
       <div className='Works'>
         <div className='slider'>

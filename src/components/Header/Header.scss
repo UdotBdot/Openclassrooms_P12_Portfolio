@@ -28,23 +28,22 @@
     &__sec-text {
         margin-left: 15px;
         color: $secondary-color;
-
     }
 }
 
-@media (max-width:1024px) {
+@media (max-width:767px) {
     .Header {
         display: flex;
         flex-direction: column;
     }
     .Header__h1 {
         font-size: calc(1.5rem + 0.390625vw);
-        display: flex;
-        justify-content: flex-start;
     }
     .Header__logos {
         display: flex;
-        justify-content: center;
+        justify-content: flex-start;
+    }
+    .Header__logo {
+        padding: 20px 20px 20px 0;
     }
 }
-

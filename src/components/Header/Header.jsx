@@ -25,7 +25,7 @@ function Header() {
   return (
     <>
     {isLoading ? (<SkeletonHeader />) : (
-      <article className='Article'>
+      <div className='Article'>
       <div className='Header'>
       <h1 className='Header__h1'>
         <span className='Header__text'>I am</span>
@@ -45,7 +45,7 @@ function Header() {
         </a>
       </div>
     </div>
-    </article>
+    </div>
     )}
     </>
   );

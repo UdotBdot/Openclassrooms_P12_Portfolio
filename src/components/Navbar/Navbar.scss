@@ -5,6 +5,9 @@
   background-color: $secondary-color;
   transition: width 250ms linear;
   border-right: 4px solid $text-color;
+  &:hover .link-text {
+    color: $primary-color;
+  }
 }
 
 .navbar-nav {
@@ -38,6 +41,7 @@
 }
 
 .link-text {
+  color: transparent;
   font-weight: bold;
   font-family: $headline-font;
   margin-left: 1rem;

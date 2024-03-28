@@ -38,8 +38,8 @@ function MainWorks() {
         <div className='slider'>
           <img src={images[currentImageIndex]} alt={`Work ${currentImageIndex + 1}`} />
           <div className='btn-display'>
-            <button className='btn1 btn-style' onClick={prevSlide}> <FontAwesomeIcon icon={faArrowLeft}/> </button>
-            <button className='btn2 btn-style' onClick={nextSlide}> <FontAwesomeIcon icon={faArrowRight}/></button>
+            <button aria-label='Slider previous image' className='btn1 btn-style' onClick={prevSlide}> <FontAwesomeIcon icon={faArrowLeft}/> </button>
+            <button aria-label='Slider next image' className='btn2 btn-style' onClick={nextSlide}> <FontAwesomeIcon icon={faArrowRight}/></button>
           </div>
 
         </div>

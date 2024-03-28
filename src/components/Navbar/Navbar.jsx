@@ -25,7 +25,7 @@ function Navbar() {
         <Tab href="" path="/" icon={faArrowsUpToLine} text="SIN_DEV"/>
         <Tab href="" path="/home" icon={faHouse} text="Home"/>
         <Tab href="" path="/works" icon={faFile} text="Works"/>
-        <Tab href="" icon={faGear} text="Services"/>
+        <Tab href="/home#services" path="/home#services" icon={faGear} text="Services"/>
         <Tab href="" icon={faPhone} text="Contact"/>
         <Tab href="" icon={faCircleHalfStroke} text="Darkmode"/>
         <Tab href="" icon={faLanguage} text="Language"/>

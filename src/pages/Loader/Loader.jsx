@@ -12,7 +12,7 @@ function Loader() {
   useEffect(() => {
     const timeout = setTimeout(() => {
       navigate('/home');
-    }, 5300);
+    }, 1000);
 
     return () => clearTimeout(timeout);
   }, [navigate]);
@@ -28,7 +28,7 @@ function Loader() {
         'Welcome',
         '歡迎 (ni-hao)',
       ];
-
+  
       const generateRandomString = (length) => {
         let randomText = '';
         while (randomText.length < length) {
@@ -36,7 +36,7 @@ function Loader() {
         }
         return randomText;
       };
-
+  
       const animateIn = () => {
         if (!document.contains(el.current)) return;
         if (currentLength < messages[messageIndex].length) {
@@ -46,12 +46,12 @@ function Loader() {
           }
           const message = generateRandomString(currentLength);
           el.current.innerHTML = message;
-          setTimeout(animateIn, 20);
+          setTimeout(animateIn, 5.7); 
         } else {
-          setTimeout(animateFadeBuffer, 20);
+          setTimeout(animateFadeBuffer, 5.7);
         }
       };
-
+  
       const animateFadeBuffer = () => {
         if (!document.contains(el.current)) return;
         if (!fadeBuffer) {
@@ -60,10 +60,10 @@ function Loader() {
             fadeBuffer.push({ c: (Math.floor(Math.random() * 12)) + 1, l: fader });
           }
         }
-
+  
         let doCycles = false;
         let message = '';
-
+  
         for (let fader of fadeBuffer) {
           if (fader.c > 0) {
             doCycles = true;
@@ -73,32 +73,32 @@ function Loader() {
             message += fader.l;
           }
         }
-
+  
         el.current.innerHTML = message;
-
+  
         if (doCycles) {
-          setTimeout(animateFadeBuffer, 50);
+          setTimeout(animateFadeBuffer, 9.4);
         } else {
-          setTimeout(cycleText, 1000);
+          setTimeout(cycleText, 189);
         }
       };
-
+  
       const cycleText = () => {
         if (!document.contains(el.current)) return;
         messageIndex = (messageIndex + 1) % messages.length;
         currentLength = 0;
         fadeBuffer = false;
         el.current.innerHTML = '';
-        setTimeout(animateIn, 200);
+        setTimeout(animateIn, 40);
       };
-
+  
       animateIn();
     };
-
+  
     const messenger = new Messenger(loaderRef);
-
+  
     return () => {};
-  }, []);
+  }, []);  
 
   return (
     <main>

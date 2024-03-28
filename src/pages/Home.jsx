@@ -5,6 +5,7 @@ import Hero from '../components/Hero/Hero'
 import AutoSlider from '../components/AutoSlider/AutoSlider'
 import GridWorks from '../components/GridWorks/GridWorks'
 import Footer from '../components/Footer/Footer'
+import Services from '../components/Services/Services'
 
 function Home() {
   return (
@@ -18,6 +19,7 @@ function Home() {
     </section>
       <AutoSlider/>
       <GridWorks />
+      <Services />
     <footer>
       <Footer />
     </footer>

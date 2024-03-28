@@ -22,7 +22,7 @@
         background: linear-gradient($sun-color, $sun-color) 0/0% no-repeat #FAF5EF;
         position: absolute;
         bottom: 40%;
-        animation: l1 5s forwards linear;
+        animation: l1 1s forwards linear;
         @include background-size-animation(l1);
   }
   &__spinner {

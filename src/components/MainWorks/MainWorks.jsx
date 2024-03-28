@@ -36,7 +36,7 @@ function MainWorks() {
       <div className='Article'>
       <div className='Works'>
         <div className='slider'>
-          <img src={images[currentImageIndex]} alt={`Work ${currentImageIndex + 1}`} />
+          <img width={840} height={384} src={images[currentImageIndex]} alt={`Work ${currentImageIndex + 1}`} />
           <div className='btn-display'>
             <button aria-label='Slider previous image' className='btn1 btn-style' onClick={prevSlide}> <FontAwesomeIcon icon={faArrowLeft}/> </button>
             <button aria-label='Slider next image' className='btn2 btn-style' onClick={nextSlide}> <FontAwesomeIcon icon={faArrowRight}/></button>

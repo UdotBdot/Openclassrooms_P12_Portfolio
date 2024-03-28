@@ -39,3 +39,18 @@
         }
     }
 }
+
+@media (max-width: 767px) {
+    .Services__items {
+        padding: 5px;
+    }
+}
+
+@media (max-width: 374px) {
+    .Services__items h3 {
+        font-size: 14px;
+    }
+    .Services__items p {
+        font-size: 13px;
+    }
+}

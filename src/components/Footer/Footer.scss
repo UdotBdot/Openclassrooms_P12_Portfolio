@@ -28,9 +28,17 @@ footer {
 
 @media (max-width:1439px) {
     footer {
-        margin-bottom: 80px;
+        margin-bottom: 68px;
+        .Footer {
+            display: flex;
+            flex-direction: row;
+            height: 56px;
+        }
     }
-    .Footer {
-        max-height: 40px;
+}
+
+@media (min-width:320px) and (max-width:425px) {
+    footer {
+        margin-bottom: 48px;
     }
 }

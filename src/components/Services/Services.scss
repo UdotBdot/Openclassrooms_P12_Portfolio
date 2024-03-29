@@ -1,6 +1,7 @@
 @import 'src/index.scss';
 
 .Services {
+    margin: 16px 0;
     flex-wrap: wrap;
     display: flex;
     &__items {
@@ -51,9 +52,12 @@
     }
 }
 
-@media (max-width: 374px) {
-    .Services__items h3, .Services__items p {
+@media (min-width: 320px) and (max-width: 426px) {
+    .Services__items p{
+        font-size: 12px;
+    }
+    .Services__items h3 {
         font-size: 14px;
-    } 
+    }
 }
 

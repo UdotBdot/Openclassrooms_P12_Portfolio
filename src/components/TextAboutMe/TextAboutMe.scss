@@ -18,3 +18,9 @@
         margin: 16px 0;
     }
 }
+
+@media (min-width:320px) and (max-width:426px) {
+    .About-me p {
+        width: 100%;
+    }
+}

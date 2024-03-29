@@ -71,7 +71,17 @@
   }
 
 
+  @media (min-width: 320px) and (max-width: 426px) {
+    .Works-grid {
+        grid-template-rows: 59px 15px 59px;
+    }
+  }
 
+  @media (min-width: 426px) and (max-width:768px) {
+    .Works-grid {
+        grid-template-rows: 142px 36px 142px;
+    }
+  }
 
 
 

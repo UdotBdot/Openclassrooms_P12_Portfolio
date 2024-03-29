@@ -9,12 +9,12 @@ function Card() {
     <>
     <section className='Card'>
           <ReactCurvedText
-          width={240} 
-          height={240} 
-          cx={120} 
-          cy={120} 
-          rx={80} 
-          ry={80} 
+          width={192} 
+          height={192} 
+          cx={96} 
+          cy={96} 
+          rx={64} 
+          ry={64} 
           startOffset={0}
           reversed={true}
           text=' Frederic SIN - a.K.a -U.B. - Front-End Developer - React -'

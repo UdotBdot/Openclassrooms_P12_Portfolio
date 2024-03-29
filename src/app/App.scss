@@ -51,13 +51,18 @@ body::-webkit-scrollbar-thumb {
 
 @media (min-width:1024px) and (max-width: 1439px) {
         .Article {
-            margin: 0 10%;
+            margin: 24px 8%;
+        }
+}
+@media (min-width: 427px) and (max-width: 1024px) {
+        .Article {
+            margin: 20px 4%;
         }
 }
 
-@media (min-width: 320px) and (max-width: 1024px) {
+@media (min-width: 320px) and (max-width: 426px) {
         .Article {
-            margin: 0 10px;
+            margin: 12px;
         }
 }
 

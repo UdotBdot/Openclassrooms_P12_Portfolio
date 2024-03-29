@@ -12,13 +12,13 @@
         justify-content: center;
         color: $text-color;
         align-items: center;
-        font-size: calc(2rem + 0.390625vw);
+        font-size: 28px;
     }
     &__progress {
         border: 3px solid $secondary-color;
         border-radius: 10px;
-        width: 150px;
-        height: 20px;
+        width: 148px;
+        height: 16px;
         background: linear-gradient($sun-color, $sun-color) 0/0% no-repeat #FAF5EF;
         position: absolute;
         bottom: 40%;
@@ -28,9 +28,9 @@
   &__spinner {
     color: $secondary-color;
     position: absolute;
-    left: -30px;
-    bottom: -2px;
-    font-size: 20px;
+    left: -40px;
+    bottom: -4px;
+    font-size: 24px;
     animation: spin 1.5s linear infinite;
     @include spin-animation(spin);
   }

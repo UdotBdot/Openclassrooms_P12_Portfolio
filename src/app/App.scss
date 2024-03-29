@@ -24,6 +24,10 @@ body, html, main, #root {
     display: flex;
 }
 
+.Article-side {
+    margin-top: 48px;
+}
+
 body::-webkit-scrollbar {
     width: 0.75rem;
 }

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './MainWorks.scss';
-import img1 from '../../assets/Works/Bluel-Wall.webp';
-import img2 from '../../assets/Works/Nina-Wall.webp';
+import img1 from '../../assets/Works/Bluel-Wall.png';
+import img2 from '../../assets/Works/Nina-Wall.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowRight, faArrowLeft} from '@fortawesome/free-solid-svg-icons'
 import SkeletonWorks from '../Skeletons/SkeletonWorks';
@@ -33,10 +33,10 @@ function MainWorks() {
   return (
     <>
     {isLoading ? (<SkeletonWorks />) : (
-      <div className='Article'>
+      <div className='Article Article-side'>
       <div className='Works'>
         <div className='slider'>
-          <img width={840} height={384} src={images[currentImageIndex]} alt={`Work ${currentImageIndex + 1}`} />
+          <img width={972} height={400} src={images[currentImageIndex]} alt={`Work ${currentImageIndex + 1}`} />
           <div className='btn-display'>
             <button aria-label='Slider previous image' className='btn1 btn-style' onClick={prevSlide}> <FontAwesomeIcon icon={faArrowLeft}/> </button>
             <button aria-label='Slider next image' className='btn2 btn-style' onClick={nextSlide}> <FontAwesomeIcon icon={faArrowRight}/></button>

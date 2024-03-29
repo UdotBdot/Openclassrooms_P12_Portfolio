@@ -5,6 +5,8 @@
     cursor: pointer;
     display: grid;
     grid-auto-flow: row;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
+    grid-template-rows: 266px 65px 254px;
     grid-template-areas:
       ". . . . ."
       ". . . . ."
@@ -13,7 +15,6 @@
     gap: 8px;
     &:hover {
        opacity: 0.9;
-       scale: 1.05;
        transition: scale 150ms linear;
     }
     &:not(:hover) { 
@@ -31,7 +32,7 @@
         grid-row-start: -1;
         grid-row-end: -4;
         & img {
-            object-position: 30% 100%;
+            object-position: 70% 100%;
         }
     }
     &__slot:nth-child(3) {
@@ -39,6 +40,9 @@
         grid-column-end: 5;
         grid-row-start: 1;
         grid-row-end: 3;
+        & img {
+            object-position: 46% 100%;
+        }
     }
     &__slot:nth-child(4) {
         grid-column-start:5;

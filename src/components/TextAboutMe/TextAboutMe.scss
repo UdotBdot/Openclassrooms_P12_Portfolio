@@ -3,15 +3,18 @@
 .About-me {
     & h2 {
         font-family: $headline-font;
-        font-size: calc(2rem + 0.390625vw);
+        font-size: 36px;
         animation: track-in 1.5s forwards;
         @include track-in-animation(track-in);
+        margin: 24px 0;
     }
     & p {
+        width: 60%;
         font-family: $text-font;
-        font-size: calc(1rem + 0.390625vw);
+        font-size: 16px;
         animation: track-in 3s forwards;
-        margin: 50px 0;
         @include track-in-animation(track-in);
+        line-height: 28px;
+        margin: 16px 0;
     }
 }

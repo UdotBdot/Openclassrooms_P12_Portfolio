@@ -27,22 +27,22 @@ function GridWorks() {
  </h2>
  <div onClick={() => handleNavigation("/works")} className='Works-grid'>
      <div className='Works-grid__slot'>
-         <img width={308} height={232} src="../../images/Grid/Bluel-Work.webp" alt="Projet Sophie Bluel" />
+         <img width={371} height={266} src="../../images/Grid/Bluel-Work.png" alt="Projet Sophie Bluel" />
      </div>
      <div className='Works-grid__slot'>
-     <img width={148} height={592}  src="../../images/Grid/Kasa-Work.webp" alt="Projet Kasa" />
+     <img width={181} height={601} src="../../images/Grid/Kasa-Work.png" alt="Projet Kasa" />
      </div>
      <div className='Works-grid__slot'>
-     <img width={148} height={432} src="../../images/Grid/Qwenta-Work.webp" alt="Projet Qwenta" />
+     <img width={181} height={339} src="../../images/Grid/Qwenta-Work.png" alt="Projet Qwenta" />
      </div>
      <div className='Works-grid__slot'>
-     <img width={148} height={432} src="../../images/Grid/Nina-Work.webp" alt="Projet Nina Carducci" />
+     <img width={181} height={339} src="../../images/Grid/Nina-Work.png" alt="Projet Nina Carducci" />
      </div>
      <div className='Works-grid__slot'>
-     <img width={308} height={344} src="../../images/Grid/ArgentBank-Work.webp" alt="Projet ArgenBank" />
+     <img width={371} height={327} src="../../images/Grid/ArgentBank-Work.png" alt="Projet ArgenBank" />
      </div>
      <div className='Works-grid__slot'>
-     <img width={308} height={144} src="../../images/Grid/724-Work.webp" alt="Projet 724events" />
+     <img width={371} height={254} src="../../images/Grid/724-Work.png" alt="Projet 724events" />
      </div>
  </div>
  </section>

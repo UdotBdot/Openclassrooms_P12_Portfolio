@@ -7,9 +7,6 @@ import MainWorks from '../components/MainWorks/MainWorks'
 function Works() {
   return (
     <>
-    <header>
-      <Header />
-    </header>
       <Navbar />
       <section>
         <MainWorks />

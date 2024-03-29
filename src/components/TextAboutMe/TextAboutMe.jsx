@@ -17,7 +17,7 @@ function TextAboutMe() {
   return (
 <>
     {isLoading ? (<SkeletonAboutMe />) : (
-      <div className='Article'>
+      <div className='Article Article-side'>
  <div className='About-me'>
         <h2>
             About Me

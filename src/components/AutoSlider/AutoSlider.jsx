@@ -3,7 +3,7 @@ import './AutoSlider.scss';
 
 const AutoSlider = () => {
 
-  const initialUrl = ['../../images/Logos/html.webp', '../../images/Logos/css-3.webp', '../../images/Logos/sass.webp', '../../images/Logos/js.webp', '../../images/Logos/react.webp', '../../images/Logos/redux.webp', '../../images/Logos/jest.svg', '../../images/Logos/figma.webp', '../../images/Logos/notion.webp', '../../images/Logos/mongodb.webp', '../../images/Logos/docker.webp'];
+  const initialUrl = ['../../images/Logos/html.webp', '../../images/Logos/css-3.webp', '../../images/Logos/Sass.png', '../../images/Logos/js.webp', '../../images/Logos/React.png', '../../images/Logos/Redux.png', '../../images/Logos/jest.svg', '../../images/Logos/figma.webp', '../../images/Logos/notion.png', '../../images/Logos/MongoDB.png', '../../images/Logos/docker.webp'];
   const [Urls, setUrls] = useState(initialUrl);
   const [showSlider, setShowSlider] = useState(false);
   const scrollerRef = useRef();

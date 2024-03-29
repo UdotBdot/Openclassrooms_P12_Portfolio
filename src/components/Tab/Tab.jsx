@@ -1,21 +1,15 @@
 import React from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { useNavigate } from "react-router-dom";
+import { HashLink } from 'react-router-hash-link';
 
-function Tab({ icon, text, path, href }) {
-
-  const navigate = useNavigate();
-
-  const handleNavigation = () => {
-    navigate(path);
-  }
+function Tab({ icon, text, to }) {
 
   return (
     <li className="nav-item">
-      <a href={href} onClick={handleNavigation} className="nav-link">
+      <HashLink className="nav-link" to={to} smooth>
         <FontAwesomeIcon icon={icon} />
         <span className="link-text">{text}</span>
-      </a>
+      </HashLink>
     </li>
   );
 }

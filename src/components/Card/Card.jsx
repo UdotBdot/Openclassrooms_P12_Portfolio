@@ -9,10 +9,10 @@ function Card() {
     <>
     <section className='Card'>
           <ReactCurvedText
-          width={200} 
-          height={200} 
-          cx={100} 
-          cy={100} 
+          width={240} 
+          height={240} 
+          cx={120} 
+          cy={120} 
           rx={80} 
           ry={80} 
           startOffset={0}
@@ -22,10 +22,12 @@ function Card() {
           textPathProps={null}
           tspanProps={null}
           ellipseProps={null}
-          svgProps={{ "className": "rotating-curved-text" }}
-/>
-        <p className='Card__xp'>1+</p>
+          svgProps={{ "className": "rotating-curved-text" }}/>  
+
+          <p className='Card__xp'>1+</p>
         <p className='Card__text'>years of programming experience</p>
+
+       
         <ul>
             <li>Obtention of Openclassrooms Associate Degree in April 2024.</li>
             <li>Over 15 solo projects made this year.</li>

@@ -33,17 +33,6 @@ function Header() {
           <Typewriter words={words} delay={150} infinite />
         </span>
       </h1>
-      <div className='Header__logos'>
-        <a href="" onClick={() => handleNavigation("/about-me")} >
-        <img width="30" height="30" className="Header__logo" src="../../images/Logos/about-me.webp" alt="About me Logo" />
-        </a>
-        <a href='https://github.com/UdotBdot' target='_blank'>
-          <img width="30" height="30" className="Header__logo" src="../../images/Logos/github_logo.webp" alt="GitHub Logo" />
-        </a>
-        <a href="https://www.linkedin.com/in/frederic-sin-965b36100/" target='_blank'>
-          <img width="30" height="30" className="Header__logo" src="../../images/Logos/linkedin_logo.webp" alt="LinkedIn Logo" />
-        </a>
-      </div>
     </div>
     </div>
     )}

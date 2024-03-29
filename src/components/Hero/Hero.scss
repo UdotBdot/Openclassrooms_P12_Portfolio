@@ -3,7 +3,7 @@
 
 .Hero {
     box-sizing: border-box;
-    padding-right: 60px;
+    padding-right: 40px;
     text-shadow: 1px 0px 5px rgba(126, 96, 38, 0.2);
     width: 60%;
     animation: track-in 3s forwards;
@@ -13,18 +13,17 @@
         justify-content: flex-start;
         font-family: $headline-font;
         color: $secondary-color;
-        font-size: calc(2rem + 0.390625vw);
     }
     &__h3 {
-        margin: 15px 0;
+        margin: 16px 0;
         font-family: $headline-font;
-        font-size: calc(1rem + 0.390625vw);
+        font-size: 20px;
     }
     &__p {
-        margin: 20px 0;
         width: 100%;
         font-family: $text-font;
-        font-size: calc(1rem + 0.390625vw);
+        font-size: 16px;
+        line-height: 28px;
     }
 }
 

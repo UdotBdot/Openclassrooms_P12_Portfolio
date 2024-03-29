@@ -50,7 +50,7 @@ const AutoSlider = () => {
               <div className="scroller" data-speed="slow" ref={scrollerRef}>
                 <ul className="tag-list scroller__inner">
                   {Urls.map((url, index) => (
-                    <li key={index}><img width={50} height={50} src={url} alt={`Front-end Tool ${index}`} /></li>
+                    <li key={index}><img width={48} height={48} src={url} alt={`Front-end Tool ${index}`} /></li>
                   ))}
                 </ul>
               </div>

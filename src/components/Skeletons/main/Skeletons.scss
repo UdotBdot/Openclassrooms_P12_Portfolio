@@ -7,7 +7,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 30px 300px;
+    margin: 30px 234px;
     height: 50px;
     border-radius: 3px;
     background-color: $bg-skelet-color;
@@ -69,7 +69,7 @@
     display: flex;
     align-items: center;
     border-radius: 3px;
-    margin: 100px 300px 0 300px;
+    margin: 100px 234px 0 234px;
     width: 100%;
     height: 539px;
     .Skeleton-text {
@@ -133,7 +133,7 @@
     flex-direction: column;
     justify-content: space-evenly;
     border-radius: 3px;
-    margin: 120px 300px 0 300px;
+    margin: 120px 234px 0 234px;
     height: 500px;
     background-color: $bg-skelet-color;
     &__h2 {
@@ -155,7 +155,7 @@
 // Works
 .Skeleton-works {
     border-radius: 3px;
-    margin: 100px 300px 0 300px;
+    margin: 100px 234px 0 234px;
     height: 970px;
     background-color: $bg-skelet-color;
     &__img {

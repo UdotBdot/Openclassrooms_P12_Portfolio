@@ -2,31 +2,15 @@
 
 .Header {
     display: flex;
-    justify-content: space-between;
-    margin: 20px 0;
+    margin-top: 240px;
+    height: 100vh;
     &__h1 {
-        font-family: $headline-font;
-        font-size: calc(2rem + 0.390625vw);
+        font-size: 76px;
         width: 100%;
         display: flex;
-        align-items: center;
-        padding: 20px 0;
-    }
-    &__logos {
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
-    }
-    &__logo {
-        cursor: pointer;
-        padding: 20px;
-        &:hover {
-            scale: 1.1;
-        }
+        flex-direction: column;
     }
     &__sec-text {
-        margin-left: 15px;
         color: $secondary-color;
     }
 }
@@ -37,13 +21,6 @@
         flex-direction: column;
     }
     .Header__h1 {
-        font-size: calc(1.5rem + 0.390625vw);
-    }
-    .Header__logos {
-        display: flex;
-        justify-content: flex-start;
-    }
-    .Header__logo {
-        padding: 20px 20px 20px 0;
+        font-size: 36px;
     }
 }

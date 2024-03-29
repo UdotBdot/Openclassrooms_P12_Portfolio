@@ -4,12 +4,12 @@
     display: flex;
     justify-content: center;
     .scroller {
-        max-width: 100%;
+        max-width: 68%;
         &__inner {
-            padding-block: 1rem;
+            padding-block: 16px;
             display: flex;
             flex-wrap: wrap;
-            gap: 1rem;
+            gap: 8px;
         }
 
         &[data-animated="true"] {
@@ -43,10 +43,10 @@
         list-style: none;
 
         li {
-            padding: 1rem;
+            padding: 8px;
             background: var(--clr-primary-400);
             border-radius: 0.5rem;
-            box-shadow: 0 0.5rem 1rem -0.25rem var(--clr-primary-900);
+            box-shadow: 0 4px 8px -0.4px var(--clr-primary-900);
         }
     }
 }

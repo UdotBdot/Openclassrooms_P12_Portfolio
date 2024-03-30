@@ -30,7 +30,7 @@ function Contact() {
             <form>
               <div className='container-form'>
                 <div className="Input-container">
-                  <Input text="Name" autoComplete="Name" name="Name" placeholder="Your name" type="text" tabIndex="1" required autoFocus />
+                  <Input text="Name" autoComplete="Name" name="Name" placeholder="Your name" type="text" tabIndex="1" required />
                 </div>
                 <div className="Input-container">
                   <Input text="Email" autoComplete="Email" name="Email" placeholder="Your Email" type="email" tabIndex="2" required />

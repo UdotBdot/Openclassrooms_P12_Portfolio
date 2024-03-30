@@ -1,7 +1,7 @@
 import React from 'react';
 
 function Input(props) {
-  const { text, autoComplete, name, className, placeholder, type, tabIndex, required, autoFocus, textarea } = props;
+  const { text, autoComplete, name, className, placeholder, type, tabIndex, required, textarea } = props;
 
   if (textarea) {
     return (
@@ -15,7 +15,6 @@ function Input(props) {
           placeholder={placeholder}
           tabIndex={tabIndex}
           required={required}
-          autoFocus={autoFocus}
         />
       </>
     );
@@ -32,7 +31,6 @@ function Input(props) {
           type={type}
           tabIndex={tabIndex}
           required={required}
-          autoFocus={autoFocus}
         />
       </>
     );

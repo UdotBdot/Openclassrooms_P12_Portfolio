@@ -6,6 +6,7 @@ import AutoSlider from '../components/AutoSlider/AutoSlider'
 import GridWorks from '../components/GridWorks/GridWorks'
 import Footer from '../components/Footer/Footer'
 import Services from '../components/Services/Services'
+import Contact from '../components/Contact/Contact'
 
 function Home() {
   return (
@@ -20,6 +21,7 @@ function Home() {
       <AutoSlider/>
       <GridWorks />
       <Services />
+      <Contact />
     <footer>
       <Footer />
     </footer>

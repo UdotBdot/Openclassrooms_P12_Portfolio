@@ -8,13 +8,7 @@ const AutoSlider = () => {
   const [showSlider, setShowSlider] = useState(false);
   const scrollerRef = useRef();
 
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setShowSlider(true);
-    }, 500);
 
-    return () => clearTimeout(timer);
-  }, []);
 
   useEffect(() => {
     const scrollerElement = scrollerRef.current;
@@ -50,7 +44,7 @@ const AutoSlider = () => {
               <div className="scroller" data-speed="slow" ref={scrollerRef}>
                 <ul className="tag-list scroller__inner">
                   {Urls.map((url, index) => (
-                    <li key={index}><img width={48} height={48} src={url} alt={`Front-end Tool ${index}`} /></li>
+                    <li key={index}><img width={32} height={32} src={url} alt={`Front-end Tool ${index}`} /></li>
                   ))}
                 </ul>
               </div>

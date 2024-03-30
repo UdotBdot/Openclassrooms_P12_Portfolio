@@ -26,7 +26,7 @@ function Navbar() {
           <Tab to="/about-me" icon={faAddressCard} text="About"  />
           <Tab to="/works" icon={faFile} text="Works"/>
           <Tab to="/home#services" icon={faGear} text="Services"/>
-          <Tab to="/" icon={faPhone} text="Contact"/>
+          <Tab to="/home#contact" icon={faPhone} text="Contact"/>
         </ul>
       </nav>
     )}

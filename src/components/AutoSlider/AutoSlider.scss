@@ -43,7 +43,7 @@
         list-style: none;
 
         li {
-            padding: 8px;
+            padding: 6px 8px;
             background: var(--clr-primary-400);
             border-radius: 0.5rem;
             box-shadow: 0 4px 8px -0.4px var(--clr-primary-900);
@@ -53,4 +53,10 @@
 h2 {
     display: flex;
     justify-content: flex-start;
+ }
+
+ @media (min-width:320px) and (max-width:425px) {
+    .Auto-slider-container .tag-list li {
+        padding: 5px 8px;
+    }
  }

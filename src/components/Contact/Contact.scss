@@ -1,0 +1,62 @@
+@import 'src/index.scss';
+
+.Contact {
+    display: flex;
+    &__me {
+        width: 50%;
+        & p {
+            font-family: $text-font;
+            font-size: 16px;
+            width: 60%;
+            margin: 16px 0;
+            line-height: 20px;
+        }
+    }
+    &__form {
+        width: 50%;
+        .container-form {
+            margin: 12px 0;
+            .Input-container {
+                display: flex;
+                flex-direction: column;
+                & input::placeholder, #Message::placeholder{
+                    font-family: $headline-font;
+                    font-size: 16px;
+                }
+                & input {
+                    font-family: $text-font;
+                    height: 20px;
+                    border-radius: 2px;
+                    padding: 8px;
+                }
+                textarea {
+                    height: 72px;
+                    padding: 8px;
+                    border-radius: 2px;
+                }
+            }
+            & label {
+                font-size: 16px;
+                font-family: $headline-font ;
+                margin: 4px 0;
+            }
+
+        }
+
+    }
+}
+
+@media (min-width:320px) and (max-width:425px) {
+    .Contact {
+        flex-direction: column;
+        &__me {
+            width: 100%;
+            & p {
+                width: 100%;
+            }
+        }
+        &__form {
+            width: 100%;
+        }
+    }
+}

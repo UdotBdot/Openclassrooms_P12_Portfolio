@@ -18,7 +18,7 @@ function Card() {
           startOffset={0}
           reversed={true}
           text=' Frederic SIN - a.K.a -U.B. - Front-End Developer - React -'
-          textProps={{ "style": { "fontSize": 18 } }} 
+          textProps={{ "style": { "fontSize": 14 } }} 
           textPathProps={null}
           tspanProps={null}
           ellipseProps={null}

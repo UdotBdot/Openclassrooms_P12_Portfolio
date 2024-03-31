@@ -36,7 +36,9 @@ function MainWorks() {
       <div className='Article Article-side'>
       <div className='Works'>
         <div className='slider'>
-          <img width={972} height={400} src={images[currentImageIndex]} alt={`Work ${currentImageIndex + 1}`} />
+          <a target='_blank' href='https://github.com/UdotBdot?tab=repositories'>
+            <img width={972} height={480} src={images[currentImageIndex]} alt={`Work ${currentImageIndex + 1}`} />
+          </a>
           <div className='btn-display'>
             <button aria-label='Slider previous image' className='btn1 btn-style' onClick={prevSlide}> <FontAwesomeIcon icon={faArrowLeft}/> </button>
             <button aria-label='Slider next image' className='btn2 btn-style' onClick={nextSlide}> <FontAwesomeIcon icon={faArrowRight}/></button>

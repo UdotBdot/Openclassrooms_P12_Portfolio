@@ -5,6 +5,7 @@
   flex-direction: column;
     width: 100%;
     .slider {
+      position: relative;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -14,24 +15,36 @@
         object-fit: cover;
         border-radius: 5px;
         width: 100%;
+        border: 1px solid $text-color;
+        &:hover {
+          opacity: 0.9;
+        }
       }
       .btn1, .btn2 {
-        width: 50%;
+        position: absolute;
+        width: 40px;
+      }
+      .btn1 {
+        top: 46%;
+        left: 5%;
+      }
+      .btn2 {
+        top: 46%;
+        right:5%;
       }
       .btn-display {
-        display: flex;
-        justify-content: center;
+        height: 36px;
+        padding: 4px;
+        
         margin-top: 5px;
       }
       .btn-style {
         cursor: pointer;
-        padding: 5px 7px;
-        background-color: white;
+        padding: 8px;
+        background-color: $sun-color;
+        color: $secondary-color;
         font-size: 16px;
-        border-radius: 5px;
-        &:hover {
-            opacity: 0.8;
-        }
+        border-radius: 4px;
       }
     }
     & p {

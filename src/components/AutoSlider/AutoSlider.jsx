@@ -8,7 +8,13 @@ const AutoSlider = () => {
   const [showSlider, setShowSlider] = useState(false);
   const scrollerRef = useRef();
 
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setShowSlider(true);
+    }, 500);
 
+    return () => clearTimeout(timer);
+  }, []);
 
   useEffect(() => {
     const scrollerElement = scrollerRef.current;

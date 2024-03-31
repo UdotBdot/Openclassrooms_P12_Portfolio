@@ -15,7 +15,9 @@ function Input(props) {
           placeholder={placeholder}
           tabIndex={tabIndex}
           required={required}
-        />
+         
+        >
+        </textarea>
       </>
     );
   } else {

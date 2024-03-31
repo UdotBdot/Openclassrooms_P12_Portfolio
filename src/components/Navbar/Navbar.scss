@@ -74,6 +74,21 @@
   .navbar {
     height: 48px;
   }
+  .nav-link {
+    height: 48px;
+  }
+}
+
+@media (min-width:425px) and (max-width:768px) {
+  .nav-link {
+    height: 66px;
+  }
+}
+
+@media (min-width:768px) and (max-width:1439px) {
+  .nav-link {
+    height: 70px;
+  }
 }
 
 @media only screen and (min-width: 1439px) {

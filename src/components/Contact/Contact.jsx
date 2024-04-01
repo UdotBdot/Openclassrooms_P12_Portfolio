@@ -61,13 +61,13 @@ function Contact() {
               <form ref={form} onSubmit={sendEmail}>
                 <div className='container-form'>
                   <div className="Input-container">
-                    <Input text="Name" autoComplete="Name" name="user_name" placeholder="Your name" type="text" tabIndex="1" required />
+                    <Input text="Name" autoComplete="Name" name="user_name" placeholder="Your name" type="text" required />
                   </div>
                   <div className="Input-container">
-                    <Input text="Email" autoComplete="Email" name="user_email" placeholder="Your Email" type="email" tabIndex="2" required />
+                    <Input text="Email" autoComplete="Email" name="user_email" placeholder="Your Email" type="email" required />
                   </div>
                   <div className="Input-container">
-                    <Input text="Message" autoComplete="Message" name="message" className="message-input" placeholder="Your Message..." tabIndex="3" required htmlFor="Message" textarea />
+                    <Input text="Message" autoComplete="Message" name="message" className="message-input" placeholder="Your Message..." required htmlFor="Message" textarea />
                   </div>
                   <div>
                     <input id="form-btn" type="submit" value="Send" />

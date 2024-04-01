@@ -1,0 +1,44 @@
+[
+    {
+        "sliderImg": "/images/Works/Bluel-Wall.png",
+        "sliderTitle": "Portfolio - Sophie Bluel",
+        "sliderDescription": "Designing a Single Page Desktop-First Application for an Architect, Implementing a RESTful API for Data Retrieval, Encompassing Category Filtering, and a Contact Form.",
+        "sliderLink": "https://github.com/UdotBdot/Openclassrooms_P6_SophieBluel-FrontEnd-",
+        "sliderId": 1
+    },
+    {
+        "sliderImg": "/images/Works/Nina-Wall.png",
+        "sliderTitle": "Portfolio - Nina Carducci",
+        "sliderDescription": "Optimizing a Desktop-First Application by Implementing SEO, Accessibility, and Performance Enhancements.",
+        "sliderLink": "https://github.com/UdotBdot/UdotBdot-Openclassrooms_P9_NinaCarducci",
+        "sliderId": 2
+    },
+    {
+        "sliderImg": "/images/Works/Qwenta-Wall.png",
+        "sliderTitle": "MenuMaker - Qwenta",
+        "sliderDescription": "Development planning of an application utilizing the Agile methodology.",
+        "sliderLink": "https://www.figma.com/file/Q6NEUPqwz1U3HFaCaVoF7N/Maquette-desktop---Menu-Maker-by-Qwenta?type=design&node-id=0-1&mode=design&t=pAqXVON9Jr5IBuiA-0",
+        "sliderId": 3
+    },
+    {
+        "sliderImg": "/images/Works/Kasa-Wall.png",
+        "sliderTitle": "Real Estate App - Kasa",
+        "sliderDescription": "Building my very-first React Desktop-first application tailored for a Real Estate Agency.",
+        "sliderLink": "https://github.com/UdotBdot/Openclassrooms_P8_Kasa",
+        "sliderId": 4
+    },
+    {
+        "sliderImg": "/images/Works/724-Wall.png",
+        "sliderTitle": "Event Agency - 724events",
+        "sliderDescription": "Debugging the React website of an event agency using Jest",
+        "sliderLink": "https://github.com/UdotBdot/UdotBdot-Openclassrooms_P10_724events",
+        "sliderId": 5
+    },
+    {
+        "sliderImg": "/images/Works/ArgentBank-Wall.png",
+        "sliderTitle": "Online Bank - ArgentBank",
+        "sliderDescription": "Transforming a static website into a React application with state management using Redux",
+        "sliderLink": "https://github.com/UdotBdot/UdotBdot-Openclassrooms_P11_ArgentBank-Frontend-",
+        "sliderId": 6
+    }
+]

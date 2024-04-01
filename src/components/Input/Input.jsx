@@ -1,7 +1,7 @@
 import React from 'react';
 
 function Input(props) {
-  const { text, autoComplete, name, className, placeholder, type, tabIndex, required, textarea } = props;
+  const { text, autoComplete, name, className, placeholder, type, required, textarea } = props;
 
   if (textarea) {
     return (
@@ -13,7 +13,6 @@ function Input(props) {
           name={name}
           className={className}
           placeholder={placeholder}
-          tabIndex={tabIndex}
           required={required}
          
         >
@@ -31,7 +30,6 @@ function Input(props) {
           className={className}
           placeholder={placeholder}
           type={type}
-          tabIndex={tabIndex}
           required={required}
         />
       </>

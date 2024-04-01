@@ -3,76 +3,119 @@
 .Works {
   display: flex;
   flex-direction: column;
-    width: 100%;
-    .slider {
-      position: relative;
+  width: 100%;
+
+  & p {
+    max-width: 1012px;
+    display: flex;
+    justify-content: center;
+    font-family: $text-font;
+    line-height: 28px;
+    margin: 16px 0;
+    font-size: 16px;
+    animation: track-in 3s ease;
+    @include track-in-animation(track-in);
+  }
+
+  .center-align {
+    text-align: center;
+    padding: 8px;
+    animation: moveOutContent 0.5s  ease; 
+    @include move-out-animation(moveOutContent);
+  }
+
+  .Slider {
+    padding: 4px 4px 0 4px;
+    overflow: hidden;
+    margin-bottom: 16px;
+    box-shadow: 0px 25px 75px -3px rgba(0, 0, 0, 0.1);
+
+    & h3 {
+      font-family: $headline-font;
+      color: $secondary-color;
+      animation: moveInContent 0.4s  ease; 
+      @include move-in-animation(moveInContent);
+    }
+
+    & img {
+      overflow: hidden;
+      object-fit: cover;
+      object-position: 0% 100%;
+      border: 5px;
+      animation: moveUp 0.3s  ease;
+      @include move-up-animation(moveUp)
+    }
+
+    .center-align.reverse {
+      text-align: center;
+      padding: 8px;
+      animation: moveInContent 0.5s ease; // Utilisation de l'animation inverse
+      @include move-in-animation(moveInContent); // Utilisation du mixin d'animation inverse
+    }
+    
+    & h3.reverse {
+      font-family: $headline-font;
+      color: $secondary-color;
+      animation: moveOutContent 0.4s ease; // Utilisation de l'animation inverse
+      @include move-out-animation(moveOutContent); // Utilisation du mixin d'animation inverse
+    }
+    
+    & img.reverse {
+      overflow: hidden;
+      object-fit: cover;
+      object-position: 0% 100%;
+      border: 5px;
+      animation: moveDown 0.3s ease; // Utilisation de l'animation inverse
+      @include move-down-animation(moveDown); // Utilisation du mixin d'animation inverse
+    }
+
+    &__item {
+      &s {
+        overflow: hidden;
+        border: 5px;
+        height: 448px;
         display: flex;
         flex-direction: column;
-        justify-content: center;
-      width: 100%;
-      img {
-        box-sizing: border-box;
-        object-fit: cover;
-        border-radius: 5px;
-        width: 100%;
-        border: 1px solid $text-color;
-        &:hover {
-          opacity: 0.9;
-        }
-      }
-      .btn1, .btn2 {
-        position: absolute;
-        width: 40px;
-      }
-      .btn1 {
-        top: 46%;
-        left: 5%;
-      }
-      .btn2 {
-        top: 46%;
-        right:5%;
-      }
-      .btn-display {
-        height: 36px;
-        padding: 4px;
-        
-        margin-top: 5px;
-      }
-      .btn-style {
-        cursor: pointer;
-        padding: 8px;
-        background-color: $sun-color;
-        color: $secondary-color;
-        font-size: 16px;
-        border-radius: 4px;
+        align-items: center;
+        justify-content: space-between;
+        padding: 16px;
       }
     }
-    & p {
-      margin: 16px auto; 
+  }
+
+  .btn-display {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    & button {
+      cursor: pointer;
+      background-color: transparent;
+      font-size: 48px;
+      padding: 0 40px;
+      border: 0px solid transparent;
+    }
+  }
+
+  @media (min-width: 320px) and (max-width: 1439px) {
+    .Slider img {
+      width: 100%;
+    }
+    .Slider__item {
+      display: flex;
+      flex-direction: column-reverse;
+      &s {
+        height: 308px;
+      }
+    }
+    .Slider__item a {
       display: flex;
       justify-content: center;
-      font-family: $text-font;
-      line-height: 28px;
-      margin: 16px 0;
-      font-size: 16px;
-      animation: track-in 3s forwards;
-      @include track-in-animation(track-in);
+    }
+    .Slider__item p {
+      width: 100%;
     }
   }
-  @media (max-width: 1024px) {
-    .Works p {
-      margin: 24px 0;
-    }
-  }
+}
 
-  @media (min-width:320px) and (max-width:425px) {
-    .Works img{
-      height: 180px;
-    }
-  }
 
-  @media (min-width:320px) and (max-width:1024px) {
-    .Works {
-      flex-direction: column-reverse;
-    }
-  }

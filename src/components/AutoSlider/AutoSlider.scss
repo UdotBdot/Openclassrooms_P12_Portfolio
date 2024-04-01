@@ -4,7 +4,7 @@
     display: flex;
     justify-content: center;
     .scroller {
-        max-width: 72%;
+        max-width: 472px;
         &__inner {
             padding-block: 16px;
             display: flex;
@@ -33,7 +33,7 @@
         }
 
         &[data-speed="slow"] {
-            --_animation-duration: 20s;
+            --_animation-duration: 8s;
         }
     }
 

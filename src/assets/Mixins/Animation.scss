@@ -120,7 +120,7 @@
 @mixin auto-scroll-animation($name) {
     @keyframes #{$name} {
             to {
-              transform: translate(calc(-50% - 0.5rem));
+              transform: translate(calc(-50% - 4px));
             }
           }
       }

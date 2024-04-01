@@ -110,15 +110,20 @@
     left: 0px;
   }
 }
-
+.nav-item:hover .link-text {
+  color: $text-color;
+}
 .nav-link:hover {
   background-color: $sun-color; 
   color: $text-color; 
 }
 
 .nav-item:first-child .nav-link:hover {
-  background-color: $text-color; 
-  color: $sun-color; 
+  background-color: $primary-color; 
+  color: $secondary-color;
+}
+.nav-item:first-child .nav-link:hover .link-text {
+  color: $secondary-color;
 }
 
 @media (max-width:555px) {

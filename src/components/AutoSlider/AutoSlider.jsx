@@ -45,7 +45,6 @@ const AutoSlider = () => {
       <section className='Article'>
         {showSlider && (
           <>
-            <h2 className='test'>Front-End Tools</h2>
             <div className='Auto-slider-container'>
               <div className="scroller" data-speed="slow" ref={scrollerRef}>
                 <ul className="tag-list scroller__inner">

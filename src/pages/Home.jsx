@@ -18,9 +18,9 @@ function Home() {
     <section className='Hero-Pages'>
       <Hero />
     </section>
-      <AutoSlider/>
       <GridWorks />
       <Services />
+      <AutoSlider/>
       <Contact />
     <footer>
       <Footer />

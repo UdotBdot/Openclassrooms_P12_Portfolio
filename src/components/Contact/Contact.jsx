@@ -67,7 +67,7 @@ function Contact() {
                     <Input text="Email" autoComplete="Email" name="user_email" placeholder="Your Email" type="email" required />
                   </div>
                   <div className="Input-container">
-                    <Input text="Message" autoComplete="Message" name="message" className="message-input" placeholder="Your Message..." required htmlFor="Message" textarea />
+                    <Input text="Message" autoComplete="Message" name="Message" className="message-input" placeholder="Your Message..." required htmlFor="Message" textarea />
                   </div>
                   <div>
                     <input id="form-btn" type="submit" value="Send" />

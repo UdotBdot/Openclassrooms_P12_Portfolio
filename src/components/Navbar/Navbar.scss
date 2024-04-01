@@ -28,6 +28,15 @@
 
 }
 
+.link-text {
+  color: transparent;
+  font-weight: bold;
+  font-family: $headline-font;
+  margin-left: 8px;
+  font-size: 16px;
+  transition: color 200ms ease-out; 
+}
+
 .nav-link {
   cursor: pointer;
   display: flex;
@@ -35,15 +44,6 @@
   height: 80px;
   color: $primary-color;
   text-decoration: none;
-  transition: background-color 0.3s, color 0.3s; 
-}
-
-.link-text {
-  color: transparent;
-  font-weight: bold;
-  font-family: $headline-font;
-  margin-left: 8px;
-  font-size: 16px;
 }
 
 .nav-link svg {

@@ -1,17 +1,19 @@
 @import 'src/index.scss';
-
 .Header {
     display: flex;
     margin-top: 40vh;
     height: 100vh;
     &__h1 {
         font-size: 76px;
+        font-weight: bold;
+        font-family: $text-font;
         width: 100%;
         display: flex;
         flex-direction: column;
     }
     &__sec-text {
         color: $secondary-color;
+        margin: 16px 0;
     }
 }
 

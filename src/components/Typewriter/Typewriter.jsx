@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 
-const Typewriter = ({ words, delay, infinite }) => {
+const Typewriter = ({ words, delay, infinite, phraseDelay }) => {
   const [currentWordIndex, setCurrentWordIndex] = useState(0);
   const [currentText, setCurrentText] = useState('');
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -19,12 +19,12 @@ const Typewriter = ({ words, delay, infinite }) => {
           setCurrentIndex(0);
           setCurrentText('');
           setCurrentWordIndex((prevIndex) => (prevIndex + 1) % words.length);
-        }, delay);
+        }, phraseDelay);
       }
     }
 
     return () => clearTimeout(timeout);
-  }, [currentIndex, currentWordIndex, delay, infinite, words]);
+  }, [currentIndex, currentWordIndex, delay, infinite, words, phraseDelay]);
 
   return <span>{currentText}</span>;
 };

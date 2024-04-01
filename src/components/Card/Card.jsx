@@ -17,7 +17,7 @@ function Card() {
           ry={64} 
           startOffset={0}
           reversed={true}
-          text=' Frederic SIN - a.K.a -U.B. - Front-End Developer - React -'
+          text=' -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  - -  - '
           textProps={{ "style": { "fontSize": 14 } }} 
           textPathProps={null}
           tspanProps={null}

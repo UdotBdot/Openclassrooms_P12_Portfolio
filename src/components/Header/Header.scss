@@ -1,28 +1,53 @@
 @import 'src/index.scss';
+
 .Header {
-    display: flex;
-    margin-top: 40vh;
-    height: 100vh;
+    gap: 4px;
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    margin: 16px 0;
+    box-shadow: 0 4px 8px -0.4px var(--clr-primary-900);
+    & img {
+        width: 100%;
+        height: 307px;
+    }
+    .bg {
+        object-fit: cover;
+    }
     &__h1 {
-        font-size: 76px;
+        font-size: 60px;
         font-weight: bold;
         font-family: $text-font;
         width: 100%;
-        display: flex;
-        flex-direction: column;
+        grid-column-start:1;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        grid-row-end: 2;
+        align-self: center;
+        margin: 32px;
     }
     &__sec-text {
         color: $secondary-color;
-        margin: 16px 0;
+        margin: 16px;
     }
 }
 
 @media (max-width:767px) {
-    .Header {
-        display: flex;
-        flex-direction: column;
-    }
     .Header__h1 {
         font-size: 36px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 426px) {
+    .Header img {
+        width: 100%;
+        height: 120px;
+    }
+    .Header__h1 {
+        font-size: 24px;
+    }
+    .Header__sec-text {
+        margin: 8px;
     }
 }

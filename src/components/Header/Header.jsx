@@ -28,18 +28,18 @@ function Header() {
       {isLoading ? (<SkeletonHeader />) : (
         <div id="header" className='Article'>
           <div className='Header'>
-            <img loading='eager' width={319} height={307} src="/images/Grid/bg1.png" className='bg bg1'alt='Cyberpunk Hong-kong photo'></img>
-            <img loading='eager' width={319} height={307} src="/images/Grid/bg2.png" className='bg bg2' alt="Cyberpunk Tokyo photo"></img>
-            <img loading='eager' width={319} height={307} src="/images/Grid/bg3.png" className='bg bg3' alt='Cyberpunk Hong-kong photo big view'></img>
+            <img loading='eager' width={319} height={307} src="/images/Grid/bg1.webp" className='bg bg1'alt='Cyberpunk Hong-kong photo'></img>
+            <img loading='eager' width={319} height={307} src="/images/Grid/bg2.webp" className='bg bg2' alt="Cyberpunk Tokyo photo"></img>
+            <img loading='eager' width={319} height={307} src="/images/Grid/bg3.webp" className='bg bg3' alt='Cyberpunk Hong-kong photo big view'></img>
             <h1 className='Header__h1'>
               <span className='Header__text'>I am</span>
               <span className='Header__text Header__sec-text'>
                 <Typewriter words={words} delay={32} phraseDelay={500} infinite />
               </span>
             </h1>
-            <img loading='eager' width={319} height={307} src="/images/Grid/bg4.png" className='bg bg4' alt='Colorful Basketball court in Hong-Kong'></img>
-            <img loading='eager' width={319} height={307} src="/images/Grid/bg5.png" className='bg bg5' alt="New Kowloon Colorful buildings"></img>
-            <img loading='eager' width={319} height={307} src="/images/Grid/bg6.png" className='bg bg6' alt="Crossroads in"></img>
+            <img loading='eager' width={319} height={307} src="/images/Grid/bg4.webp" className='bg bg4' alt='Colorful Basketball court in Hong-Kong'></img>
+            <img loading='eager' width={319} height={307} src="/images/Grid/bg5.webp" className='bg bg5' alt="New Kowloon Colorful buildings"></img>
+            <img loading='eager' width={319} height={307} src="/images/Grid/bg6.webp" className='bg bg6' alt="Crossroads in"></img>
           </div>
         </div>
       )}

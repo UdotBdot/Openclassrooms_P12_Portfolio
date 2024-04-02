@@ -24,7 +24,7 @@ function Hero() {
           <h2 className='Hero__h2'>Welcome to my Portfolio!</h2>
           <h3 className='Hero__h3'>I am Frederic SIN, a young Agile developer based in Alsace.</h3>
           <p className='Hero__p'>
-            Welcome to my digital space where I regularly express myself through my projects, highlighting my ability to combine aesthetics and functionality to offer the best possible user experience.
+            Here is my digital space where I regularly express myself through my projects, highlighting my ability to combine aesthetics and functionality to offer the best possible user experience.
           </p>
           <p className='Hero__p'>
             Thanks to my range of skills, I offer a diversity of services including debugging, SEO/Performance optimization, as well as the creation of web applications.

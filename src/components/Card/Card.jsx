@@ -17,7 +17,7 @@ function Card() {
           ry={64} 
           startOffset={0}
           reversed={true}
-          text=' -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  - -  - '
+          text=' °  °  °  °  °  °  °  °  °  °  °  °  °  °  °  °  °  °  °  °  °  °  °  °  °  °  °  °  °  °  °  °  °  °  °  °  °  °  ° °  ° '
           textProps={{ "style": { "fontSize": 14 } }} 
           textPathProps={null}
           tspanProps={null}

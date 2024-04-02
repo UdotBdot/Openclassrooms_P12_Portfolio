@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 import Tab from '../Tab/Tab'
 import './Navbar.scss'
 import SkeletonNavbar from '../Skeletons/SkeletonNavbar';
-import { faArrowsUpToLine, faHouse, faFile, faBellConcierge, faPhone, faAddressCard,} from '@fortawesome/free-solid-svg-icons'
+import { faBackward, faHouse, faFile, faBellConcierge, faPhone, faAddressCard,} from '@fortawesome/free-solid-svg-icons'
 
 function Navbar() {
   const [isLoading, setIsLoading] = useState(true);
@@ -21,12 +21,12 @@ function Navbar() {
     {isLoading ? (<SkeletonNavbar/>) : (
       <nav className="navbar">
         <ul className="navbar-nav">
-          <Tab to="/" icon={faArrowsUpToLine} text="SIN_DEV"/>
-          <Tab to="/home" icon={faHouse} text="Home"/>
-          <Tab to="/about-me" icon={faAddressCard} text="About"  />
+          <Tab to="/" icon={faBackward} text="SIN_DEV"/>
+          <Tab to="/home#header" icon={faHouse} text="Home"/>
           <Tab to="/works" icon={faFile} text="Works"/>
           <Tab to="/home#services" icon={faBellConcierge} text="Services"/>
           <Tab to="/home#contact" icon={faPhone} text="Contact"/>
+          <Tab to="/about-me" icon={faAddressCard} text="About"  />
         </ul>
       </nav>
     )}

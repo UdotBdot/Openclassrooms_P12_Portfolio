@@ -122,8 +122,18 @@
   background-color: $primary-color; 
   color: $secondary-color;
 }
+
 .nav-item:first-child .nav-link:hover .link-text {
   color: $secondary-color;
+}
+.navbar:hover .nav-item:first-child .nav-link svg{
+  animation: rotate180 0.3s linear forwards;
+  @include dropdown-animation-180(rotate180);
+}
+
+.navbar:not(:hover) .nav-item:first-child .nav-link svg {
+  animation: rotate0 0.3s linear forwards;
+  @include dropdown-animation-reset(rotate0);
 }
 
 @media (max-width:555px) {

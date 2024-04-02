@@ -2,7 +2,7 @@ import React from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { HashLink } from 'react-router-hash-link';
 
-function Tab({ icon, text, to }) {
+function Tab({ icon, text, to, id }) {
 
   return (
     <li className="nav-item">

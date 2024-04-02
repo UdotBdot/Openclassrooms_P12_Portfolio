@@ -98,14 +98,18 @@
   }
 
   @media (min-width: 320px) and (max-width: 1439px) {
+    .center-align {
+      margin: 0;
+    }
     .Slider img {
       width: 100%;
+      height: 40vh;
     }
     .Slider__item {
       display: flex;
       flex-direction: column-reverse;
       &s {
-        height: 308px;
+        height: 280px;
       }
     }
     .Slider__item a {

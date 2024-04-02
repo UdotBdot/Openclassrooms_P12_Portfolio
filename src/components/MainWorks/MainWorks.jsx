@@ -48,8 +48,8 @@ function MainWorks() {
                     <h3 className={direction === 'reverse' ? 'reverse' : ''}>{project.sliderTitle}</h3>
                     <p className={'center-align ' + (direction === 'reverse' ? 'reverse' : '')}>{project.sliderDescription}</p>
                     <div className='btn-display'>
-                      <button className='btn1' onClick={goToPrevSlide}><FontAwesomeIcon icon={faCaretLeft} /></button>
-                      <button className='btn2' onClick={goToNextSlide}><FontAwesomeIcon icon={faCaretRight} /></button>
+                      <button aria-label='previous image bouton' className='btn1' onClick={goToPrevSlide}><FontAwesomeIcon icon={faCaretLeft} /></button>
+                      <button aria-label='next image bouton' className='btn2' onClick={goToNextSlide}><FontAwesomeIcon icon={faCaretRight} /></button>
                     </div>
                   </div>
                   <a target='_blank' href={project.sliderLink}>

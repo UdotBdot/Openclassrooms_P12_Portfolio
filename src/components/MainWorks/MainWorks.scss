@@ -40,7 +40,7 @@
     & img {
       overflow: hidden;
       object-fit: cover;
-      object-position: 0% 100%;
+      object-position: 30% 0%;
       border: 5px;
       animation: moveUp 0.3s  ease;
       @include move-up-animation(moveUp)
@@ -63,7 +63,7 @@
     & img.reverse {
       overflow: hidden;
       object-fit: cover;
-      object-position: 0% 100%;
+      object-position: 30% 0%;
       border: 5px;
       animation: moveDown 0.3s ease; // Utilisation de l'animation inverse
       @include move-down-animation(moveDown); // Utilisation du mixin d'animation inverse
@@ -101,10 +101,6 @@
     .center-align {
       margin: 0;
     }
-    .Slider img {
-      width: 100%;
-      height: 40vh;
-    }
     .Slider__item {
       display: flex;
       flex-direction: column-reverse;
@@ -122,4 +118,9 @@
   }
 }
 
-
+@media (min-width:320px) and (max-width:426px) {
+  .Slider img {
+    width: 100%;
+    height: 40vh;
+  }
+}

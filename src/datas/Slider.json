@@ -35,7 +35,7 @@
         "sliderId": 5
     },
     {
-        "sliderImg": "/images/Works/ArgentBank-Wall.png",
+        "sliderImg": "/images/Works/ArgentBank-Wall.jpeg",
         "sliderTitle": "Online Bank - ArgentBank",
         "sliderDescription": "Transforming a static website into a React application with state management using Redux",
         "sliderLink": "https://github.com/UdotBdot/UdotBdot-Openclassrooms_P11_ArgentBank-Frontend-",

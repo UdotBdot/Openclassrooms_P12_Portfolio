@@ -31,6 +31,8 @@
     box-shadow: 0px 25px 75px -3px rgba(0, 0, 0, 0.1);
 
     & h3 {
+      display: flex;
+      gap: 10px;
       font-family: $headline-font;
       color: $secondary-color;
       animation: moveInContent 0.4s  ease; 
@@ -38,9 +40,10 @@
     }
 
     & img {
+      width: 100%;
       overflow: hidden;
       object-fit: cover;
-      object-position: 30% 0%;
+      object-position: 50% 0%;
       border: 5px;
       animation: moveUp 0.3s  ease;
       @include move-up-animation(moveUp)
@@ -121,6 +124,17 @@
 @media (min-width:320px) and (max-width:426px) {
   .Slider img {
     width: 100%;
+  }
+  .slider-image {
     height: 40vh;
+  }
+}
+
+@media (min-width:768px) and (max-width:1023px) {
+  .slider-image {
+    height: 400px;
+  }
+  .Slider__items {
+    height: 600px;
   }
 }

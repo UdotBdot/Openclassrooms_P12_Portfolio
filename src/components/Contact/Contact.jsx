@@ -4,6 +4,9 @@ import Input from '../Input/Input';
 import emailjs from '@emailjs/browser';
 
 function Contact() {
+  const serviceId = import.meta.env.VITE_SERVICE_ID;
+  const templateId = import.meta.env.VITE_YOUR_TEMPLATE_ID;
+  const publicKey = import.meta.env.VITE_PUBLIC_KEY;
   const form = useRef();
   const [isLoading, setIsLoading] = useState(true);
   const [messageStatus, setMessageStatus] = useState(null);
@@ -12,8 +15,8 @@ function Contact() {
     e.preventDefault();
 
     emailjs
-      .sendForm('service_3zjqz4w', 'template_vms42zl', form.current, {
-        publicKey: 'gv8GAFS6Qr6mcL-ff',
+      .sendForm(serviceId, templateId, form.current, {
+        publicKey: publicKey,
       })
       .then(
         (response) => {

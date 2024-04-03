@@ -64,7 +64,7 @@ function MainWorks() {
                     </div>
                   </div>
                   <div>
-                    <img  className={`slider-image ${direction === 'reverse' ? 'reverse' : ''}`} width={740} height={480} src={project.sliderImg} alt={project.sliderTitle} />
+                    <img  className={`slider-image ${direction === 'reverse' ? 'reverse' : ''}`} width={662} height={480} src={project.sliderImg} alt={project.sliderTitle} />
                   </div>
                 </div>
               ))}

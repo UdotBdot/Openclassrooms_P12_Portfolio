@@ -6,7 +6,6 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    margin: 16px 0;
     box-shadow: 0 4px 8px -0.4px var(--clr-primary-900);
     & img {
         width: 100%;
@@ -15,7 +14,7 @@
         object-fit: cover;
     }
     &__h1 {
-        font-size: 60px;
+        font-size: $font-60;
         font-weight: bold;
         font-family: $text-font;
         width: 100%;
@@ -34,7 +33,7 @@
 
 @media (max-width:767px) {
     .Header__h1 {
-        font-size: 36px;
+        font-size: $font-36;
     }
 }
 
@@ -44,7 +43,7 @@
         height: 120px;
     }
     .Header__h1 {
-        font-size: 20px;
+        font-size: $font-20;
         width: max-content;
     }
     .Header__sec-text {

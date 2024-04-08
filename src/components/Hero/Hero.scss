@@ -15,14 +15,13 @@
         color: $secondary-color;
     }
     &__h3 {
-        margin: 16px 0;
         font-family: $headline-font;
-        font-size: 20px;
+        font-size: $font-20;
     }
     &__p {
         width: 100%;
         font-family: $text-font;
-        font-size: 16px;
+        font-size: $font-16;
         line-height: 28px;
     }
 }

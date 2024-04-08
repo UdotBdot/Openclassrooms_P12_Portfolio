@@ -1,6 +1,6 @@
 import React from 'react'
 import { useEffect, useState } from 'react';
-import Tab from '../Tab/Tab'
+import Tab from '../Props/Tab/Tab'
 import './Navbar.scss'
 import SkeletonNavbar from '../Skeletons/SkeletonNavbar';
 import { faBackward, faHouse, faFile, faBellConcierge, faPhone, faAddressCard,} from '@fortawesome/free-solid-svg-icons'

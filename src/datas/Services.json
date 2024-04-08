@@ -1,0 +1,27 @@
+[
+    {
+      "title": "Web/App",
+      "text": "Crafting versatile, Mobile-First and Desktop-First Web/App solutions tailored for diverse objectives.",
+      "src": "../../images/Logos/build.png",
+      "alt": "Build App Logo"
+    },
+    {
+      "title": "SEO/Performance",
+      "text": "Implementing SEO strategies and min/max Performances ensuring online visibility, and optimal experience.",
+      "src": "../../images/Logos/performance.png",
+      "alt": "SEO/Performance Logo"
+    },
+    {
+      "title": "Debug",
+      "text": "Facing challenges with your Web App? My comprehensive service includes an assessment of encountered bugs and their resolution within the scope of my expertise.",
+      "src": "../../images/Logos/bugs.png",
+      "alt": "Debug Logo"
+    },
+    {
+      "title": "Agile developer",
+      "text": "As an Agile developer, I am dedicated to delivering flexible, collaborative, and quality-focused solutions, establishing swift adaptation to evolving project requirements.",
+      "src": "../../images/Logos/agile.png",
+      "alt": "Agile dev Logo"
+    }
+  ]
+  

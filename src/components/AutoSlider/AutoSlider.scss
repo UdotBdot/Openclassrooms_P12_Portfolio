@@ -33,7 +33,7 @@
         }
 
         &[data-speed="slow"] {
-            --_animation-duration: 8s;
+            --_animation-duration: 6s;
         }
     }
 
@@ -45,7 +45,6 @@
         li {
             padding: 6px 8px;
             background: var(--clr-primary-400);
-            border-radius: 4px;
             box-shadow: 0 4px 8px -0.4px var(--clr-primary-900);
         }
     }

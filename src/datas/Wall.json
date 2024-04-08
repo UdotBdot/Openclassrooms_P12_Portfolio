@@ -1,0 +1,51 @@
+[
+    {
+      "wallId": "1",
+      "wallSrc": "../../images/Grid/Bluel-Work.png",
+      "wallClass": "top-left-radius",
+      "wallName": "Sophie Bluel",
+      "width": 371,
+      "height": 266
+    },
+    {
+      "wallId": "2",
+      "wallSrc": "../../images/Grid/Kasa-Work.png",
+      "wallClass": "",
+      "wallName": "Kasa",
+      "width": 181,
+      "height": 601
+    },
+    {
+      "wallId": "3",
+      "wallSrc": "../../images/Grid/Qwenta-Work.png",
+      "wallClass": "",
+      "wallName": "Qwenta",
+      "width": 181,
+      "height": 339
+    },
+    {
+      "wallId": "4",
+      "wallSrc": "../../images/Grid/Nina-Work.png",
+      "wallClass": "top-right-radius",
+      "wallName": "Nina Carducci",
+      "width": 181,
+      "height": 339
+    },
+    {
+      "wallId": "5",
+      "wallSrc": "../../images/Grid/ArgentBank-Work.png",
+      "wallClass": "bottom-left-radius",
+      "wallName": "ArgenBank",
+      "width": 371,
+      "height": 327
+    },
+    {
+      "wallId": "6",
+      "wallSrc": "../../images/Grid/724-Work.png",
+      "wallClass": "bottom-right-radius",
+      "wallName": "724events",
+      "width": 371,
+      "height": 254
+    }
+  ]
+  

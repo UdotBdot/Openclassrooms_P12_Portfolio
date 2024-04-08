@@ -7,7 +7,7 @@ function Card() {
 
   return (
     <>
-    <section className='Card'>
+    <section className='Card border-radius'>
           <ReactCurvedText
           width={192} 
           height={192} 
@@ -17,7 +17,7 @@ function Card() {
           ry={64} 
           startOffset={0}
           reversed={true}
-          text=' °  °  °  °  °  °  °  °  °  °  °  °  °  °  °  °  °  °  °  °  °  °  °  °  °  °  °  °  °  °  °  °  °  °  °  °  °  °  ° °  ° '
+          text=' °  °  °  °  °  °  °  °  °  °  °  °  °  °  °  °  °  °  °  °  °  °  °  °  °  °  °  °  °  °  °  °  °  °  °  °  °  °  °  °  ° '
           textProps={{ "style": { "fontSize": 14 } }} 
           textPathProps={null}
           tspanProps={null}

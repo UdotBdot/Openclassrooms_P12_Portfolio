@@ -1,0 +1,47 @@
+[
+    {
+      "url": "../../images/Logos/html.webp",
+      "alt": "HTML Logo"
+    },
+    {
+      "url": "../../images/Logos/css-3.webp",
+      "alt": "CSS Logo"
+    },
+    {
+      "url": "../../images/Logos/Sass.png",
+      "alt": "Sass Logo"
+    },
+    {
+      "url": "../../images/Logos/js.webp",
+      "alt": "JavaScript Logo"
+    },
+    {
+      "url": "../../images/Logos/React.png",
+      "alt": "React Logo"
+    },
+    {
+      "url": "../../images/Logos/Redux.png",
+      "alt": "Redux Logo"
+    },
+    {
+      "url": "../../images/Logos/jest.svg",
+      "alt": "Jest Logo"
+    },
+    {
+      "url": "../../images/Logos/figma.webp",
+      "alt": "Figma Logo"
+    },
+    {
+      "url": "../../images/Logos/notion.png",
+      "alt": "Notion Logo"
+    },
+    {
+      "url": "../../images/Logos/MongoDB.png",
+      "alt": "MongoDB Logo"
+    },
+    {
+      "url": "../../images/Logos/docker.webp",
+      "alt": "Docker Logo"
+    }
+  ]
+  

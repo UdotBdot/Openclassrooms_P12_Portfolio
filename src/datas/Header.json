@@ -1,0 +1,33 @@
+[
+    {
+      "headerSrc": "/images/Grid/bg1.webp",
+      "headerId": "1",
+      "bgClassName": "top-left-radius"
+    },
+    {
+      "headerSrc": "/images/Grid/bg2.webp",
+      "headerId": "2",
+      "bgClassName": ""
+    },
+    {
+      "headerSrc": "/images/Grid/bg3.webp",
+      "headerId": "3",
+      "bgClassName": "top-right-radius"
+    },
+    {
+      "headerSrc": "/images/Grid/bg4.webp",
+      "headerId": "4",
+      "bgClassName": "bottom-left-radius"
+    },
+    {
+      "headerSrc": "/images/Grid/bg5.webp",
+      "headerId": "5",
+      "bgClassName": ""
+    },
+    {
+      "headerSrc": "/images/Grid/bg6.webp",
+      "headerId": "6",
+      "bgClassName": "bottom-right-radius"
+    }
+  ]
+  

@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import './Contact.scss';
-import Input from '../Input/Input';
+import Input from '../Props/Input/Input';
 import emailjs from '@emailjs/browser';
 
 function Contact() {
@@ -22,18 +22,17 @@ function Contact() {
         (response) => {
           console.log('SUCCESS!', response.status);
           form.current.reset();
-          setMessageStatus('success'); // Mettre à jour le statut du message pour afficher le message de succès
+          setMessageStatus('success'); 
         },
         (error) => {
           console.log('FAILED...', error.text);
-          setMessageStatus('error'); // Mettre à jour le statut du message pour afficher le message d'erreur
+          setMessageStatus('error'); 
         },
       )
       .finally(() => {
-        // Réinitialiser le statut du message après un certain délai
         setTimeout(() => {
           setMessageStatus(null);
-        }, 5000); // Délai en millisecondes avant de masquer le message (5 secondes dans cet exemple)
+        }, 5000); 
       });
   };
 
@@ -54,7 +53,7 @@ function Contact() {
           <div className='Contact'>
             <div className='Contact__me'>
               <h2>Contact Me</h2>
-              <p>For inquiries, collaborations, or any further information, please feel free to reach out to me using the contact details provided below</p>
+              <p className='margin-16'>For inquiries, collaborations, or any further information, please feel free to reach out to me using the contact details provided below</p>
               <p>
                 Additionally, I can be reached via <a target="_blank" href="https://twitter.com/UdotBdotTFT">Twitter</a> or <a target="_blank" href="https://discord.gg/e2Y3Zbsa9R">Discord</a> for further ways to reach.
               </p>
@@ -64,16 +63,16 @@ function Contact() {
               <form ref={form} onSubmit={sendEmail}>
                 <div className='container-form'>
                   <div className="Input-container">
-                    <Input text="Name" autoComplete="Name" name="user_name" placeholder="Your name" type="text" required />
+                    <Input className='border-radius padding-8' text="Name" autoComplete="Name" name="user_name" placeholder="Your name" type="text" required />
                   </div>
                   <div className="Input-container">
-                    <Input text="Email" autoComplete="Email" name="user_email" placeholder="Your Email" type="email" required />
+                    <Input className='border-radius padding-8' text="Email" autoComplete="Email" name="user_email" placeholder="Your Email" type="email" required />
                   </div>
                   <div className="Input-container">
-                    <Input text="Message" autoComplete="Message" name="Message" className="message-input" placeholder="Your Message..." required htmlFor="Message" textarea />
+                    <Input text="Message" autoComplete="Message" name="Message" className="message-input border-radius padding-8" placeholder="Your Message..." required htmlFor="Message" textarea />
                   </div>
                   <div>
-                    <input id="form-btn" type="submit" value="Send" />
+                    <input className='border-radius margin-16' id="form-btn" type="submit" value="Send" />
                   </div>
                 </div>
               </form>

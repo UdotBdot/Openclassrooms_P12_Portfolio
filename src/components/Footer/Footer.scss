@@ -13,7 +13,7 @@ footer {
         &__p {
             font-family: $headline-font;
             color: $primary-color;
-            font-size: 12px;
+            font-size: $font-12;
             padding: 4px;
         }
         &__logos {

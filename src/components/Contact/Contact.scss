@@ -2,13 +2,14 @@
 
 .Contact {
     display: flex;
+    &__me p, .Input-container input::placeholder, #Message::placeholder, .container-form label, .Contact__form p, #form-btn {
+        font-size: $font-16;
+    }
     &__me {
         width: 50%;
         & p {
             font-family: $text-font;
-            font-size: 16px;
             width: 60%;
-            margin: 16px 0;
             line-height: 20px;
         }
     }
@@ -21,24 +22,19 @@
                 flex-direction: column;
                 & input::placeholder, #Message::placeholder{
                     font-family: $headline-font;
-                    font-size: 16px;
+                }
+                & input, textarea {
+                    border: 2px solid $secondary-color;
                 }
                 & input {
                     font-family: $text-font;
                     height: 20px;
-                    border-radius: 4px;
-                    padding: 8px;
-                    border: 2px solid $secondary-color;
                 }
                 textarea {
                     height: 72px;
-                    padding: 8px;
-                    border-radius: 4px;
-                    border: 2px solid $secondary-color;
                 }
             }
             & label {
-                font-size: 16px;
                 font-family: $headline-font ;
                 margin: 4px 0;
             }
@@ -46,7 +42,6 @@
         }
         & p {
             font-family: $headline-font;
-            font-size: 16px;
             color: green;
             font-weight: bold;
         }
@@ -56,13 +51,7 @@
 @media (min-width:320px) and (max-width:425px) {
     .Contact {
         flex-direction: column;
-        &__me {
-            width: 100%;
-            & p {
-                width: 100%;
-            }
-        }
-        &__form {
+        &__me, &__me p, &__form {
             width: 100%;
         }
     }
@@ -71,11 +60,8 @@
 #form-btn {
     cursor: pointer;
     font-family: $headline-font;
-    font-size: 16px;
     padding: 4px;
-    margin: 16px 0;
     width: 50%;
-    border-radius: 4px;
     background-color: $sun-color;
     color: $secondary-color;
     border: 2px solid $secondary-color;

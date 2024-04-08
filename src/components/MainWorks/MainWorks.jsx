@@ -37,7 +37,7 @@ function MainWorks() {
       ) : (
         <div className='Article Article-side'>
           <div className='Works'>
-            <div className='Slider'>
+            <div className='Slider border-radius'>
               {projects.map((project, index) => (
                 <div
                   className='Slider__item'

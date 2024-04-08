@@ -1,12 +1,9 @@
 @import 'src/index.scss';
 
 .Services {
-    margin: 16px 0;
     flex-wrap: wrap;
     display: flex;
     &__items {
-        margin: 16px 0;
-        border-radius: 4px;
         box-sizing: border-box;
         padding: 32px;
         width: 45%;
@@ -15,12 +12,11 @@
         align-items: flex-start;
         & h3 {
             font-family: $headline-font;
-            margin: 16px 0;
-            font-size: 20px;
+            font-size: $font-20;
         }
         & p {
             font-family: $text-font;
-            font-size: 16px;
+            font-size: $font-16;
         }
         &:nth-child(1) {
             margin-right: auto;
@@ -60,10 +56,10 @@
 
 @media (min-width: 320px) and (max-width: 426px) {
     .Services__items p{
-        font-size: 16px;
+        font-size: $font-16;
     }
     .Services__items h3 {
-        font-size: 20px;
+        font-size: $font-20;
         margin: 0 0 4px 0;
     }
     .Services__items img {

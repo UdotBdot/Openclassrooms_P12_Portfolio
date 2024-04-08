@@ -41,6 +41,30 @@ body::-webkit-scrollbar-thumb {
     background: $sun-color;
 }
 
+.border-radius {
+    border-radius: 4px;
+}
+
+.top-left-radius {
+    border-top-left-radius: 4px;
+}
+.top-right-radius {
+    border-top-right-radius: 4px;
+}
+.bottom-left-radius {
+    border-bottom-left-radius: 4px;
+}
+.bottom-right-radius {
+    border-bottom-right-radius: 4px;
+}
+
+.margin-16 {
+    margin: 16px 0;
+}
+.padding-8 {
+    padding: 8px;
+}
+
 @media (max-width:1024px) {
     .Article-hero {
         display: flex;

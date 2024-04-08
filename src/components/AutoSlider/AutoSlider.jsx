@@ -1,10 +1,8 @@
 import React, { useEffect, useRef, useState } from 'react';
 import './AutoSlider.scss';
+import Logos from '../../datas/Logos.json';
 
 const AutoSlider = () => {
-
-  const initialUrl = ['../../images/Logos/html.webp', '../../images/Logos/css-3.webp', '../../images/Logos/Sass.png', '../../images/Logos/js.webp', '../../images/Logos/React.png', '../../images/Logos/Redux.png', '../../images/Logos/jest.svg', '../../images/Logos/figma.webp', '../../images/Logos/notion.png', '../../images/Logos/MongoDB.png', '../../images/Logos/docker.webp'];
-  const [Urls, setUrls] = useState(initialUrl);
   const [showSlider, setShowSlider] = useState(false);
   const scrollerRef = useRef();
 
@@ -48,8 +46,10 @@ const AutoSlider = () => {
             <div className='Auto-slider-container'>
               <div className="scroller" data-speed="slow" ref={scrollerRef}>
                 <ul className="tag-list scroller__inner">
-                  {Urls.map((url, index) => (
-                    <li key={index}><img width={32} height={32} src={url} alt={`Front-end Tool ${index}`} /></li>
+                  {Logos.map((item, index) => (
+                    <li className='border-radius' key={index}>
+                      <img width={32} height={32} src={item.url} alt={item.alt} />
+                    </li>
                   ))}
                 </ul>
               </div>

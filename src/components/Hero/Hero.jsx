@@ -22,7 +22,7 @@ function Hero() {
       <section className='Article-hero Article'>
         <div className='Hero'>
           <h2 className='Hero__h2'>Welcome to my Portfolio!</h2>
-          <h3 className='Hero__h3'>I am Frederic SIN, a young Agile developer based in Alsace.</h3>
+          <h3 className='Hero__h3 margin-16'>I am Frederic SIN, a young Agile developer based in Alsace.</h3>
           <p className='Hero__p'>
             Here is my digital space where I regularly express myself through my projects, highlighting my ability to combine aesthetics and functionality to offer the best possible user experience.
           </p>

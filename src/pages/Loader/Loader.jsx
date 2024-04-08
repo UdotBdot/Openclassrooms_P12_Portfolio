@@ -105,7 +105,7 @@ function Loader() {
       <section>
         <div className='Loader'>
         <div className='Loader__text' ref={loaderRef}></div>
-        <div className="Loader__progress">
+        <div className="Loader__progress border-radius">
           <FontAwesomeIcon className='Loader__spinner' icon={faSpinner} />
         </div>
       </div>

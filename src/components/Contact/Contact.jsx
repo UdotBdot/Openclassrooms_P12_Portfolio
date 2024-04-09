@@ -7,6 +7,7 @@ function Contact() {
   const serviceId = import.meta.env.VITE_SERVICE_ID;
   const templateId = import.meta.env.VITE_YOUR_TEMPLATE_ID;
   const publicKey = import.meta.env.VITE_PUBLIC_KEY;
+  const captchaPublicKey = import.meta.env.VITE_CAPTCHA_PUBLIC_KEY;
   const form = useRef();
   const [isLoading, setIsLoading] = useState(true);
   const [messageStatus, setMessageStatus] = useState(null);
@@ -74,6 +75,7 @@ function Contact() {
                   <div>
                     <input className='border-radius margin-16' id="form-btn" type="submit" value="Send" />
                   </div>
+                  <div className="g-recaptcha" data-sitekey={captchaPublicKey}></div>
                 </div>
               </form>
               {messageStatus === 'success' && <p className='message'>Your message has been sent successfully!</p>}

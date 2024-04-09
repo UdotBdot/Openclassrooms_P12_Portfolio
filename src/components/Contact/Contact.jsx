@@ -4,7 +4,7 @@ import Input from '../Props/Input/Input';
 import emailjs from '@emailjs/browser';
 
 function Contact() {
-  const servicheId = import.meta.env.VITE_SERVICE_ID;
+  const serviceId = import.meta.env.VITE_SERVICE_ID;
   const templateId = import.meta.env.VITE_YOUR_TEMPLATE_ID;
   const publicKey = import.meta.env.VITE_PUBLIC_KEY;
   const captchaPublicKey = import.meta.env.VITE_CAPTCHA_PUBLIC_KEY;

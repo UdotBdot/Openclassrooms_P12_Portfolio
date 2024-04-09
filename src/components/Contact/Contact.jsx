@@ -1,54 +1,63 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useRef } from 'react';
 import './Contact.scss';
 import Input from '../Props/Input/Input';
 import emailjs from '@emailjs/browser';
+import ReCAPTCHA from 'react-google-recaptcha'
+import axios from 'axios';
 
 function Contact() {
   const serviceId = import.meta.env.VITE_SERVICE_ID;
   const templateId = import.meta.env.VITE_YOUR_TEMPLATE_ID;
   const publicKey = import.meta.env.VITE_PUBLIC_KEY;
+  const captchaPublic = import.meta.env.VITE_PUBLIC_CAPTCHA
   const form = useRef();
-  const [isLoading, setIsLoading] = useState(true);
+  const recaptcha = useRef()
   const [messageStatus, setMessageStatus] = useState(null);
+
 
   const sendEmail = (e) => {
     e.preventDefault();
-
-    emailjs
-      .sendForm(serviceId, templateId, form.current, {
-        publicKey: publicKey,
+    const token = recaptcha.current.getValue(); 
+    if (!token) {
+      console.error('reCAPTCHA validation failed');
+      setMessageStatus('error');
+      return;
+    }
+    const formData = new FormData(form.current);
+    formData.append('captchaValue', token);
+  
+    axios.post('http://localhost:8080/verify', formData)
+      .then((response) => {
+        if (response.data.success) {
+          emailjs.sendForm(serviceId, templateId, form.current, {
+            publicKey: publicKey,
+          }).then(
+            (response) => {
+              console.log('SUCCESS!', response.status);
+              form.current.reset();
+              setMessageStatus('success');
+            },
+            (error) => {
+              console.log('FAILED...', error.text);
+              setMessageStatus('error');
+            }
+          ).finally(() => {
+            setTimeout(() => {
+              setMessageStatus(null);
+            }, 5000);
+          });
+        } else {
+          console.error('reCAPTCHA validation failed');
+          setMessageStatus('error');
+        }
       })
-      .then(
-        (response) => {
-          console.log('SUCCESS!', response.status);
-          form.current.reset();
-          setMessageStatus('success'); 
-        },
-        (error) => {
-          console.log('FAILED...', error.text);
-          setMessageStatus('error'); 
-        },
-      )
-      .finally(() => {
-        setTimeout(() => {
-          setMessageStatus(null);
-        }, 5000); 
+      .catch((error) => {
+        console.error('Error verifying reCAPTCHA:', error);
+        setMessageStatus('error');
       });
   };
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setIsLoading(false);
-    }, 500);
-
-    return () => clearTimeout(timer);
-  }, []);
-
   return (
     <>
-      {isLoading ? (
-        null
-      ) : (
         <section id="contact" className='Article'>
           <div className='Contact'>
             <div className='Contact__me'>
@@ -74,6 +83,7 @@ function Contact() {
                   <div>
                     <input className='border-radius margin-16' id="form-btn" type="submit" value="Send" />
                   </div>
+                  <ReCAPTCHA ref={recaptcha} sitekey={captchaPublic} />
                 </div>
               </form>
               {messageStatus === 'success' && <p className='message message__green'>Your message has been sent successfully!</p>}
@@ -81,7 +91,6 @@ function Contact() {
             </div>
           </div>
         </section>
-      )}
     </>
   );
 }

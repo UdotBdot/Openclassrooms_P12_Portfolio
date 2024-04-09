@@ -1,14 +1,25 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './Header.scss';
 import Typewriter from '../Typewriter/Typewriter';
 import SkeletonHeader from '../Skeletons/SkeletonHeader';
 import HeaderData from '../../datas/Header.json'; 
 
 function Header() {
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 500);
+
+    return () => clearTimeout(timer);
+  }, []);
+
   const words = ["A Developer", "29 Years Old", "Born in France", "From Hong-Kong"]; 
 
   return (
     <>
+      {isLoading ? (<SkeletonHeader />) : (
         <div id="header" className='Article'>
           <div className='Header border-radius margin-16'>
             {HeaderData.map(header => (
@@ -30,6 +41,7 @@ function Header() {
             </h1>
           </div>
         </div>
+      )}
     </>
   );
 }

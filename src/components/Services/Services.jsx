@@ -1,11 +1,22 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Service from '../Props/Service/Service'
 import './Services.scss'
 import servicesData from '../../datas/Services.json';
 
 function Services() {
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 500);
+
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
     <>
+      {isLoading ? null : (
         <section className='Article'>
           <h2 id="services">My Prestations</h2>
           <div className='Services margin-16'>
@@ -24,6 +35,7 @@ function Services() {
             ))}
           </div>
         </section>
+      )}
     </>
   )
 }

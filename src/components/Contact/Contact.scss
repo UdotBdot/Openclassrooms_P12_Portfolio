@@ -40,15 +40,10 @@
             }
 
         }
-    }
-    .message {
-        font-family: $headline-font;
-        font-weight: bold;
-        &__green {
+        & p {
+            font-family: $headline-font;
             color: green;
-        }
-        &__red {
-            color: red;
+            font-weight: bold;
         }
     }
 }

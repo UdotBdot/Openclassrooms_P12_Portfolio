@@ -1,22 +1,9 @@
 import React, { useState, useEffect} from 'react';
 import './TextAboutMe.scss'
-import SkeletonAboutMe from '../Skeletons/SkeletonAboutMe'
 
 function TextAboutMe() {
-
-    const [isLoading, setIsLoading] = useState(true);
-  
-    useEffect(() => {
-      const timer = setTimeout(() => {
-        setIsLoading(false);
-      }, 500);
-  
-      return () => clearTimeout(timer);
-    }, []);
-
   return (
 <>
-    {isLoading ? (<SkeletonAboutMe />) : (
       <div className='Article Article-side'>
  <div className='About-me'>
         <h2>
@@ -36,8 +23,6 @@ function TextAboutMe() {
         </p>
     </div>
       </div>
-       
-    )}
     </>
   )
 }

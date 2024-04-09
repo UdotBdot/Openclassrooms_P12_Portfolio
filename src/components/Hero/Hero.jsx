@@ -1,24 +1,11 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import Skeleton from '../Skeletons/SkeletonText';
 import './Hero.scss';
 import Card from '../Card/Card';
 
 function Hero() {
-  const [isLoading, setIsLoading] = useState(true);
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setIsLoading(false);
-    }, 500);
-
-    return () => clearTimeout(timer);
-  }, []);
-
   return (
     <>
-      {isLoading ? (
-          <Skeleton /> 
-      ) : (
       <section className='Article-hero Article'>
         <div className='Hero'>
           <h2 className='Hero__h2'>Welcome to my Portfolio!</h2>
@@ -35,7 +22,6 @@ function Hero() {
         </div>
         <Card />
       </section>
-      )}
     </>
   );
 }

@@ -9,7 +9,6 @@ function Contact() {
   const publicKey = import.meta.env.VITE_PUBLIC_KEY;
   const captchaPublicKey = import.meta.env.VITE_CAPTCHA_PUBLIC_KEY;
   const form = useRef();
-  const [isLoading, setIsLoading] = useState(true);
   const [messageStatus, setMessageStatus] = useState(null);
 
   const sendEmail = (e) => {
@@ -37,19 +36,8 @@ function Contact() {
       });
   };
 
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setIsLoading(false);
-    }, 500);
-
-    return () => clearTimeout(timer);
-  }, []);
-
   return (
     <>
-      {isLoading ? (
-        null
-      ) : (
         <section id="contact" className='Article'>
           <div className='Contact'>
             <div className='Contact__me'>
@@ -78,12 +66,11 @@ function Contact() {
                   <div className="g-recaptcha" data-sitekey={captchaPublicKey}></div>
                 </div>
               </form>
-              {messageStatus === 'success' && <p className='message'>Your message has been sent successfully!</p>}
-              {messageStatus === 'error' && <p className='message'>Failed to send the message. Please try again later.</p>}
+              {messageStatus === 'success' && <p className='message message__green'>Your message has been sent successfully!</p>}
+              {messageStatus === 'error' && <p className='message message__red'>Failed to send the message. Please try again later.</p>}
             </div>
           </div>
         </section>
-      )}
     </>
   );
 }

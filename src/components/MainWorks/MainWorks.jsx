@@ -6,7 +6,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCaretLeft, faCaretRight } from '@fortawesome/free-solid-svg-icons';
 
 function MainWorks() {
-  const [isLoading, setIsLoading] = useState(true);
   const [projects, setProjects] = useState([]);
   const [currentSlideIndex, setCurrentSlideIndex] = useState(0);
   const [direction, setDirection] = useState('normal');
@@ -14,7 +13,6 @@ function MainWorks() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setProjects(Slider);
-      setIsLoading(false);
     }, 500);
 
     return () => clearTimeout(timer);
@@ -32,9 +30,6 @@ function MainWorks() {
 
   return (
     <>
-      {isLoading ? (
-        <SkeletonWorks />
-      ) : (
         <div className='Article Article-side'>
           <div className='Works'>
             <div className='Slider border-radius'>
@@ -71,7 +66,6 @@ function MainWorks() {
             </div>
           </div>
         </div>
-      )}
     </>
   );
 }

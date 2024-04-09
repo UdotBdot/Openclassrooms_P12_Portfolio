@@ -1,17 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { useNavigate } from 'react-router';
 import './GridWorks.scss';
 import WorksData from '../../datas/Wall.json'; 
 
 function GridWorks() {
-  const [isLoading, setIsLoading] = useState(true);
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setIsLoading(false);
-    }, 500);
-
-    return () => clearTimeout(timer);
-  }, []);
 
   const navigate = useNavigate();
 
@@ -21,7 +13,6 @@ function GridWorks() {
 
   return (
     <>
-      {isLoading ? null : (
         <section className='Article'>
           <h2 className='test'>My Projects Wall</h2>
           <div onClick={() => handleNavigation("/works")} className='Works-grid'>
@@ -38,7 +29,6 @@ function GridWorks() {
             ))}
           </div>
         </section>
-      )}
     </>
   );
 }

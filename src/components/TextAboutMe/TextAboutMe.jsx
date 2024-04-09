@@ -1,24 +1,11 @@
-import React, { useState, useEffect} from 'react';
+import React from 'react';
 import './TextAboutMe.scss'
-import SkeletonAboutMe from '../Skeletons/SkeletonAboutMe'
 
 function TextAboutMe() {
-
-    const [isLoading, setIsLoading] = useState(true);
-  
-    useEffect(() => {
-      const timer = setTimeout(() => {
-        setIsLoading(false);
-      }, 500);
-  
-      return () => clearTimeout(timer);
-    }, []);
-
   return (
 <>
-    {isLoading ? (<SkeletonAboutMe />) : (
-      <div className='Article Article-side'>
- <div className='About-me'>
+    <div className='Article Article-side'>
+      <div className='About-me'>
         <h2>
             About Me
         </h2>
@@ -34,11 +21,9 @@ function TextAboutMe() {
         <p className='margin-16'>
             By incorporating thoses principles into my development projects, I aim to not only create unique experiences but also contribute to a more environmentally friendly ecosystem. Together, let us build a more sustainable future for generations to come. 
         </p>
-    </div>
       </div>
-       
-    )}
-    </>
+    </div>
+  </>
   )
 }
 

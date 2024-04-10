@@ -81,7 +81,7 @@ function Contact() {
                 </div>
                 <div>
                   <ReCAPTCHA
-                    sitekey={captchaKey}
+                    sitekey="6LdQsLUpAAAAAJeLmuKLBYWNwVovuaXWSa6d6PZK"
                     onChange={handleRecaptchaChange}
                   />
                 </div>

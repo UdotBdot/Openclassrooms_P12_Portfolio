@@ -17,8 +17,8 @@ function Card() {
           ry={64} 
           startOffset={0}
           reversed={true}
-          text=' °  °  °  °  °  °  °  °  °  °  °  °  °  °  °  °  °  °  °  °  °  °  °  °  °  °  °  °  °  °  °  °  °  °  °  °  °  °  °  °  ° '
-          textProps={{ "style": { "fontSize": 14 } }} 
+          text='PRODUCTIVE — ENTHUSIAST — ATTENTIVE — '
+          textProps={{ "style": { "fontSize": 16, "fontWeight":'bold' } }} 
           textPathProps={null}
           tspanProps={null}
           ellipseProps={null}

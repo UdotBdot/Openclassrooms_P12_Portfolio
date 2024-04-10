@@ -1,36 +1,42 @@
 @import 'src/index.scss';
 
-
+header {
+    background: rgb(29,30,34);
+    background: linear-gradient(180deg, rgba(29,30,34,1) 25%, rgba(250,245,239,1) 100%);
+}
 .Header {
-    gap: 4px;
+    background-color: $primary-color;
+    gap: 8px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    box-shadow: 0 4px 8px -0.4px var(--clr-primary-900);
+    grid-template-rows: 1fr 1fr;
     & img {
         width: 100%;
     }
     .bg {
         object-fit: cover;
     }
-    &__h1 {
-        font-size: $font-60;
-        font-weight: bold;
-        font-family: $text-font;
-        width: 100%;
-        grid-column-start:1;
-        grid-column-end: 4;
-        grid-row-start: 2;
-        grid-row-end: 2;
-        align-self: center;
-        margin: 32px;
-    }
-    &__sec-text {
-        color: $secondary-color;
-        margin: 16px;
-    }
 }
-
+.Header__h1 {
+    margin: 32px 0;
+    font-size: $font-60;
+    font-weight: bold;
+    font-family: $text-font;
+    width: 100%;
+    grid-column-start:1;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    text-align: center;
+}
+.Header__sec-text {
+    color: $sun-color;
+    height: 61px;
+}
+cite {
+    font-size: $font-16;
+    color: $primary-color;
+}
 @media (max-width:767px) {
     .Header__h1 {
         font-size: $font-36;
@@ -43,10 +49,12 @@
         height: 120px;
     }
     .Header__h1 {
-        font-size: $font-20;
-        width: max-content;
+        font-size: $font-28;
     }
     .Header__sec-text {
         margin: 8px;
+    }
+    cite {
+        font-size: $font-12;
     }
 }

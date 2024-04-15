@@ -1,21 +1,6 @@
-@import 'src/assets/Mixins/Animation.scss';
-@import 'src/assets/Variables/Variables.scss';
-@import 'src/assets/Styles/Fonts.scss';
+@import 'src/assets/mixins/Animation.scss';
+@import 'src/assets/variables/Variables.scss';
+@import 'src/assets/styles/Fonts.scss';
 
-.pulse {
-    animation: pulse 0.5s cubic-bezier(0.4, 0, 0.6, 1) infinite;
-    @include pulse-animation(pulse)
-}
 
-h2 {
-    font-family: $headline-font;
-    color: $secondary-color;
-    font-size: $font-32;
-}
-
-@media (min-width:320px) and (max-width:425px) {
-    h2 {
-        font-size: $font-20;
-    }
-}
 

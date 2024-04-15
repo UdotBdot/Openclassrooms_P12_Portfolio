@@ -1,6 +1,6 @@
 import React from 'react'
 import Tab from '../Props/Tab/Tab'
-import './Navbar.scss'
+import './navbar.scss'
 import { faBackward, faHouse, faFile, faBellConcierge, faPhone, faAddressCard,} from '@fortawesome/free-solid-svg-icons'
 
 function Navbar() {

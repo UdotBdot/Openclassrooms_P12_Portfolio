@@ -1,5 +1,5 @@
 import React, { useState, useRef } from 'react';
-import './Contact.scss';
+import './contact.scss';
 import Input from '../Props/Input/Input';
 import emailjs from '@emailjs/browser';
 import ReCAPTCHA from 'react-google-recaptcha'; 
@@ -54,26 +54,26 @@ function Contact() {
 
   return (
     <>
-      <section id="contact" className='Article'>
-        <div className='Contact'>
-          <div className='Contact__me'>
+      <section id="contact" className='article'>
+        <div className='contact'>
+          <div className='contact__me'>
             <h2>Contact Me</h2>
             <p className='margin-16'>For inquiries, collaborations, or any further information, please feel free to reach out to me using the contact details provided below</p>
             <p>
               Additionally, I can be reached via <a target="_blank" href="https://twitter.com/UdotBdotTFT">Twitter</a> or <a target="_blank" href="https://discord.gg/e2Y3Zbsa9R">Discord</a> for further ways to reach.
             </p>
           </div>
-          <div className='Contact__form'>
+          <div className='contact__form'>
             <h2>Contact Form</h2>
             <form ref={form} onSubmit={sendEmail}>
               <div className='container-form'>
-                <div className="Input-container">
+                <div className="input-container">
                   <Input className='border-radius padding-8' text="Name" autoComplete="Name" name="user_name" placeholder="Your name" type="text" required />
                 </div>
-                <div className="Input-container">
+                <div className="input-container">
                   <Input className='border-radius padding-8' text="Email" autoComplete="Email" name="user_email" placeholder="Your Email" type="email" required />
                 </div>
-                <div className="Input-container">
+                <div className="input-container">
                   <Input text="Message" autoComplete="Message" name="Message" className="message-input border-radius padding-8" placeholder="Your Message..." required htmlFor="Message" textarea />
                 </div>
                 <div>

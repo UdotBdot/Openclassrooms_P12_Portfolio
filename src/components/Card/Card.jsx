@@ -1,13 +1,13 @@
 import React from 'react';
 import ReactCurvedText from 'react-curved-text';
+import './card.scss'
 
-import './Card.scss'
 function Card() {
 
 
   return (
     <>
-    <section className='Card border-radius'>
+    <section className='card border-radius'>
           <ReactCurvedText
           width={192} 
           height={192} 
@@ -24,8 +24,8 @@ function Card() {
           ellipseProps={null}
           svgProps={{ "className": "rotating-curved-text" }}/>  
 
-          <p className='Card__xp'>1+</p>
-        <p className='Card__text'>years of programming experience</p>
+          <p className='card__xp'>1+</p>
+        <p className='card__text'>years of programming experience</p>
 
        
         <ul>

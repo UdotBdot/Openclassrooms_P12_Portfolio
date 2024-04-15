@@ -1,8 +1,7 @@
 import React from 'react'
-import Navbar from '../components/Navbar/Navbar'
-import Header from '../components/Header/Header'
-import Footer from '../components/Footer/Footer'
-import MainWorks from '../components/MainWorks/MainWorks'
+import Navbar from '../components/navbar/Navbar'
+import Footer from '../components/footer/Footer'
+import MainWorks from '../components/main_works/MainWorks'
 
 function Works() {
   return (

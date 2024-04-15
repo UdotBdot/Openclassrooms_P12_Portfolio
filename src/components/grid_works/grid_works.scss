@@ -1,6 +1,6 @@
 @import 'src/index.scss';
 
-.Works-grid {  
+.works-grid {  
     box-sizing: border-box;
     cursor: pointer;
     display: grid;
@@ -72,13 +72,13 @@
 
 
   @media (min-width: 320px) and (max-width: 426px) {
-    .Works-grid {
+    .works-grid {
         grid-template-rows: 80px 40px 80px;
     }
   }
 
   @media (min-width: 426px) and (max-width:768px) {
-    .Works-grid {
+    .works-grid {
         grid-template-rows: 142px 36px 142px;
     }
   }

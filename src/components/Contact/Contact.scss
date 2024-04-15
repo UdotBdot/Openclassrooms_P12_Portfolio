@@ -1,6 +1,6 @@
 @import 'src/index.scss';
 
-.Contact {
+.contact {
     display: flex;
     &__me p, .Input-container input::placeholder, #Message::placeholder, .container-form label, .Contact__form p, #form-btn {
         font-size: $font-16;
@@ -17,7 +17,7 @@
         width: 50%;
         .container-form {
             margin: 12px 0;
-            .Input-container {
+            .input-container {
                 display: flex;
                 flex-direction: column;
                 & input::placeholder, #Message::placeholder{
@@ -42,7 +42,7 @@
 
         }
     }
-    .Contact__form {
+    .contact__form {
         position: relative;
     }
     .message {
@@ -59,7 +59,7 @@
 }
 
 @media (min-width:320px) and (max-width:425px) {
-    .Contact {
+    .contact {
         flex-direction: column;
         &__me, &__me p, &__form {
             width: 100%;

@@ -1,6 +1,6 @@
 @import 'src/index.scss';
 
-.Works {
+.works {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -23,7 +23,7 @@
     @include move-out-animation(moveOutContent);
   }
 
-  .Slider {
+  .slider {
     padding: 4px 4px 0 4px;
     overflow: hidden;
     margin-bottom: 16px;
@@ -102,25 +102,25 @@
     .center-align {
       margin: 0;
     }
-    .Slider__item {
+    .slider__item {
       display: flex;
       flex-direction: column-reverse;
       &s {
         height: 280px;
       }
     }
-    .Slider__item a {
+    .slider__item a {
       display: flex;
       justify-content: center;
     }
-    .Slider__item p {
+    .slider__item p {
       width: 100%;
     }
   }
 }
 
 @media (min-width:320px) and (max-width:426px) {
-  .Slider img {
+  .slider img {
     width: 100%;
   }
   .slider-image {
@@ -132,7 +132,7 @@
   .slider-image {
     height: 400px;
   }
-  .Slider__items {
+  .slider__items {
     height: 600px;
   }
 }

@@ -1,14 +1,14 @@
 import React from 'react';
 import Service from '../Props/Service/Service'
-import './Services.scss'
-import servicesData from '../../datas/Services.json';
+import './services.scss'
+import servicesData from '../../datas/services.json';
 
 function Services() {
   return (
     <>
-        <section className='Article'>
+        <section className='article'>
           <h2 id="services">My Prestations</h2>
-          <div className='Services margin-16'>
+          <div className='services margin-16'>
             {servicesData.map(service => (
               <Service
                 key={service.title}

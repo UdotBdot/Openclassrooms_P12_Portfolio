@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSpinner } from '@fortawesome/free-solid-svg-icons';
-import './Loader.scss';
+import './loader.scss';
 import '../../assets/Styles/Fonts.scss';
 
 function Loader() {
@@ -103,10 +103,10 @@ function Loader() {
   return (
     <main>
       <section>
-        <div className='Loader'>
-        <div className='Loader__text' ref={loaderRef}></div>
-        <div className="Loader__progress border-radius">
-          <FontAwesomeIcon className='Loader__spinner' icon={faSpinner} />
+        <div className='loader'>
+        <div className='loader__text' ref={loaderRef}></div>
+        <div className="loader__progress border-radius">
+          <FontAwesomeIcon className='loader__spinner' icon={faSpinner} />
         </div>
       </div>
       </section>

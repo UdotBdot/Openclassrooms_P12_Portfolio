@@ -1,12 +1,12 @@
 import React from 'react'
-import Header from '../components/Header/Header'
-import Navbar from '../components/Navbar/Navbar'
-import Hero from '../components/Hero/Hero'
-import AutoSlider from '../components/AutoSlider/AutoSlider'
-import GridWorks from '../components/GridWorks/GridWorks'
-import Footer from '../components/Footer/Footer'
-import Services from '../components/Services/Services'
-import Contact from '../components/Contact/Contact'
+import Header from '../components/header/Header'
+import Navbar from '../components/navbar/Navbar'
+import Hero from '../components/hero/Hero'
+import AutoSlider from '../components/auto_slider/AutoSlider'
+import GridWorks from '../components/grid_works/GridWorks'
+import Footer from '../components/footer/Footer'
+import Services from '../components/services/Services'
+import Contact from '../components/contact/Contact'
 
 function Home() {
   return (

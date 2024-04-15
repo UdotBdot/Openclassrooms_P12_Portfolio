@@ -2,7 +2,7 @@
 
 footer {
     margin-top: auto;
-    .Footer {
+    .footer {
         gap: 8px;
         display: flex;
         flex-direction: column;
@@ -29,7 +29,7 @@ footer {
 @media (max-width:1439px) {
     footer {
         margin-bottom: 68px;
-        .Footer {
+        .footer {
             display: flex;
             flex-direction: row;
             padding: 8px 0

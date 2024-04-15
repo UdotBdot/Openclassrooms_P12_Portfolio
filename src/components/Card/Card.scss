@@ -1,6 +1,6 @@
 @import 'src/index.scss';
 
-.Card {
+.card {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -47,7 +47,7 @@
 
 
 @media (max-width:1024px) {
-    .Card {
+    .card {
         margin: 16px auto;
         &__text {
             top: 36%;
@@ -56,15 +56,15 @@
 }
 
 @media (min-width:320px) and (max-width:425px) {
-    .Card {
+    .card {
         width: 90%;
-    }
-    .Card__xp {
-        top: 16%;
-    }
-    .Card__text {
-        top: 36%;
-        font-size: $font-12;
+        &__xp {
+            top: 16%;
+        }
+        &__text {
+            top: 36%;
+            font-size: $font-12;
+        }
     }
 }
 

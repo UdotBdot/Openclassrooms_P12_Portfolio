@@ -1,7 +1,7 @@
 @import 'src/index.scss';
 
 
-.Hero {
+.hero {
     box-sizing: border-box;
     padding-right: 40px;
     text-shadow: 1px 0px 5px rgba(126, 96, 38, 0.2);
@@ -27,7 +27,7 @@
 }
 
 @media (max-width:1024px) {
-    .Hero {
+    .hero {
         width: 100%;
         padding-right: 0;
     }

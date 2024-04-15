@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
-import './AutoSlider.scss';
-import Logos from '../../datas/Logos.json';
+import './auto_slider.scss';
+import Logos from '../../datas/logos.json';
 
 const AutoSlider = () => {
   const [showSlider, setShowSlider] = useState(false);
@@ -40,10 +40,10 @@ const AutoSlider = () => {
 
   return (
     <>
-      <section className='Article'>
+      <section className='article'>
         {showSlider && (
           <>
-            <div className='Auto-slider-container'>
+            <div className='auto-slider-container'>
               <div className="scroller" data-speed="slow" ref={scrollerRef}>
                 <ul className="tag-list scroller__inner">
                   {Logos.map((item, index) => (

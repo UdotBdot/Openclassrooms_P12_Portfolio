@@ -1,5 +1,5 @@
 import './App.scss'
-import Loader from '../pages/Loader/Loader'
+import Loader from '../pages/loader/Loader'
 import Home from '../pages/Home'
 import Works from '../pages/Works';
 import AboutMe from '../pages/AboutMe';

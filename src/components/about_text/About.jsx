@@ -1,11 +1,11 @@
 import React from 'react';
-import './TextAboutMe.scss'
+import './about.scss'
 
-function TextAboutMe() {
+function About() {
   return (
 <>
-    <div className='Article Article-side'>
-      <div className='About-me'>
+    <div className='article article-side'>
+      <div className='about-me'>
         <h2>
             About Me
         </h2>
@@ -27,4 +27,4 @@ function TextAboutMe() {
   )
 }
 
-export default TextAboutMe
+export default About

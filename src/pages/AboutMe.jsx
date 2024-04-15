@@ -1,14 +1,14 @@
 import React from 'react'
-import Navbar from '../components/Navbar/Navbar'
-import Footer from '../components/Footer/Footer'
-import TextAboutMe from '../components/TextAboutMe/TextAboutMe'
+import Navbar from '../components/navbar/Navbar'
+import Footer from '../components/footer/Footer'
+import About from '../components/about_text/About'
 
 function AboutMe() {
   return (
     <>
      <Navbar />
      <section>
-      <TextAboutMe />
+      <About />
      </section>
      <footer>
       <Footer />

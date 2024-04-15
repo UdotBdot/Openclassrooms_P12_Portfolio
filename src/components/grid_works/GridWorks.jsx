@@ -1,7 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router';
-import './GridWorks.scss';
-import WorksData from '../../datas/Wall.json'; 
+import './grid_works.scss';
+import WorksData from '../../datas/wall.json'; 
 
 function GridWorks() {
 
@@ -13,11 +13,11 @@ function GridWorks() {
 
   return (
     <>
-        <section className='Article'>
-          <h2 className='test'>My Projects Wall</h2>
-          <div onClick={() => handleNavigation("/works")} className='Works-grid'>
+        <section className='article'>
+          <h2>My Projects Wall</h2>
+          <div onClick={() => handleNavigation("/works")} className='works-grid'>
             {WorksData.map(work => (
-              <div key={work.wallId} className='Works-grid__slot'>
+              <div key={work.wallId} className='works-grid__slot'>
                 <img
                   src={work.wallSrc}
                   alt={`Projet ${work.workName}`} 

@@ -1,5 +1,5 @@
 import React from 'react'
-import Tab from '../Props/Tab/Tab'
+import Tab from '../props/tab/Tab'
 import './navbar.scss'
 import { faBackward, faHouse, faFile, faBellConcierge, faPhone, faAddressCard,} from '@fortawesome/free-solid-svg-icons'
 

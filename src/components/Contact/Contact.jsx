@@ -1,6 +1,6 @@
 import React, { useState, useRef } from 'react';
 import './contact.scss';
-import Input from '../Props/Input/Input';
+import Input from '../props/input/Input';
 import emailjs from '@emailjs/browser';
 import ReCAPTCHA from 'react-google-recaptcha'; 
 

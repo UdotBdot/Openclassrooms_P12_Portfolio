@@ -1,0 +1,170 @@
+@mixin background-size-animation($name) {
+    @keyframes #{$name} {
+        100% {
+            background-size: 100%;
+        }
+    }
+}
+
+@mixin swing-animation($name) {
+    @keyframes #{$name} {
+        0% {
+            transform: rotate(15deg);
+        }
+        50% {
+            transform: rotate(-15deg);
+        }
+        100% {
+            transform: rotate(15deg);
+        }
+    }
+}
+
+@mixin spin-animation($name) {
+    @keyframes #{$name} {
+         from {
+            transform: rotate(0deg);
+         }   
+         to {
+            transform: rotate(360deg);
+         }
+    }
+}
+
+@mixin dropdown-animation-0($name) {
+    @keyframes #{$name} {
+         0% {
+            transform: rotate(0deg);
+         }   
+    }
+}
+
+@mixin dropdown-animation-180($name) {
+    @keyframes #{$name} {
+         100% {
+            transform: rotate(180deg);
+         }   
+    }
+}
+
+@mixin dropdown-animation-reset($name) {
+    @keyframes #{$name} {
+         0% {
+            transform: rotate(180deg);
+         }
+         100% {
+            transform: rotate(0deg);
+         }
+    }
+}
+@mixin expand-animation($name) {
+    @keyframes #{$name} {
+        0% {
+            letter-spacing: -0.5em;
+            -webkit-transform: translateZ(-800px);
+                    transform: translateZ(-800px);
+            -webkit-filter: blur(12px);
+                    filter: blur(12px);
+            opacity: 0;
+          }
+          100% {
+            -webkit-transform: translateZ(0);
+                    transform: translateZ(0);
+            -webkit-filter: blur(0);
+                    filter: blur(0);
+            opacity: 1;
+          }
+      }
+}
+
+
+@mixin pulse-animation($name) {
+    @keyframes #{$name} {
+        50% {
+            opacity: .5;
+        }
+    }
+}
+
+@mixin track-in-animation($name) {
+    @keyframes #{$name} {
+        0% {
+            opacity: 0;
+          }
+          100% {
+            opacity: 1;
+          }
+    }
+}
+
+@mixin skelet-animation-out($name)  {
+    @keyframes #{$name} {
+        100% {
+            opacity: 0.2;
+        }
+        0% {
+            opacity: 0;
+        }
+    }
+}
+
+@mixin spin-animation($name) {
+    @keyframes #{$name} {
+        100% {
+            -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+        }
+    }
+}
+
+@mixin auto-scroll-animation($name) {
+    @keyframes #{$name} {
+            to {
+              transform: translate(calc(-50% - 4px));
+            }
+          }
+      }
+
+@mixin move-out-animation($name){
+    @keyframes #{$name} {
+        from {
+          transform: translateX(100%);
+        }
+        to {
+          transform: translateX(0);
+        }
+      }
+}
+
+@mixin move-in-animation($name) {
+    @keyframes #{$name} {
+        from {
+          transform: translateX(-100%);
+        }
+        to {
+          transform: translateX(0);
+        }
+      }
+}
+
+@mixin move-up-animation($name) {
+    @keyframes #{$name} {
+        from {
+            transform: translateY(-100%)
+        }
+        to {
+            transform: translateX(0)
+        }
+    }
+}
+
+@mixin move-down-animation($name) {
+    @keyframes #{$name} {
+        from {
+            transform: translateY(100%)
+        }
+        to {
+            transform: translateY(0)
+        }
+    }
+}

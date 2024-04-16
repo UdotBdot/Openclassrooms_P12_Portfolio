@@ -18,7 +18,7 @@
         border: 3px solid $secondary-color;
         width: 148px;
         height: 16px;
-        background: linear-gradient($sun-color, $sun-color) 0/0% no-repeat #FAF5EF;
+        background: linear-gradient($sun-color, $sun-color) 0/0% no-repeat $primary-color;
         position: absolute;
         bottom: 40%;
         animation: l1 1s forwards linear;

@@ -6,13 +6,12 @@
 }
 
 .Hero-Pages {
-    margin-top: 32px;
     display: flex;
 }
 
 body, html, main, #root {
     min-height: 100vh;
-    background-color: #FAF5EF;
+    background-color: $primary-color;
     display: flex;
     flex-direction: column;
 }

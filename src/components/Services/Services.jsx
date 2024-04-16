@@ -8,7 +8,7 @@ function Services() {
     <>
         <section className='article'>
           <h2 id="services">My Prestations</h2>
-          <div className='services margin-16'>
+          <div className='services'>
             {servicesData.map(service => (
               <Service
                 key={service.title}

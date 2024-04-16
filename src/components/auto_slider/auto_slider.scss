@@ -1,10 +1,7 @@
 @import 'src/index.scss';
 
 .auto-slider-container {
-    display: flex;
-    justify-content: center;
     .scroller {
-        max-width: 472px;
         &__inner {
             padding-block: 16px;
             display: flex;
@@ -33,7 +30,7 @@
         }
 
         &[data-speed="slow"] {
-            --_animation-duration: 6s;
+            --_animation-duration: 12s;
         }
     }
 
@@ -43,16 +40,22 @@
         list-style: none;
 
         li {
-            padding: 6px 8px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            height: 64px;
+            width: 64px;
+            padding:12px;
             background: var(--clr-primary-400);
-            box-shadow: 0 4px 8px -0.4px var(--clr-primary-900);
+            box-shadow: $icon-shadow;
+            & p {
+                font-family: $text-font;
+                font-size: $font-12;
+            }
         }
     }
 }
-h2 {
-    display: flex;
-    justify-content: flex-start;
- }
 
  @media (min-width:320px) and (max-width:425px) {
     .Auto-slider-container .tag-list li {

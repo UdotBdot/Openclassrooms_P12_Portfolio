@@ -1,6 +1,6 @@
 @import 'src/index.scss';
 
-.About-me {
+.about-me {
     & h2 {
         font-family: $headline-font;
         font-size: $font-36;
@@ -17,7 +17,6 @@
         line-height: 28px;
     }
 }
-
 @media (min-width:320px) and (max-width:426px) {
     .about-me p {
         width: 100%;

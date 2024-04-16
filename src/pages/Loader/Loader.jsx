@@ -3,7 +3,6 @@ import { useNavigate } from 'react-router';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSpinner } from '@fortawesome/free-solid-svg-icons';
 import './loader.scss';
-import '../../assets/Styles/Fonts.scss';
 
 function Loader() {
   const loaderRef = useRef(null);

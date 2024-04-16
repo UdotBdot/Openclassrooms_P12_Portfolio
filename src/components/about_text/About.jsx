@@ -4,7 +4,7 @@ import './about.scss'
 function About() {
   return (
 <>
-    <div className='article article-side'>
+    <div className='article article-side article-hero'>
       <div className='about-me'>
         <h2>
             About Me

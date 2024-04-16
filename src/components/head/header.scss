@@ -1,0 +1,87 @@
+@import 'src/index.scss';
+
+#header {
+    background-color: $bg-color;
+    box-sizing: border-box;
+    box-shadow: $main-shadow;
+    margin-top: 8px;
+    padding: 0 32px;
+    height: 97vh;
+}
+.header__h1 {
+    margin: 32px 0;
+    font-size: $font-60;
+    font-weight: bold;
+    font-family: $text-font;
+    grid-column-start:1;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    width: 100%;
+}
+.header__sec-text {
+    color: $secondary-color;
+    height: 62px;
+    width: 600px;
+}
+blockquote {
+    cite {
+        font-size: $font-16;
+        color: $text-color;
+    }
+}
+
+.header__logo {
+    margin: 0 8px 0 0;
+    &:hover {
+        scale: 1.1;
+    }
+}
+
+.header__pp {
+    display: flex;
+    justify-content: flex-end;
+}
+
+@media (max-width:767px) {
+    .header__h1 {
+        font-size: $font-36;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 426px) {
+    .header__h1 {
+        font-size: $font-28;
+    }
+    .header__sec-text {
+        margin: 8px 0;
+        height: 22px;
+    }
+    cite {
+        font-size: $font-12;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 376px) {
+    #header {
+        height: 89vh;
+    }
+}
+
+@media (min-width: 377px) and (max-width: 1025px) {
+    #header {
+        height: 85vh;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+    .header__sec-text {
+        width: 240px;
+    }
+}
+
+@media (min-width: 767px) and (max-width: 1024px) {
+    .header__h1 {
+        font-size: 24px;
+    }
+}

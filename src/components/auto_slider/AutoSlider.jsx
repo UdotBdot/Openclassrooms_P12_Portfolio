@@ -9,7 +9,7 @@ const AutoSlider = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setShowSlider(true);
-    }, 500);
+    }, 0);
 
     return () => clearTimeout(timer);
   }, []);
@@ -40,23 +40,20 @@ const AutoSlider = () => {
 
   return (
     <>
-      <section className='article'>
         {showSlider && (
-          <>
             <div className='auto-slider-container'>
               <div className="scroller" data-speed="slow" ref={scrollerRef}>
                 <ul className="tag-list scroller__inner">
                   {Logos.map((item, index) => (
                     <li className='border-radius' key={index}>
                       <img width={32} height={32} src={item.url} alt={item.alt} />
+                      <p>{item.name}</p>
                     </li>
                   ))}
                 </ul>
               </div>
             </div>
-          </>
         )}
-      </section>
     </>
   );
 };

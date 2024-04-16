@@ -1,47 +1,58 @@
 [
     {
       "url": "../../images/Logos/html.webp",
-      "alt": "HTML Logo"
+      "alt": "HTML Logo",
+      "name": "HTML"
     },
     {
       "url": "../../images/Logos/css-3.webp",
-      "alt": "CSS Logo"
+      "alt": "CSS Logo",
+      "name": "CSS"
     },
     {
       "url": "../../images/Logos/Sass.png",
-      "alt": "Sass Logo"
+      "alt": "Sass Logo",
+      "name": "Sass"
     },
     {
       "url": "../../images/Logos/js.webp",
-      "alt": "JavaScript Logo"
+      "alt": "JavaScript Logo",
+      "name": "JavaScript"
     },
     {
       "url": "../../images/Logos/React.png",
-      "alt": "React Logo"
+      "alt": "React Logo",
+      "name": "React"
     },
     {
       "url": "../../images/Logos/Redux.png",
-      "alt": "Redux Logo"
+      "alt": "Redux Logo",
+      "name": "Redux"
     },
     {
       "url": "../../images/Logos/jest.svg",
-      "alt": "Jest Logo"
+      "alt": "Jest Logo",
+      "name": "Jest"
     },
     {
       "url": "../../images/Logos/figma.webp",
-      "alt": "Figma Logo"
+      "alt": "Figma Logo",
+      "name": "Figma"
     },
     {
       "url": "../../images/Logos/notion.png",
-      "alt": "Notion Logo"
+      "alt": "Notion Logo",
+      "name": "Notion"
     },
     {
       "url": "../../images/Logos/MongoDB.png",
-      "alt": "MongoDB Logo"
+      "alt": "MongoDB Logo",
+      "name": "MongoDB"
     },
     {
       "url": "../../images/Logos/docker.webp",
-      "alt": "Docker Logo"
+      "alt": "Docker Logo",
+      "name": "Docker"
     }
   ]
   

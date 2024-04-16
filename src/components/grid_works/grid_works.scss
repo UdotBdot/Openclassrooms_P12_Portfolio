@@ -1,6 +1,8 @@
 @import 'src/index.scss';
 
 .works-grid {  
+    background-color: $bg-color;
+    box-shadow: $main-shadow;
     box-sizing: border-box;
     cursor: pointer;
     display: grid;
@@ -11,7 +13,7 @@
       ". . . . ."
       ". . . . ."
       ". . . . .";
-    padding: 16px 0;
+    margin: 16px 0;
     gap: 8px;
     &:hover {
        opacity: 0.8;

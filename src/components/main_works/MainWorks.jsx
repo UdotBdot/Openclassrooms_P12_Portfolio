@@ -43,7 +43,7 @@ function MainWorks() {
                       {project.sliderTitle}
                       <span>
                         <a target='_blank' href={project.sliderLink}>
-                          <img width='24' height='24' className='footer__logos' src='../../images/Logos/github_logo.webp' alt='GitHub Logo' />
+                          <img width='24' height='24' src='../../images/Logos/github_logo.svg' alt='GitHub Logo' />
                         </a>
                       </span>
                     </h3>

@@ -1,8 +1,7 @@
 import React from 'react'
-import Header from '../components/header/Header'
+import Header from '../components/head/Header'
 import Navbar from '../components/navbar/Navbar'
 import Hero from '../components/hero/Hero'
-import AutoSlider from '../components/auto_slider/AutoSlider'
 import GridWorks from '../components/grid_works/GridWorks'
 import Footer from '../components/footer/Footer'
 import Services from '../components/services/Services'
@@ -20,7 +19,6 @@ function Home() {
     </section>
       <GridWorks />
       <Services />
-      <AutoSlider/>
       <Contact />
     <footer>
       <Footer />

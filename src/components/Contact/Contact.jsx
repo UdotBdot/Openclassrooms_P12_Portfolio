@@ -77,7 +77,7 @@ function Contact() {
                   <Input text="Message" autoComplete="Message" name="Message" className="message-input border-radius padding-8" placeholder="Your Message..." required htmlFor="Message" textarea />
                 </div>
                 <div>
-                  <input className='border-radius margin-16' id="form-btn" type="submit" value="Send" />
+                  <input className='border-radius margin-16 btn-width' id="form-btn" type="submit" value="Send" />
                 </div>
                 <div>
                   <ReCAPTCHA

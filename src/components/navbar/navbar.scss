@@ -116,6 +116,7 @@
 .nav-link:hover {
   background-color: $sun-color; 
   color: $text-color; 
+  box-shadow: $icon-shadow;
 }
 
 .nav-item:first-child .nav-link:hover {

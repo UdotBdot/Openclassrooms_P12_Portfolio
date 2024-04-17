@@ -20,24 +20,38 @@
     width: 100%;
 }
 .header__sec-text {
+    margin: 24px 0 0 0;
     color: $secondary-color;
     height: 62px;
     width: 600px;
 }
 blockquote {
+    margin-bottom: 8px;
     cite {
         font-size: $font-16;
         color: $text-color;
     }
 }
-
 .header__logo {
     margin: 0 8px 0 0;
-    &:hover {
-        scale: 1.1;
-    }
 }
 
+.article-space {
+    justify-content: space-between;
+    margin: 0 32px;
+}
+.header__text {
+    margin: 0 32px;
+    .header__button {
+        width: 180px;
+        padding: 4px 0;
+        border-radius: 4px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 8px;
+    }
+}
 .header__pp {
     display: flex;
     justify-content: flex-end;
@@ -51,6 +65,7 @@ blockquote {
 
 @media (min-width: 320px) and (max-width: 426px) {
     .header__h1 {
+        text-align: center;
         font-size: $font-28;
     }
     .header__sec-text {
@@ -59,6 +74,10 @@ blockquote {
     }
     cite {
         font-size: $font-12;
+    }
+    .header__pp img {
+        width: 140px;
+        height: 140px;
     }
 }
 
@@ -80,8 +99,15 @@ blockquote {
     }
 }
 
-@media (min-width: 767px) and (max-width: 1024px) {
+@media (min-width: 767px) and (max-width: 1025px) {
     .header__h1 {
         font-size: 24px;
+        text-align: center;
     }
+
+    .header__pp img {
+        width: 180px;
+        height: 180px;
+    }
+
 }

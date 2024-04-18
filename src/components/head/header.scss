@@ -111,3 +111,13 @@ blockquote {
     }
 
 }
+
+@media (min-width: 426px) and (max-width: 767px) {
+    .header__pp img {
+        width: 140px;
+        height: 140px;
+    }
+    blockquote cite {
+        font-size: $font-12;
+    }
+}

@@ -8,6 +8,11 @@ function Header() {
 
   return (
     <>
+      <div className='logo'>
+      <p>WEB</p>
+      <img  width={80} height={80} src='/images/Logos/Sin_dev.png' />
+      <p>DEV</p>
+      </div>
       <div id="header" className='article border-radius'>
         <AutoSlider />
         <h1 className='header__h1'>
@@ -16,7 +21,7 @@ function Header() {
                   <Typewriter words={words} delay={32} phraseDelay={700} infinite />
                 </div>
                 <div className='header__pp'>
-                  <img width={240} height={240} alt="Profile Picture" src='/images/profile-pic.png'/>
+                  <img width={240} height={240} alt="Profile Picture" src='/images/profile-pic.webp'/>
                 </div>
               </div>
               <div className='header__text'>

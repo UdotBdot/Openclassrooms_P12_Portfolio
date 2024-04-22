@@ -1,12 +1,27 @@
 @import 'src/index.scss';
 
+.logo {
+    gap: 8px;
+    margin: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    & img {
+        box-shadow: $main-shadow;
+    }
+    & p {
+        font-family: $headline-font;
+        color: $secondary-color;
+        font-weight: bold;
+    }
+}
+
 #header {
     background-color: $bg-color;
     box-sizing: border-box;
     box-shadow: $main-shadow;
-    margin-top: 8px;
-    padding: 0 32px;
-    height: 97vh;
+    margin-top: 32px;
+    padding: 8px 32px;
 }
 .header__h1 {
     margin: 32px 0;
@@ -81,17 +96,6 @@ blockquote {
     }
 }
 
-@media (min-width: 320px) and (max-width: 376px) {
-    #header {
-        height: 89vh;
-    }
-}
-
-@media (min-width: 377px) and (max-width: 1025px) {
-    #header {
-        height: 85vh;
-    }
-}
 
 @media (min-width: 320px) and (max-width: 768px) {
     .header__sec-text {

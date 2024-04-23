@@ -1,6 +1,7 @@
 @import 'src/index.scss';
 
 #cookies {
+    z-index: 100;
     box-sizing: border-box;
     padding: 12px;
    position: fixed;
@@ -14,9 +15,17 @@
    box-shadow: $main-shadow;
    .cookie {
     color: $primary-color;
+    display: flex;
+    flex-direction: column;
     &__btn {
         margin-top: 32px;
         padding: 4px;
     }
    }
+}
+
+@media (min-width:320px) and (max-width:426px) {
+    #cookies {
+        top: 40%;
+    }
 }

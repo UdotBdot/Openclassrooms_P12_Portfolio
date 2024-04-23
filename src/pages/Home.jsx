@@ -6,14 +6,12 @@ import GridWorks from '../components/grid_works/GridWorks'
 import Footer from '../components/footer/Footer'
 import Services from '../components/services/Services'
 import Contact from '../components/contact/Contact'
-import Cookie from '../components/cookie/Cookie';
 
 function Home() {
   return (
     <>
     <header>
       <Header />
-      <Cookie />
     </header>
     <Navbar />
     <section className='Hero-Pages'>

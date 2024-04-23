@@ -1,10 +1,20 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import './contact.scss';
 import Input from '../props/input/Input';
 import emailjs from '@emailjs/browser';
-import ReCAPTCHA from 'react-google-recaptcha'; 
+import ReCAPTCHA from 'react-google-recaptcha';
+import Cookie from '../cookie/Cookie';
 
 function Contact() {
+  const [isAccepted, setIsAccepted] = useState(false);
+
+  useEffect(() => {
+    // Vérifie si le consentement aux cookies a déjà été donné
+    const cookieConsent = localStorage.getItem('cookieConsent');
+    if (cookieConsent === 'true') {
+      setIsAccepted(true);
+    }
+  }, []);
 
   const serviceId = import.meta.env.VITE_SERVICE_ID;
   const templateId = import.meta.env.VITE_YOUR_TEMPLATE_ID;
@@ -12,10 +22,10 @@ function Contact() {
   const captchaKey = import.meta.env.VITE_CAPTCHA_KEY;
   const form = useRef();
   const [messageStatus, setMessageStatus] = useState(null);
-  const [isVerified, setIsVerified] = useState(false); 
+  const [isVerified, setIsVerified] = useState(false);
 
   const handleRecaptchaChange = () => {
-    setIsVerified(true); 
+    setIsVerified(true);
   };
 
   const sendEmail = (e) => {
@@ -23,7 +33,7 @@ function Contact() {
 
     if (!isVerified) {
       alert("reCAPTCHA not verified");
-      return; 
+      return;
     }
 
     emailjs
@@ -47,9 +57,19 @@ function Contact() {
           setMessageStatus(null);
           form.current.reset();
         }, 2000);
-  
-
       });
+  };
+
+  const handleAccept = () => {
+    setIsAccepted(true);
+    // Stocke le consentement aux cookies dans le stockage local
+    localStorage.setItem('cookieConsent', 'true');
+  };
+
+  const handleRefuse = () => {
+    setIsAccepted(false);
+    // Supprime le consentement aux cookies du stockage local
+    localStorage.removeItem('cookieConsent');
   };
 
   return (
@@ -68,16 +88,24 @@ function Contact() {
             <form ref={form} onSubmit={sendEmail}>
               <div className='container-form'>
                 <div className="input-container">
-                  <Input className='border-radius padding-8' text="Name" autoComplete="Name" name="user_name" placeholder="Your name" type="text" required />
+                  <Input className='border-radius padding-8' text="Name" autoComplete="Name" name="user_name" placeholder="Your name" type="text" required disabled={!isAccepted} />
                 </div>
                 <div className="input-container">
-                  <Input className='border-radius padding-8' text="Email" autoComplete="Email" name="user_email" placeholder="Your Email" type="email" required />
+                  <Input className='border-radius padding-8' text="Email" autoComplete="Email" name="user_email" placeholder="Your Email" type="email" required disabled={!isAccepted} />
                 </div>
                 <div className="input-container">
-                  <Input text="Message" autoComplete="Message" name="Message" className="message-input border-radius padding-8" placeholder="Your Message..." required htmlFor="Message" textarea />
+                  <Input text="Message" autoComplete="Message" name="Message" className="message-input border-radius padding-8" placeholder="Your Message..." required htmlFor="Message" textarea disabled={!isAccepted} />
                 </div>
                 <div>
-                  <input className='border-radius margin-16 btn-width' id="form-btn" type="submit" value="Send" />
+                  <button 
+                    className={`border-radius margin-16 btn-width ${!isAccepted ? 'disabled' : ''}`} 
+                    id="form-btn" 
+                    type="submit" 
+                    disabled={!isAccepted}
+                    style={{ opacity: isAccepted ? 1 : 0.5 }}
+                  >
+                    {isAccepted ? "Send" : "Not Available (Accept third-party cookies)"}
+                  </button>
                 </div>
                 <div>
                   <ReCAPTCHA
@@ -92,6 +120,11 @@ function Contact() {
           </div>
         </div>
       </section>
+
+      <Cookie
+        onAccept={handleAccept}
+        onRefuse={handleRefuse}
+      />
     </>
   );
 }

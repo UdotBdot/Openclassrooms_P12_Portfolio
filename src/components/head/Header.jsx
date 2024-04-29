@@ -21,7 +21,7 @@ function Header() {
                   <Typewriter words={words} delay={32} phraseDelay={700} infinite />
                 </div>
                 <div className='header__pp'>
-                  <img width={240} height={240} alt="Profile Picture" src='/images/profile-pic.webp'/>
+                  <img width={240} height={240} alt="Profile Picture" src='/images/profile-pic.webp' loading='eager'/>
                 </div>
               </div>
               <div className='header__text'>

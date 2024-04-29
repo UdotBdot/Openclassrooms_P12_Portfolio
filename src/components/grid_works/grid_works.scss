@@ -15,10 +15,6 @@
       ". . . . .";
     margin: 16px 0;
     gap: 8px;
-    &:hover {
-       opacity: 0.8;
-       transition: scale 150ms linear;
-    }
     &:not(:hover) { 
         scale: 1;
         transition: scale 150ms linear;

@@ -30,8 +30,8 @@ function Cookie({ onAccept, onRefuse }) {
             <div className="cookie">
               <p className='margin-4'>This website uses reCAPTCHA from google as a third-party cookies to ensure a secure way to contact me.</p> 
               <p className='margin-4'>Please note that if you refuse cookies, the contact form will not be available.</p>
-              <button onClick={handleAccept} className='border-radius cookie__btn margin-4' id='form-btn'>I agree</button>
-              <button onClick={handleRefuse} className='border-radius cookie__btn margin-4' id='form-btn'>I refuse</button>
+              <button onClick={handleAccept} className='border-radius cookie__btn margin-4 form-btn'>I agree</button>
+              <button onClick={handleRefuse} className='border-radius cookie__btn margin-4 form-btn'>I refuse</button>
             </div>
           </div>
         </div>

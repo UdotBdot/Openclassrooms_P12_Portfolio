@@ -46,8 +46,8 @@ const AutoSlider = () => {
                 <ul className="tag-list scroller__inner">
                   {Logos.map((item, index) => (
                     <li className='border-radius' key={index}>
-                      <img width={32} height={32} src={item.url} alt={item.alt} />
                       <p>{item.name}</p>
+                      <img width={32} height={32} src={item.url} alt={item.alt} />
                     </li>
                   ))}
                 </ul>

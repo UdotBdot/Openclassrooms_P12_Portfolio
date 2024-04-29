@@ -98,7 +98,7 @@ function Contact() {
                 </div>
                 <div>
                   <button 
-                    className={`border-radius margin-16 btn-width ${!isAccepted ? 'disabled' : ''}`} 
+                    className={`border-radius margin-16 btn-width form-btn ${!isAccepted ? 'disabled' : ''}`} 
                     id="form-btn" 
                     type="submit" 
                     disabled={!isAccepted}

@@ -24,7 +24,7 @@
                     font-family: $headline-font;
                 }
                 & input, textarea {
-                    border: 2px solid $secondary-color;
+                    border: 1px solid $secondary-color;
                 }
                 & input {
                     font-family: $text-font;
@@ -70,18 +70,15 @@
     }
 }
 
-#form-btn {
+.form-btn {
     cursor: pointer;
     font-family: $headline-font;
     padding: 4px 0;
     background-color: $sun-color;
     color: $text-color;
-    border: 2px solid $secondary-color;
+    border: 1px solid $secondary-color;
     font-weight: bold;
     box-shadow: $icon-shadow;
-    &:hover {
-        opacity: 0.8;
-    }
 }
 
 .btn-width {

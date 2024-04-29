@@ -10,7 +10,7 @@ function Header() {
     <>
       <div className='logo'>
       <p>WEB</p>
-      <img  width={80} height={80} src='/images/Logos/Sin_dev.png' />
+      <img  width={80} height={80} src='/images/Logos/Sin_dev.png' alt='logo SIN_DEV'/>
       <p>DEV</p>
       </div>
       <div id="header" className='article border-radius'>
@@ -30,14 +30,14 @@ function Header() {
                     </blockquote>
                     
                     <a href="https://github.com/UdotBdot" target='_blank'>
-                      <button id='form-btn' className='header__button'>
+                      <button className='header__button form-btn'>
                         <img width={32} height={32} src="/images/Logos/github_logo.svg" alt="Github Logo" className='header__logo'/>
                         GitHub
                       </button>
                     </a>
 
                     <a href="https://www.linkedin.com/in/frederic-sin-965b36100/" target='_blank'>
-                      <button id='form-btn' className='header__button'>
+                      <button className='header__button form-btn'>
                         <img width={32} height={32} src="/images/Logos/Linkedin.svg" alt="Linkedin Logo" className='header__logo'/>
                         LinkedIn
                       </button>
